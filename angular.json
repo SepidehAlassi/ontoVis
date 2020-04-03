@@ -27,7 +27,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/3d-force-graph/dist/3d-force-graph.d.ts"
+              "node_modules/3d-force-graph/dist/3d-force-graph.min.js"
             ]
           },
           "configurations": {

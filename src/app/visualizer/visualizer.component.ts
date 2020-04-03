@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild, ElementRef} from '@angular/core';
+import {Component, OnInit, ViewChild, ElementRef, AfterViewInit} from '@angular/core';
 import ForceGraph3D from '3d-force-graph';
 
 @Component({
@@ -6,14 +6,15 @@ import ForceGraph3D from '3d-force-graph';
   templateUrl: './visualizer.component.html',
   styleUrls: ['./visualizer.component.css']
 })
-export class VisualizerComponent implements OnInit {
+export class VisualizerComponent implements OnInit, AfterViewInit {
 
-
-  @ViewChild('graph') graphcontainer: ElementRef;
+  ontologyName: string;
+  @ViewChild('graphcontainer', {read: ElementRef}) graphcontainer: ElementRef;
   graph = ForceGraph3D();
   constructor() { }
 
   ngOnInit(): void {
+    this.ontologyName = "BEOL Ontology"
     const nodes = [
       {
         "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
@@ -35,9 +36,15 @@ export class VisualizerComponent implements OnInit {
         "label": "subClassOf"
       },
     ];
-    const gData = {'nodes': nodes, 'links': links}
-    this.graph.graphData(gData);
-    console.log(this.graph);
-  }
+    const gData = {'nodes': nodes, 'links': links};
 
+    this.graph.graphData(gData);
+    this.graph.nodeLabel('label');
+    this.graph.linkLabel('label');
+    this.graph.nodeColor('red');
+
+  }
+  ngAfterViewInit() {
+    this.graph(this.graphcontainer.nativeElement);
+  }
 }
