@@ -1,5 +1,9 @@
 import {Component, OnInit, ViewChild, ElementRef, AfterViewInit} from '@angular/core';
+import {MatRadioChange} from '@angular/material/radio';
 import ForceGraph3D from '3d-force-graph';
+import SpriteText from 'three-spritetext';
+import * as THREE from 'three';
+import {nodeDebugInfo} from "@angular/compiler-cli/src/ngtsc/util/src/typescript";
 
 @Component({
   selector: 'app-visualizer',
@@ -11,298 +15,269 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
   ontologyName: string;
   @ViewChild('graphcontainer', {read: ElementRef}) graphcontainer: ElementRef;
   graph = ForceGraph3D();
+  dimension = '3';
   constructor() { }
 
   ngOnInit(): void {
     this.ontologyName = "BEOL Ontology"
     const nodes = [
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
-        "label": "Archive",
+        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "label": "Artikel",
         "group": "resource",
         "class": "native"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-        "label": "Basis-Brief",
+        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "label": "Buch",
         "group": "resource",
         "class": "native"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
-        "label": "Bild von Dokument",
+        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#BookContent",
+        "label": "Buch-Inhalt",
         "group": "resource",
         "class": "native"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnote",
-        "label": "Endnote",
+        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
+        "label": "Serie",
         "group": "resource",
         "class": "native"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#entryComment",
-        "label": "Kommentar zu Manuskripteintrag",
+        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "label": "Serie Artikel",
         "group": "resource",
         "class": "native"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
-        "label": "Faksimile",
+        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "label": "Serie Buch",
         "group": "resource",
         "class": "native"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
-        "label": "Figur",
+        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
+        "label": "Edition",
         "group": "resource",
         "class": "native"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#introduction",
-        "label": "Einleitung",
+        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Journal",
+        "label": "Zeitschrift",
         "group": "resource",
         "class": "native"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "label": "Brief",
+        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "label": "Zeitschrift Artikel",
         "group": "resource",
         "class": "native"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "label": "Manuskript",
+        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
+        "label": "Organisation",
         "group": "resource",
         "class": "native"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
-        "label": "Eintrag in einem Manuskript",
+        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "Publikation",
         "group": "resource",
         "class": "native"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#page",
-        "label": "Seite",
+        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
+        "label": "Verlag",
         "group": "resource",
         "class": "native"
+      },
+      {
+        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Translation",
+        "label": "Übersetzung",
+        "group": "resource",
+        "class": "native"
+      },
+      {
+        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
+        "label": "Varia Posthuma Artikel",
+        "group": "resource",
+        "class": "native"
+      },
+      {
+        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Webpage",
+        "label": "Webpage",
+        "group": "resource",
+        "class": "native"
+      },
+      {
+        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Website",
+        "label": "Website",
+        "group": "resource",
+        "class": "native"
+      },
+      {
+        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "label": "Website Artikel",
+        "group": "resource",
+        "class": "native"
+      },
+      {
+        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#letter",
+        "label": "Publizierte Brief",
+        "group": "resource",
+        "class": "native"
+      },
+      {
+        "id": "http://purl.org/ontology/bibo/Article",
+        "label": "http://purl.org/ontology/bibo/Article",
+        "group": "resource",
+        "class": "external"
+      },
+      {
+        "id": "Artikel_publicationHasTitle",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Artikel_startPage",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Artikel_endPage",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Artikel_publicationHasSubtitle",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       },
       {
         "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "label": "Person",
+        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
         "group": "resource",
-        "class": "native"
+        "class": "external"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
-        "label": "Sektion",
-        "group": "resource",
-        "class": "native"
+        "id": "Artikel_volumeSubtitle",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#transcription",
-        "label": "Transkription",
-        "group": "resource",
-        "class": "native"
+        "id": "Artikel_publicationHasAbbreviation",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-        "label": "schriftliche Quelle",
-        "group": "resource",
-        "class": "native"
+        "id": "Artikel_publicationHasDate",
+        "label": "DateValue",
+        "group": "literal",
+        "class": "DateValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffAbbreviationMarkerTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffAbbreviationMarkerTag",
-        "group": "resource",
-        "class": "native"
+        "id": "Artikel_publicationHasLocation",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffAdditionTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffAdditionTag",
+        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
+        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
         "group": "resource",
-        "class": "native"
+        "class": "external"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffBrTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffBrTag",
-        "group": "resource",
-        "class": "native"
+        "id": "Artikel_publicationHasDOI",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffCenterTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffCenterTag",
-        "group": "resource",
-        "class": "native"
+        "id": "Artikel_publicationHasExternalLink",
+        "label": "UriValue",
+        "group": "literal",
+        "class": "UriValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffCorrectionTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffCorrectionTag",
+        "id": "http://purl.org/ontology/bibo/book",
+        "label": "http://purl.org/ontology/bibo/book",
         "group": "resource",
-        "class": "native"
+        "class": "external"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffDeletionTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffDeletionTag",
-        "group": "resource",
-        "class": "native"
+        "id": "Buch_bookHasISBN",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffEntityTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffEntityTag",
-        "group": "resource",
-        "class": "native"
+        "id": "Buch_publicationHasTitle",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffExpansionMarkerTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffExpansionMarkerTag",
-        "group": "resource",
-        "class": "native"
+        "id": "Buch_numPages",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffExpansionTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffExpansionTag",
-        "group": "resource",
-        "class": "native"
+        "id": "Buch_publicationHasSubtitle",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFacsimileTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFacsimileTag",
-        "group": "resource",
-        "class": "native"
+        "id": "Buch_numVolumes",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFigCaptionTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFigCaptionTag",
-        "group": "resource",
-        "class": "native"
+        "id": "Buch_publicationHasAbbreviation",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFigTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFigTag",
-        "group": "resource",
-        "class": "native"
+        "id": "Buch_collectionNumber",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFigureTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFigureTag",
-        "group": "resource",
-        "class": "native"
+        "id": "Buch_publicationHasDate",
+        "label": "DateValue",
+        "group": "literal",
+        "class": "DateValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFontTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFontTag",
-        "group": "resource",
-        "class": "native"
+        "id": "Buch_publicationHasLocation",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffForeignTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffForeignTag",
-        "group": "resource",
-        "class": "native"
+        "id": "Buch_publicationHasDOI",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffGapTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffGapTag",
-        "group": "resource",
-        "class": "native"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffHrTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffHrTag",
-        "group": "resource",
-        "class": "native"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffHtmlTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffHtmlTag",
-        "group": "resource",
-        "class": "native"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffInterventionMarkerTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffInterventionMarkerTag",
-        "group": "resource",
-        "class": "native"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffMarginalTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffMarginalTag",
-        "group": "resource",
-        "class": "native"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffMathTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffMathTag",
-        "group": "resource",
-        "class": "native"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffOriginalMarkerTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffOriginalMarkerTag",
-        "group": "resource",
-        "class": "native"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffPbTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffPbTag",
-        "group": "resource",
-        "class": "native"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffReferenceTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffReferenceTag",
-        "group": "resource",
-        "class": "native"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffRegionTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffRegionTag",
-        "group": "resource",
-        "class": "native"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSmallTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSmallTag",
-        "group": "resource",
-        "class": "native"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSubstitutionAdditionTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSubstitutionAdditionTag",
-        "group": "resource",
-        "class": "native"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSubstitutionDeletionTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSubstitutionDeletionTag",
-        "group": "resource",
-        "class": "native"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSubstitutionTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSubstitutionTag",
-        "group": "resource",
-        "class": "native"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffTableCellTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffTableCellTag",
-        "group": "resource",
-        "class": "native"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffTableTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffTableTag",
-        "group": "resource",
-        "class": "native"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffUnclearTag",
-        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffUnclearTag",
-        "group": "resource",
-        "class": "native"
+        "id": "Buch_publicationHasExternalLink",
+        "label": "UriValue",
+        "group": "literal",
+        "class": "UriValue"
       },
       {
         "id": "http://api.knora.org/ontology/knora-api/v2#Resource",
@@ -311,1246 +286,1801 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
         "class": "external"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#archiveHasName_TextValue",
+        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#introduction",
+        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#introduction",
+        "group": "resource",
+        "class": "external"
+      },
+      {
+        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
+        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
+        "group": "resource",
+        "class": "external"
+      },
+      {
+        "id": "http://purl.org/ontology/bibo/Collection",
+        "label": "http://purl.org/ontology/bibo/Collection",
+        "group": "resource",
+        "class": "external"
+      },
+      {
+        "id": "Serie_hasName",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#archiveHasAbbreviation_TextValue",
+        "id": "Serie_collectionNumber",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#archiveHasLocation_TextValue",
+        "id": "Serie_numVolumes",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#mentionedIn_TextValue",
+        "id": "Serie Artikel_collectionNumber",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
+        "id": "Serie Artikel_publicationHasTitle",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
+        "id": "Serie Artikel_startPage",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#title_TextValue",
+        "id": "Serie Artikel_endPage",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasNumber_TextValue",
+        "id": "Serie Artikel_publicationHasSubtitle",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#creationDate_DateValue",
+        "id": "Serie Artikel_volumeSubtitle",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Serie Artikel_publicationHasAbbreviation",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Serie Artikel_publicationHasDate",
         "label": "DateValue",
         "group": "literal",
         "class": "DateValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasLanguage_TextValue",
+        "id": "Serie Artikel_publicationHasLocation",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasURI_UriValue",
+        "id": "Serie Artikel_publicationHasDOI",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Serie Artikel_publicationHasExternalLink",
         "label": "UriValue",
         "group": "literal",
         "class": "UriValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#location_TextValue",
-        "label": "TextValue",
-        "group": "literal",
-        "class": "TextValue"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasText_TextValue",
-        "label": "TextValue",
-        "group": "literal",
-        "class": "TextValue"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasSubject_ListValue",
-        "label": "ListValue",
-        "group": "literal",
-        "class": "ListValue"
-      },
-      {
-        "id": "http://api.knora.org/ontology/knora-api/v2#StillImageRepresentation",
-        "label": "http://api.knora.org/ontology/knora-api/v2#StillImageRepresentation",
+        "id": "http://purl.org/ontology/bibo/EditedBook",
+        "label": "http://purl.org/ontology/bibo/EditedBook",
         "group": "resource",
         "class": "external"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#pagenum_TextValue",
+        "id": "Serie Buch_bookHasISBN",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#seqnum_IntValue",
-        "label": "IntValue",
-        "group": "literal",
-        "class": "IntValue"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnoteHasNumber_TextValue",
+        "id": "Serie Buch_publicationHasTitle",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasCaption_TextValue",
+        "id": "Serie Buch_numPages",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#letter",
-        "label": "http://0.0.0.0:3333/ontology/0801/biblio/v2#letter",
-        "group": "resource",
-        "class": "external"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasRepertoriumNumber_TextValue",
+        "id": "Serie Buch_publicationHasSubtitle",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#externalRepository_UriValue",
+        "id": "Serie Buch_numVolumes",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Serie Buch_publicationHasAbbreviation",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Serie Buch_collectionNumber",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Serie Buch_publicationHasDate",
+        "label": "DateValue",
+        "group": "literal",
+        "class": "DateValue"
+      },
+      {
+        "id": "Serie Buch_publicationHasLocation",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Serie Buch_publicationHasDOI",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Serie Buch_publicationHasExternalLink",
         "label": "UriValue",
         "group": "literal",
         "class": "UriValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasSystemNumber_TextValue",
+        "id": "Edition_editionHasTitle",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptStartFolium_TextValue",
+        "id": "Edition_editionHasNumber",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEndFolium_TextValue",
-        "label": "TextValue",
-        "group": "literal",
-        "class": "TextValue"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptAdditionalFolium_TextValue",
-        "label": "TextValue",
-        "group": "literal",
-        "class": "TextValue"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptHasShelfMark_TextValue",
-        "label": "TextValue",
-        "group": "literal",
-        "class": "TextValue"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptStartPage_TextValue",
-        "label": "TextValue",
-        "group": "literal",
-        "class": "TextValue"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEndPage_TextValue",
-        "label": "TextValue",
-        "group": "literal",
-        "class": "TextValue"
-      },
-      {
-        "id": "http://xmlns.com/foaf/0.1/Person",
-        "label": "http://xmlns.com/foaf/0.1/Person",
-        "group": "resource",
-        "class": "external"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasFamilyName_TextValue",
-        "label": "TextValue",
-        "group": "literal",
-        "class": "TextValue"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasGivenName_TextValue",
-        "label": "TextValue",
-        "group": "literal",
-        "class": "TextValue"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#personHasTitle_TextValue",
-        "label": "TextValue",
-        "group": "literal",
-        "class": "TextValue"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasAlternativeName_TextValue",
-        "label": "TextValue",
-        "group": "literal",
-        "class": "TextValue"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasIAFIdentifier_TextValue",
-        "label": "TextValue",
-        "group": "literal",
-        "class": "TextValue"
-      },
-      {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasBirthDate_DateValue",
+        "id": "Edition_editionHasDate",
         "label": "DateValue",
         "group": "literal",
         "class": "DateValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasDeathDate_DateValue",
+        "id": "http://purl.org/ontology/bibo/Journal",
+        "label": "http://purl.org/ontology/bibo/Journal",
+        "group": "resource",
+        "class": "external"
+      },
+      {
+        "id": "Zeitschrift_hasName",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Zeitschrift_numPages",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Zeitschrift_numVolumes",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Zeitschrift Artikel_journalVolume",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Zeitschrift Artikel_publicationHasTitle",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Zeitschrift Artikel_startPage",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Zeitschrift Artikel_endPage",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Zeitschrift Artikel_journalIssue",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Zeitschrift Artikel_publicationHasSubtitle",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Zeitschrift Artikel_volumeSubtitle",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Zeitschrift Artikel_publicationHasAbbreviation",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Zeitschrift Artikel_publicationHasDate",
         "label": "DateValue",
         "group": "literal",
         "class": "DateValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasFloruitDate_DateValue",
+        "id": "Zeitschrift Artikel_publicationHasLocation",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Zeitschrift Artikel_publicationHasDOI",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Zeitschrift Artikel_publicationHasExternalLink",
+        "label": "UriValue",
+        "group": "literal",
+        "class": "UriValue"
+      },
+      {
+        "id": "http://xmlns.com/foaf/0.1/organization",
+        "label": "http://xmlns.com/foaf/0.1/organization",
+        "group": "resource",
+        "class": "external"
+      },
+      {
+        "id": "Organisation_hasName",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "http://purl.org/dc/terms/BibliographicResource",
+        "label": "http://purl.org/dc/terms/BibliographicResource",
+        "group": "resource",
+        "class": "external"
+      },
+      {
+        "id": "Publikation_publicationHasTitle",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Publikation_publicationHasSubtitle",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Publikation_publicationHasAbbreviation",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Publikation_publicationHasDate",
         "label": "DateValue",
         "group": "literal",
         "class": "DateValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasMarriageDate_DateValue",
+        "id": "Publikation_publicationHasLocation",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Publikation_publicationHasDOI",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Publikation_publicationHasExternalLink",
+        "label": "UriValue",
+        "group": "literal",
+        "class": "UriValue"
+      },
+      {
+        "id": "http://purl.org/dc/terms/publisher",
+        "label": "http://purl.org/dc/terms/publisher",
+        "group": "resource",
+        "class": "external"
+      },
+      {
+        "id": "Verlag_hasName",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Verlag_publisherHasLocation",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Übersetzung_translationHasTitle",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Übersetzung_translationHasLanguage",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Übersetzung_translationHasDate",
         "label": "DateValue",
         "group": "literal",
         "class": "DateValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasBirthPlace_TextValue",
+        "id": "Varia Posthuma Artikel_editionHasTitle",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasDeathPlace_TextValue",
+        "id": "Varia Posthuma Artikel_vpEndPage",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasFloruitPlace_TextValue",
+        "id": "Varia Posthuma Artikel_vpStartPage",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasMarriagePlace_TextValue",
+        "id": "Varia Posthuma Artikel_editionHasNumber",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasDictionaryEntries_TextValue",
+        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
+        "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
+        "group": "resource",
+        "class": "external"
+      },
+      {
+        "id": "Varia Posthuma Artikel_hasURI",
+        "label": "UriValue",
+        "group": "literal",
+        "class": "UriValue"
+      },
+      {
+        "id": "Varia Posthuma Artikel_editionHasDate",
+        "label": "DateValue",
+        "group": "literal",
+        "class": "DateValue"
+      },
+      {
+        "id": "http://purl.org/ontology/bibo/Webpage",
+        "label": "http://purl.org/ontology/bibo/Webpage",
+        "group": "resource",
+        "class": "external"
+      },
+      {
+        "id": "Webpage_hasName",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#sectionHasTitle_TextValue",
+        "id": "Webpage_hasURI",
+        "label": "UriValue",
+        "group": "literal",
+        "class": "UriValue"
+      },
+      {
+        "id": "Webpage_webpageHasHrefTag",
         "label": "TextValue",
         "group": "literal",
         "class": "TextValue"
       },
       {
-        "id": "http://api.knora.org/ontology/knora-api/v2#Region",
-        "label": "http://api.knora.org/ontology/knora-api/v2#Region",
+        "id": "http://purl.org/ontology/bibo/Website",
+        "label": "http://purl.org/ontology/bibo/Website",
         "group": "resource",
         "class": "external"
       },
       {
-        "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#layer_IntValue",
-        "label": "IntValue",
+        "id": "Website_hasName",
+        "label": "TextValue",
         "group": "literal",
-        "class": "IntValue"
+        "class": "TextValue"
       },
       {
-        "id": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "group": "resource",
-        "class": "external"
+        "id": "Website_hasURI",
+        "label": "UriValue",
+        "group": "literal",
+        "class": "UriValue"
       },
       {
-        "id": "http://api.knora.org/ontology/standoff/v2#StandoffBrTag",
-        "label": "http://api.knora.org/ontology/standoff/v2#StandoffBrTag",
-        "group": "resource",
-        "class": "external"
+        "id": "Website Artikel_publicationHasTitle",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       },
       {
-        "id": "http://api.knora.org/ontology/knora-api/v2#StandoffLinkTag",
-        "label": "http://api.knora.org/ontology/knora-api/v2#StandoffLinkTag",
-        "group": "resource",
-        "class": "external"
+        "id": "Website Artikel_publicationHasSubtitle",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       },
       {
-        "id": "http://api.knora.org/ontology/standoff/v2#StandoffRootTag",
-        "label": "http://api.knora.org/ontology/standoff/v2#StandoffRootTag",
-        "group": "resource",
-        "class": "external"
+        "id": "Website Artikel_publicationHasAbbreviation",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       },
       {
-        "id": "http://api.knora.org/ontology/standoff/v2#StandoffVisualTag",
-        "label": "http://api.knora.org/ontology/standoff/v2#StandoffVisualTag",
-        "group": "resource",
-        "class": "external"
+        "id": "Website Artikel_publicationHasDate",
+        "label": "DateValue",
+        "group": "literal",
+        "class": "DateValue"
       },
       {
-        "id": "http://api.knora.org/ontology/standoff/v2#StandoffTableCellTag",
-        "label": "http://api.knora.org/ontology/standoff/v2#StandoffTableCellTag",
-        "group": "resource",
-        "class": "external"
+        "id": "Website Artikel_publicationHasLocation",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       },
       {
-        "id": "http://api.knora.org/ontology/standoff/v2#StandoffTableTag",
-        "label": "http://api.knora.org/ontology/standoff/v2#StandoffTableTag",
-        "group": "resource",
-        "class": "external"
+        "id": "Website Artikel_publicationHasDOI",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Website Artikel_publicationHasExternalLink",
+        "label": "UriValue",
+        "group": "literal",
+        "class": "UriValue"
+      },
+      {
+        "id": "Publizierte Brief_publishedLetterNumber",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Publizierte Brief_publishedLetterStartPage",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
+      },
+      {
+        "id": "Publizierte Brief_publishedLetterEndPage",
+        "label": "TextValue",
+        "group": "literal",
+        "class": "TextValue"
       }
     ];
     const links = [
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "http://purl.org/ontology/bibo/Article",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "Artikel_publicationHasTitle",
+        "label": "Publikationstitel"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "Artikel_startPage",
+        "label": "Erste Seite"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "Artikel_endPage",
+        "label": "letzte Seite"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "Artikel_publicationHasSubtitle",
+        "label": "Untertitel"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+        "label": "Autor"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "Artikel_volumeSubtitle",
+        "label": "Untertitel des Bandes"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "Artikel_publicationHasAbbreviation",
+        "label": "Abbreviation of the publication"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "Artikel_publicationHasDate",
+        "label": "Datum der Veröffentlichung "
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "Artikel_publicationHasLocation",
+        "label": "Veröffentlichungsort"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+        "label": "Redaktor (person)"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
+        "label": "Editorische Organisation"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
+        "label": "Verlag"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+        "label": "Übersetzer"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist bearbeitet"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist Edition von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "wieder abgedruckt"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "wieder abgedruckt von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "Bewertet"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "Kritik von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
+        "label": "Manuskript"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist Übersetztung von "
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist übersetzt"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "Artikel_publicationHasDOI",
+        "label": "DOI"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "target": "Artikel_publicationHasExternalLink",
+        "label": "Externer Link"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "http://purl.org/ontology/bibo/book",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "Buch_bookHasISBN",
+        "label": "ISBN"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "Buch_publicationHasTitle",
+        "label": "Publikationstitel"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "Buch_numPages",
+        "label": "Seitenzahl"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "Buch_publicationHasSubtitle",
+        "label": "Untertitel"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "Buch_numVolumes",
+        "label": "Bändenzahl"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+        "label": "Autor"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
+        "label": "ist Teil von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "Buch_publicationHasAbbreviation",
+        "label": "Abbreviation of the publication"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "Buch_collectionNumber",
+        "label": "Serie Nummer"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "Buch_publicationHasDate",
+        "label": "Datum der Veröffentlichung "
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#BookContent",
+        "label": "Buch-Inhalt"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "Buch_publicationHasLocation",
+        "label": "Veröffentlichungsort"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+        "label": "Redaktor (person)"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
+        "label": "Editorische Organisation"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
+        "label": "Verlag"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+        "label": "Übersetzer"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist bearbeitet"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist Edition von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "wieder abgedruckt"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "wieder abgedruckt von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "Bewertet"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "Kritik von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
+        "label": "Manuskript"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist Übersetztung von "
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist übersetzt"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "Buch_publicationHasDOI",
+        "label": "DOI"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
+        "target": "Buch_publicationHasExternalLink",
+        "label": "Externer Link"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#BookContent",
         "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
         "label": "subClassOf"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#archiveHasName_TextValue",
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#BookContent",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#introduction",
+        "label": "Einleitung"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#BookContent",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
+        "label": "Inhalt"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
+        "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
+        "target": "http://purl.org/ontology/bibo/Collection",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
+        "target": "Serie_hasName",
         "label": "Name"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#archiveHasAbbreviation_TextValue",
-        "label": "Archive Arbbreviation"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
+        "target": "Serie_collectionNumber",
+        "label": "Serie Nummer"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#archiveHasLocation_TextValue",
-        "label": "Archive Location"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
+        "target": "Serie_numVolumes",
+        "label": "Bändenzahl"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#mentionedIn_TextValue",
-        "label": "Mentioned In"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
+        "label": "ist Teil von"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
-        "label": "Kommentar"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
-        "label": "BEOL-IDs"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
         "label": "subClassOf"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "Serie Artikel_collectionNumber",
+        "label": "Serie Nummer"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "Serie Artikel_publicationHasTitle",
+        "label": "Publikationstitel"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "Serie Artikel_startPage",
+        "label": "Erste Seite"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "Serie Artikel_endPage",
+        "label": "letzte Seite"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "label": "ist Teil von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "Serie Artikel_publicationHasSubtitle",
+        "label": "Untertitel"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
         "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "label": "Empfänger"
+        "label": "Autor"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#title_TextValue",
-        "label": "Titel"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "Serie Artikel_volumeSubtitle",
+        "label": "Untertitel des Bandes"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "Serie Artikel_publicationHasAbbreviation",
+        "label": "Abbreviation of the publication"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "Serie Artikel_publicationHasDate",
+        "label": "Datum der Veröffentlichung "
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "Serie Artikel_publicationHasLocation",
+        "label": "Veröffentlichungsort"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
         "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "label": "Autor/Verfasser"
+        "label": "Redaktor (person)"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasNumber_TextValue",
-        "label": "Briefnummer"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
+        "label": "Editorische Organisation"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#creationDate_DateValue",
-        "label": "Datum der Entstehung"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
+        "label": "Verlag"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasLanguage_TextValue",
-        "label": "Sprache"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasURI_UriValue",
-        "label": "PDF des Briefes in der Vollfassung"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#location_TextValue",
-        "label": "Standort"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasText_TextValue",
-        "label": "Text"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
-        "label": "BEOL-IDs"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
-        "label": "Kommentar"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasSubject_ListValue",
-        "label": "Themen"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
-        "label": "Zeichen"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
         "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "label": "erwähnte Person"
+        "label": "Übersetzer"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StillImageRepresentation",
-        "label": "subClassOf"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist bearbeitet"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#pagenum_TextValue",
-        "label": "Seitenbezeichnung"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist Edition von"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-        "label": "ist ein Teil von"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "wieder abgedruckt"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#seqnum_IntValue",
-        "label": "Sequenznummer"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "wieder abgedruckt von"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
-        "label": "Kommentar"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "Bewertet"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
-        "label": "BEOL-IDs"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "Kritik von"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnote",
-        "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnote",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnoteHasNumber_TextValue",
-        "label": "Endnote-Nummer"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnote",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
-        "label": "Zeichen"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnote",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasText_TextValue",
-        "label": "Text"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnote",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
-        "label": "BEOL-IDs"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#entryComment",
-        "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#entryComment",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasText_TextValue",
-        "label": "Text"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#entryComment",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#seqnum_IntValue",
-        "label": "Sequenznummer"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#entryComment",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
-        "label": "Kommentar zu"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasCaption_TextValue",
-        "label": "Bildunterschrift"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#pagenum_TextValue",
-        "label": "Seitenbezeichnung"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-        "label": "ist ein Teil von"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#seqnum_IntValue",
-        "label": "Sequenznummer"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
-        "label": "Kommentar"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
-        "label": "BEOL-IDs"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StillImageRepresentation",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasCaption_TextValue",
-        "label": "Bildunterschrift"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
-        "label": "BEOL-IDs"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#introduction",
-        "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#introduction",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
-        "label": "BEOL-IDs"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "label": "Empfänger"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
         "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "label": "Manuscript des Briefs"
+        "label": "Manuskript"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#title_TextValue",
-        "label": "Titel"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist Übersetztung von "
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "label": "Autor/Verfasser"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist übersetzt"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasNumber_TextValue",
-        "label": "Briefnummer"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "Serie Artikel_publicationHasDOI",
+        "label": "DOI"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "label": "Übersetzung"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "target": "Serie Artikel_publicationHasExternalLink",
+        "label": "Externer Link"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#creationDate_DateValue",
-        "label": "Datum der Entstehung"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasLanguage_TextValue",
-        "label": "Sprache"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#letter",
-        "label": "Der Brief ist publiziert"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasRepertoriumNumber_TextValue",
-        "label": "Repertorium-Nummer"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasURI_UriValue",
-        "label": "PDF des Briefes in der Vollfassung"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#location_TextValue",
-        "label": "Standort"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#externalRepository_UriValue",
-        "label": "Dieser Brief ist auch vorhanden in"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasText_TextValue",
-        "label": "Text"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
-        "label": "BEOL-IDs"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "label": "Antwort auf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
-        "label": "Kommentar"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasSystemNumber_TextValue",
-        "label": "System number"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasSubject_ListValue",
-        "label": "Themen"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
-        "label": "Zeichen"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "label": "erwähnte Person"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
         "label": "subClassOf"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
-        "label": "Archive of Manuscript"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "http://purl.org/ontology/bibo/EditedBook",
+        "label": "subClassOf"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#title_TextValue",
-        "label": "Titel"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "Serie Buch_bookHasISBN",
+        "label": "ISBN"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "Serie Buch_publicationHasTitle",
+        "label": "Publikationstitel"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "Serie Buch_numPages",
+        "label": "Seitenzahl"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "Serie Buch_publicationHasSubtitle",
+        "label": "Untertitel"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "Serie Buch_numVolumes",
+        "label": "Bändenzahl"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
         "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "label": "Autor/Verfasser"
+        "label": "Autor"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptStartFolium_TextValue",
-        "label": "Start Folium"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
+        "label": "ist Teil von"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#creationDate_DateValue",
-        "label": "Datum der Entstehung"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "Serie Buch_publicationHasAbbreviation",
+        "label": "Abbreviation of the publication"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEndFolium_TextValue",
-        "label": "End Folium"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "Serie Buch_collectionNumber",
+        "label": "Serie Nummer"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#location_TextValue",
-        "label": "Standort"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "Serie Buch_publicationHasDate",
+        "label": "Datum der Veröffentlichung "
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptAdditionalFolium_TextValue",
-        "label": "Additional Folium"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#BookContent",
+        "label": "Buch-Inhalt"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasText_TextValue",
-        "label": "Text"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "Serie Buch_publicationHasLocation",
+        "label": "Veröffentlichungsort"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptHasShelfMark_TextValue",
-        "label": "Shelfmark"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
-        "label": "BEOL-IDs"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#mentionedIn_TextValue",
-        "label": "Mentioned In"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
-        "label": "Kommentar"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasSubject_ListValue",
-        "label": "Themen"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
-        "label": "Zeichen"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptStartPage_TextValue",
-        "label": "Start Page"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
         "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "label": "erwähnte Person"
+        "label": "Redaktor (person)"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEndPage_TextValue",
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
+        "label": "Editorische Organisation"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
+        "label": "Verlag"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+        "label": "Übersetzer"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist bearbeitet"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist Edition von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "wieder abgedruckt"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "wieder abgedruckt von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "Bewertet"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "Kritik von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
+        "label": "Manuskript"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist Übersetztung von "
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist übersetzt"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "Serie Buch_publicationHasDOI",
+        "label": "DOI"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "target": "Serie Buch_publicationHasExternalLink",
+        "label": "Externer Link"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
+        "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
+        "target": "Edition_editionHasTitle",
+        "label": "Edition Titel"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+        "label": "Redaktor (Person)"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
+        "target": "Edition_editionHasNumber",
+        "label": "Edition Nummer"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
+        "label": "Organisation"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
+        "label": "Manuskript der Edition"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
+        "target": "Edition_editionHasDate",
+        "label": "Datum der Bearbeitung"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "label": "ist Teil von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Journal",
+        "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Journal",
+        "target": "http://purl.org/ontology/bibo/Journal",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Journal",
+        "target": "Zeitschrift_hasName",
+        "label": "Name"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Journal",
+        "target": "Zeitschrift_numPages",
+        "label": "Seitenzahl"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Journal",
+        "target": "Zeitschrift_numVolumes",
+        "label": "Bändenzahl"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "Zeitschrift Artikel_journalVolume",
+        "label": "Ausgabe"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "Zeitschrift Artikel_publicationHasTitle",
+        "label": "Publikationstitel"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "Zeitschrift Artikel_startPage",
+        "label": "Erste Seite"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "Zeitschrift Artikel_endPage",
+        "label": "letzte Seite"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "Zeitschrift Artikel_journalIssue",
+        "label": "Ausgabe No"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "Zeitschrift Artikel_publicationHasSubtitle",
+        "label": "Untertitel"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Journal",
+        "label": "ist Teil von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+        "label": "Autor"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "Zeitschrift Artikel_volumeSubtitle",
+        "label": "Untertitel des Bandes"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "Zeitschrift Artikel_publicationHasAbbreviation",
+        "label": "Abbreviation of the publication"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "Zeitschrift Artikel_publicationHasDate",
+        "label": "Datum der Veröffentlichung "
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "Zeitschrift Artikel_publicationHasLocation",
+        "label": "Veröffentlichungsort"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+        "label": "Redaktor (person)"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
+        "label": "Editorische Organisation"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
+        "label": "Verlag"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+        "label": "Übersetzer"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist bearbeitet"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist Edition von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "wieder abgedruckt"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "wieder abgedruckt von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "Bewertet"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "Kritik von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
+        "label": "Manuskript"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist Übersetztung von "
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist übersetzt"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "Zeitschrift Artikel_publicationHasDOI",
+        "label": "DOI"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
+        "target": "Zeitschrift Artikel_publicationHasExternalLink",
+        "label": "Externer Link"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
+        "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
+        "target": "http://xmlns.com/foaf/0.1/organization",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
+        "target": "Organisation_hasName",
+        "label": "Name"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "http://purl.org/dc/terms/BibliographicResource",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "Publikation_publicationHasTitle",
+        "label": "Publikationstitel"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "Publikation_publicationHasSubtitle",
+        "label": "Untertitel"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+        "label": "Autor"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "Publikation_publicationHasAbbreviation",
+        "label": "Abbreviation of the publication"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "Publikation_publicationHasDate",
+        "label": "Datum der Veröffentlichung "
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "Publikation_publicationHasLocation",
+        "label": "Veröffentlichungsort"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+        "label": "Redaktor (person)"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
+        "label": "Editorische Organisation"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
+        "label": "Verlag"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+        "label": "Übersetzer"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist bearbeitet"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist Edition von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "wieder abgedruckt"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "wieder abgedruckt von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "Bewertet"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "Kritik von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
+        "label": "Manuskript"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist Übersetztung von "
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist übersetzt"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "Publikation_publicationHasDOI",
+        "label": "DOI"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "target": "Publikation_publicationHasExternalLink",
+        "label": "Externer Link"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
+        "target": "http://purl.org/dc/terms/publisher",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
+        "target": "Verlag_hasName",
+        "label": "Name"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
+        "target": "Verlag_publisherHasLocation",
+        "label": "Ort"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+        "label": "Offizinleiter"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Translation",
+        "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Translation",
+        "target": "Übersetzung_translationHasTitle",
+        "label": "Übersetzungstitle"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Translation",
+        "target": "Übersetzung_translationHasLanguage",
+        "label": "Sprache"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Translation",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist Übersetzung von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Translation",
+        "target": "Übersetzung_translationHasDate",
+        "label": "Datum der Übersetzung"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
+        "target": "Varia Posthuma Artikel_editionHasTitle",
+        "label": "Edition Titel"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
+        "target": "Varia Posthuma Artikel_vpEndPage",
         "label": "End Page"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
-        "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#title_TextValue",
-        "label": "Titel"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#seqnum_IntValue",
-        "label": "Sequenznummer"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-        "label": "Manuskripteintrag in"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasSubject_ListValue",
-        "label": "Themen"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#page",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#page",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#pagenum_TextValue",
-        "label": "Seitenbezeichnung"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#page",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-        "label": "ist ein Teil von"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#page",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#seqnum_IntValue",
-        "label": "Sequenznummer"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#page",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
-        "label": "Kommentar"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#page",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
-        "label": "BEOL-IDs"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://xmlns.com/foaf/0.1/Person",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasFamilyName_TextValue",
-        "label": "Nachname"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasGivenName_TextValue",
-        "label": "Vorname"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#personHasTitle_TextValue",
-        "label": "Titel"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasAlternativeName_TextValue",
-        "label": "Alternative-Name"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
-        "label": "BEOL-IDs"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasIAFIdentifier_TextValue",
-        "label": "Gemeinsame Normdatei (GND)"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasBirthDate_DateValue",
-        "label": "Geburtsdatum"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasDeathDate_DateValue",
-        "label": "Sterbedatum"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasFloruitDate_DateValue",
-        "label": "Floruit-Dataum"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasMarriageDate_DateValue",
-        "label": "Hochzeitdataum"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasBirthPlace_TextValue",
-        "label": "Geburtsort"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasDeathPlace_TextValue",
-        "label": "Todesort"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasFloruitPlace_TextValue",
-        "label": "Floruit-Ort"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasMarriagePlace_TextValue",
-        "label": "Trauugsort"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
         "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "label": "hat Sohn"
+        "label": "Redaktor (Person)"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasDictionaryEntries_TextValue",
-        "label": "Indexeinträge"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
+        "target": "Varia Posthuma Artikel_vpStartPage",
+        "label": "Start Page"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
-        "label": "Kommentar"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
+        "target": "Varia Posthuma Artikel_editionHasNumber",
+        "label": "Edition Nummer"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#mentionedIn_TextValue",
-        "label": "Mentioned In"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "label": "hat Bruder"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "label": "hat Neffe"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "label": "hat Onkel"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "label": "hat Schüler"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "label": "hat Schüler"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "label": "hat Lehrer"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
-        "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasSubject_ListValue",
-        "label": "Themen"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#sectionHasTitle_TextValue",
-        "label": "Titel"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasText_TextValue",
-        "label": "Text"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
-        "label": "hat Sektion"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
-        "label": "BEOL-IDs"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#transcription",
-        "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#transcription",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasText_TextValue",
-        "label": "Text"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#transcription",
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
         "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
-        "label": "Transkription von"
+        "label": "Edition der Manuskripteintrag"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#transcription",
-        "target": "http://api.knora.org/ontology/knora-api/v2#Region",
-        "label": "Bezug zu Region"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
+        "label": "Organisation"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#transcription",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#layer_IntValue",
-        "label": "Schicht"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
+        "label": "Der Manuskript ist publiziert"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
+        "target": "Varia Posthuma Artikel_hasURI",
+        "label": "URI"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
+        "label": "Manuskript der Edition"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
+        "target": "Varia Posthuma Artikel_editionHasDate",
+        "label": "Datum der Bearbeitung"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "label": "ist Teil von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Webpage",
         "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
         "label": "subClassOf"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#title_TextValue",
-        "label": "Titel"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Webpage",
+        "target": "http://purl.org/ontology/bibo/Webpage",
+        "label": "subClassOf"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Webpage",
+        "target": "Webpage_hasName",
+        "label": "Name"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Webpage",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Website",
+        "label": "ist Teil von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Webpage",
+        "target": "Webpage_hasURI",
+        "label": "URI"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Webpage",
+        "target": "Webpage_webpageHasHrefTag",
+        "label": "href Tag"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Website",
+        "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Website",
+        "target": "http://purl.org/ontology/bibo/Website",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Website",
+        "target": "Website_hasName",
+        "label": "Name"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Website",
+        "target": "Website_hasURI",
+        "label": "URI"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "http://purl.org/ontology/bibo/Webpage",
+        "label": "subClassOf"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "Website Artikel_publicationHasTitle",
+        "label": "Publikationstitel"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "Website Artikel_publicationHasSubtitle",
+        "label": "Untertitel"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
         "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "label": "Autor/Verfasser"
+        "label": "Autor"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#creationDate_DateValue",
-        "label": "Datum der Entstehung"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "Website Artikel_publicationHasAbbreviation",
+        "label": "Abbreviation of the publication"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#location_TextValue",
-        "label": "Standort"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "Website Artikel_publicationHasDate",
+        "label": "Datum der Veröffentlichung "
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasText_TextValue",
-        "label": "Text"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "Website Artikel_publicationHasLocation",
+        "label": "Veröffentlichungsort"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
-        "label": "BEOL-IDs"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
-        "label": "Kommentar"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasSubject_ListValue",
-        "label": "Themen"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
-        "label": "Zeichen"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
         "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-        "label": "erwähnte Person"
+        "label": "Redaktor (person)"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffAbbreviationMarkerTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
+        "label": "Editorische Organisation"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
+        "label": "Verlag"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+        "label": "Übersetzer"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist bearbeitet"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist Edition von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "wieder abgedruckt"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "wieder abgedruckt von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "Bewertet"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "Kritik von"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
+        "label": "Manuskript"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Webpage",
+        "label": "Link"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist Übersetztung von "
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+        "label": "ist übersetzt"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "Website Artikel_publicationHasDOI",
+        "label": "DOI"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
+        "target": "Website Artikel_publicationHasExternalLink",
+        "label": "Externer Link"
+      },
+      {
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#letter",
+        "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
         "label": "subClassOf"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffAdditionTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#letter",
+        "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
+        "label": "Der Brief ist publiziert in"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffBrTag",
-        "target": "http://api.knora.org/ontology/standoff/v2#StandoffBrTag",
-        "label": "subClassOf"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#letter",
+        "target": "Publizierte Brief_publishedLetterNumber",
+        "label": "Letter Number in the Edition"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffCenterTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#letter",
+        "target": "Publizierte Brief_publishedLetterStartPage",
+        "label": "Start Page in Edition"
       },
       {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffCorrectionTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffDeletionTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffEntityTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffLinkTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffExpansionMarkerTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffExpansionTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFacsimileTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffLinkTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFigCaptionTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFigTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFigureTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffLinkTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFontTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffForeignTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffGapTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffHrTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffHtmlTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffInterventionMarkerTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffMarginalTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffMathTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffOriginalMarkerTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffPbTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffReferenceTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffRegionTag",
-        "target": "http://api.knora.org/ontology/standoff/v2#StandoffRootTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSmallTag",
-        "target": "http://api.knora.org/ontology/standoff/v2#StandoffVisualTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSubstitutionAdditionTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSubstitutionDeletionTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSubstitutionTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffTableCellTag",
-        "target": "http://api.knora.org/ontology/standoff/v2#StandoffTableCellTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffTableTag",
-        "target": "http://api.knora.org/ontology/standoff/v2#StandoffTableTag",
-        "label": "subClassOf"
-      },
-      {
-        "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffUnclearTag",
-        "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-        "label": "subClassOf"
+        "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#letter",
+        "target": "Publizierte Brief_publishedLetterEndPage",
+        "label": "End Page in Edition"
       }
     ];
     const gData = {'nodes': nodes, 'links': links};
 
-    this.graph.graphData(gData);
     this.graph.nodeLabel('label');
     this.graph.linkLabel('label');
-    this.graph.nodeAutoColorBy('class');
+    this.graph.linkWidth(1.5);
 
+    this.graph.graphData(gData);
+    this.graph.nodeAutoColorBy('class');
+    this.graph.showNavInfo(true);
+    this.graph.enableNodeDrag(true);
   }
   ngAfterViewInit() {
     this.graph(this.graphcontainer.nativeElement);
+  }
+  dimensionHandler(mrChange: MatRadioChange) {
+    this.dimension = mrChange.value;
+    if (this.dimension === '3') {
+      this.graph.numDimensions(3);
+    } else {
+      this.graph.numDimensions(2);
+    }
   }
 }
