@@ -25,13 +25,15 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
     this.graph.nodeLabel('label');
     this.graph.nodeAutoColorBy('class');
     this.graph.enableNodeDrag(true);
+    
     this.graph.nodeThreeObject((node) => {
       let geometry;
+      console.log(node)
       if (node[`group`] === 'literal') {
-        geometry = new THREE.BoxGeometry(10, 5, 7);
+        geometry = new THREE.BoxGeometry(15, 8, 10);
       } else {
         geometry = new THREE.SphereGeometry(5, 16, 12);
-        geometry.applyMatrix(new THREE.Matrix4().makeScale(2, 1.0, 1.5));
+        geometry.applyMatrix4(new THREE.Matrix4().makeScale(2, 1.0, 1.5));
       }
       const material = new THREE.MeshLambertMaterial({
                             color: node[`color`],
@@ -40,6 +42,7 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
                            });
       const mesh = new THREE.Mesh(geometry, material);
       return mesh; });
+
     // link design
     this.graph.linkLabel('label');
     this.graph.linkThreeObjectExtend(true);
