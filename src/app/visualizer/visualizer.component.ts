@@ -25,10 +25,9 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
     this.graph.nodeLabel('label');
     this.graph.nodeAutoColorBy('class');
     this.graph.enableNodeDrag(true);
-    
+
     this.graph.nodeThreeObject((node) => {
       let geometry;
-      console.log(node)
       if (node[`group`] === 'literal') {
         geometry = new THREE.BoxGeometry(15, 8, 10);
       } else {
