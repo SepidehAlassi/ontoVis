@@ -295,85 +295,97 @@
       "class": "external"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#archiveHasName_TextValue",
+      "id": "Archive_archiveHasName",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#archiveHasAbbreviation_TextValue",
+      "id": "Archive_archiveHasAbbreviation",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#archiveHasLocation_TextValue",
+      "id": "Archive_archiveHasLocation",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#mentionedIn_TextValue",
+      "id": "Archive_mentionedIn",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
+      "id": "Archive_comment",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
+      "id": "Archive_beolIDs",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#title_TextValue",
+      "id": "Basis-Brief_title",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasNumber_TextValue",
+      "id": "Basis-Brief_letterHasNumber",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#creationDate_DateValue",
+      "id": "Basis-Brief_creationDate",
       "label": "DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasLanguage_TextValue",
+      "id": "Basis-Brief_letterHasLanguage",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasURI_UriValue",
+      "id": "Basis-Brief_letterHasURI",
       "label": "UriValue",
       "group": "literal",
       "class": "UriValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#location_TextValue",
+      "id": "Basis-Brief_location",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasText_TextValue",
+      "id": "Basis-Brief_hasText",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasSubject_ListValue",
+      "id": "Basis-Brief_beolIDs",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Basis-Brief_comment",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Basis-Brief_hasSubject",
       "label": "ListValue",
       "group": "literal",
       "class": "ListValue"
@@ -385,25 +397,127 @@
       "class": "external"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#pagenum_TextValue",
+      "id": "Bild von Dokument_pagenum",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#seqnum_IntValue",
+      "id": "Bild von Dokument_seqnum",
       "label": "IntValue",
       "group": "literal",
       "class": "IntValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnoteHasNumber_TextValue",
+      "id": "Bild von Dokument_comment",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasCaption_TextValue",
+      "id": "Bild von Dokument_beolIDs",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Endnote_endnoteHasNumber",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Endnote_hasText",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Endnote_beolIDs",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Kommentar zu Manuskripteintrag_hasText",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Kommentar zu Manuskripteintrag_seqnum",
+      "label": "IntValue",
+      "group": "literal",
+      "class": "IntValue"
+    },
+    {
+      "id": "Faksimile_hasCaption",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Faksimile_pagenum",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Faksimile_seqnum",
+      "label": "IntValue",
+      "group": "literal",
+      "class": "IntValue"
+    },
+    {
+      "id": "Faksimile_comment",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Faksimile_beolIDs",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Figur_hasCaption",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Figur_beolIDs",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Einleitung_beolIDs",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Brief_title",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Brief_letterHasNumber",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Brief_creationDate",
+      "label": "DateValue",
+      "group": "literal",
+      "class": "DateValue"
+    },
+    {
+      "id": "Brief_letterHasLanguage",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
@@ -415,55 +529,181 @@
       "class": "external"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasRepertoriumNumber_TextValue",
+      "id": "Brief_letterHasRepertoriumNumber",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#externalRepository_UriValue",
+      "id": "Brief_letterHasURI",
       "label": "UriValue",
       "group": "literal",
       "class": "UriValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasSystemNumber_TextValue",
+      "id": "Brief_location",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptStartFolium_TextValue",
+      "id": "Brief_externalRepository",
+      "label": "UriValue",
+      "group": "literal",
+      "class": "UriValue"
+    },
+    {
+      "id": "Brief_hasText",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEndFolium_TextValue",
+      "id": "Brief_beolIDs",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptAdditionalFolium_TextValue",
+      "id": "Brief_comment",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptHasShelfMark_TextValue",
+      "id": "Brief_hasSystemNumber",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptStartPage_TextValue",
+      "id": "Brief_hasSubject",
+      "label": "ListValue",
+      "group": "literal",
+      "class": "ListValue"
+    },
+    {
+      "id": "Manuskript_title",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEndPage_TextValue",
+      "id": "Manuskript_manuscriptStartFolium",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Manuskript_creationDate",
+      "label": "DateValue",
+      "group": "literal",
+      "class": "DateValue"
+    },
+    {
+      "id": "Manuskript_manuscriptEndFolium",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Manuskript_location",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Manuskript_manuscriptAdditionalFolium",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Manuskript_hasText",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Manuskript_manuscriptHasShelfMark",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Manuskript_beolIDs",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Manuskript_mentionedIn",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Manuskript_comment",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Manuskript_hasSubject",
+      "label": "ListValue",
+      "group": "literal",
+      "class": "ListValue"
+    },
+    {
+      "id": "Manuskript_manuscriptStartPage",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Manuskript_manuscriptEndPage",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Eintrag in einem Manuskript_title",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Eintrag in einem Manuskript_seqnum",
+      "label": "IntValue",
+      "group": "literal",
+      "class": "IntValue"
+    },
+    {
+      "id": "Eintrag in einem Manuskript_hasSubject",
+      "label": "ListValue",
+      "group": "literal",
+      "class": "ListValue"
+    },
+    {
+      "id": "Seite_pagenum",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Seite_seqnum",
+      "label": "IntValue",
+      "group": "literal",
+      "class": "IntValue"
+    },
+    {
+      "id": "Seite_comment",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Seite_beolIDs",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
@@ -475,91 +715,133 @@
       "class": "external"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasFamilyName_TextValue",
+      "id": "Person_hasFamilyName",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasGivenName_TextValue",
+      "id": "Person_hasGivenName",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#personHasTitle_TextValue",
+      "id": "Person_personHasTitle",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasAlternativeName_TextValue",
+      "id": "Person_hasAlternativeName",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasIAFIdentifier_TextValue",
+      "id": "Person_beolIDs",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasBirthDate_DateValue",
+      "id": "Person_hasIAFIdentifier",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Person_hasBirthDate",
       "label": "DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasDeathDate_DateValue",
+      "id": "Person_hasDeathDate",
       "label": "DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasFloruitDate_DateValue",
+      "id": "Person_hasFloruitDate",
       "label": "DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasMarriageDate_DateValue",
+      "id": "Person_hasMarriageDate",
       "label": "DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasBirthPlace_TextValue",
+      "id": "Person_hasBirthPlace",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasDeathPlace_TextValue",
+      "id": "Person_hasDeathPlace",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasFloruitPlace_TextValue",
+      "id": "Person_hasFloruitPlace",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasMarriagePlace_TextValue",
+      "id": "Person_hasMarriagePlace",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasDictionaryEntries_TextValue",
+      "id": "Person_hasDictionaryEntries",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#sectionHasTitle_TextValue",
+      "id": "Person_comment",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Person_mentionedIn",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Sektion_hasSubject",
+      "label": "ListValue",
+      "group": "literal",
+      "class": "ListValue"
+    },
+    {
+      "id": "Sektion_sectionHasTitle",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Sektion_hasText",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Sektion_beolIDs",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "Transkription_hasText",
       "label": "TextValue",
       "group": "literal",
       "class": "TextValue"
@@ -571,10 +853,52 @@
       "class": "external"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#layer_IntValue",
+      "id": "Transkription_layer",
       "label": "IntValue",
       "group": "literal",
       "class": "IntValue"
+    },
+    {
+      "id": "schriftliche Quelle_title",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "schriftliche Quelle_creationDate",
+      "label": "DateValue",
+      "group": "literal",
+      "class": "DateValue"
+    },
+    {
+      "id": "schriftliche Quelle_location",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "schriftliche Quelle_hasText",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "schriftliche Quelle_beolIDs",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "schriftliche Quelle_comment",
+      "label": "TextValue",
+      "group": "literal",
+      "class": "TextValue"
+    },
+    {
+      "id": "schriftliche Quelle_hasSubject",
+      "label": "ListValue",
+      "group": "literal",
+      "class": "ListValue"
     },
     {
       "id": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
@@ -627,32 +951,32 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#archiveHasName_TextValue",
+      "target": "Archive_archiveHasName",
       "label": "Name"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#archiveHasAbbreviation_TextValue",
+      "target": "Archive_archiveHasAbbreviation",
       "label": "Archive Arbbreviation"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#archiveHasLocation_TextValue",
+      "target": "Archive_archiveHasLocation",
       "label": "Archive Location"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#mentionedIn_TextValue",
+      "target": "Archive_mentionedIn",
       "label": "Mentioned In"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
+      "target": "Archive_comment",
       "label": "Kommentar"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
+      "target": "Archive_beolIDs",
       "label": "BEOL-IDs"
     },
     {
@@ -667,7 +991,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#title_TextValue",
+      "target": "Basis-Brief_title",
       "label": "Titel"
     },
     {
@@ -677,47 +1001,47 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasNumber_TextValue",
+      "target": "Basis-Brief_letterHasNumber",
       "label": "Briefnummer"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#creationDate_DateValue",
+      "target": "Basis-Brief_creationDate",
       "label": "Datum der Entstehung"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasLanguage_TextValue",
+      "target": "Basis-Brief_letterHasLanguage",
       "label": "Sprache"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasURI_UriValue",
+      "target": "Basis-Brief_letterHasURI",
       "label": "PDF des Briefes in der Vollfassung"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#location_TextValue",
+      "target": "Basis-Brief_location",
       "label": "Standort"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasText_TextValue",
+      "target": "Basis-Brief_hasText",
       "label": "Text"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
+      "target": "Basis-Brief_beolIDs",
       "label": "BEOL-IDs"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
+      "target": "Basis-Brief_comment",
       "label": "Kommentar"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasSubject_ListValue",
+      "target": "Basis-Brief_hasSubject",
       "label": "Themen"
     },
     {
@@ -737,7 +1061,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#pagenum_TextValue",
+      "target": "Bild von Dokument_pagenum",
       "label": "Seitenbezeichnung"
     },
     {
@@ -747,17 +1071,17 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#seqnum_IntValue",
+      "target": "Bild von Dokument_seqnum",
       "label": "Sequenznummer"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
+      "target": "Bild von Dokument_comment",
       "label": "Kommentar"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
+      "target": "Bild von Dokument_beolIDs",
       "label": "BEOL-IDs"
     },
     {
@@ -767,7 +1091,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnote",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnoteHasNumber_TextValue",
+      "target": "Endnote_endnoteHasNumber",
       "label": "Endnote-Nummer"
     },
     {
@@ -777,12 +1101,12 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnote",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasText_TextValue",
+      "target": "Endnote_hasText",
       "label": "Text"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnote",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
+      "target": "Endnote_beolIDs",
       "label": "BEOL-IDs"
     },
     {
@@ -792,12 +1116,12 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#entryComment",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasText_TextValue",
+      "target": "Kommentar zu Manuskripteintrag_hasText",
       "label": "Text"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#entryComment",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#seqnum_IntValue",
+      "target": "Kommentar zu Manuskripteintrag_seqnum",
       "label": "Sequenznummer"
     },
     {
@@ -812,12 +1136,12 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasCaption_TextValue",
+      "target": "Faksimile_hasCaption",
       "label": "Bildunterschrift"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#pagenum_TextValue",
+      "target": "Faksimile_pagenum",
       "label": "Seitenbezeichnung"
     },
     {
@@ -827,17 +1151,17 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#seqnum_IntValue",
+      "target": "Faksimile_seqnum",
       "label": "Sequenznummer"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
+      "target": "Faksimile_comment",
       "label": "Kommentar"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
+      "target": "Faksimile_beolIDs",
       "label": "BEOL-IDs"
     },
     {
@@ -847,12 +1171,12 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasCaption_TextValue",
+      "target": "Figur_hasCaption",
       "label": "Bildunterschrift"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
+      "target": "Figur_beolIDs",
       "label": "BEOL-IDs"
     },
     {
@@ -862,7 +1186,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#introduction",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
+      "target": "Einleitung_beolIDs",
       "label": "BEOL-IDs"
     },
     {
@@ -882,7 +1206,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#title_TextValue",
+      "target": "Brief_title",
       "label": "Titel"
     },
     {
@@ -892,7 +1216,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasNumber_TextValue",
+      "target": "Brief_letterHasNumber",
       "label": "Briefnummer"
     },
     {
@@ -902,12 +1226,12 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#creationDate_DateValue",
+      "target": "Brief_creationDate",
       "label": "Datum der Entstehung"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasLanguage_TextValue",
+      "target": "Brief_letterHasLanguage",
       "label": "Sprache"
     },
     {
@@ -917,32 +1241,32 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasRepertoriumNumber_TextValue",
+      "target": "Brief_letterHasRepertoriumNumber",
       "label": "Repertorium-Nummer"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterHasURI_UriValue",
+      "target": "Brief_letterHasURI",
       "label": "PDF des Briefes in der Vollfassung"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#location_TextValue",
+      "target": "Brief_location",
       "label": "Standort"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#externalRepository_UriValue",
+      "target": "Brief_externalRepository",
       "label": "Dieser Brief ist auch vorhanden in"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasText_TextValue",
+      "target": "Brief_hasText",
       "label": "Text"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
+      "target": "Brief_beolIDs",
       "label": "BEOL-IDs"
     },
     {
@@ -952,17 +1276,17 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
+      "target": "Brief_comment",
       "label": "Kommentar"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasSystemNumber_TextValue",
+      "target": "Brief_hasSystemNumber",
       "label": "System number"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasSubject_ListValue",
+      "target": "Brief_hasSubject",
       "label": "Themen"
     },
     {
@@ -987,7 +1311,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#title_TextValue",
+      "target": "Manuskript_title",
       "label": "Titel"
     },
     {
@@ -997,57 +1321,57 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptStartFolium_TextValue",
+      "target": "Manuskript_manuscriptStartFolium",
       "label": "Start Folium"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#creationDate_DateValue",
+      "target": "Manuskript_creationDate",
       "label": "Datum der Entstehung"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEndFolium_TextValue",
+      "target": "Manuskript_manuscriptEndFolium",
       "label": "End Folium"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#location_TextValue",
+      "target": "Manuskript_location",
       "label": "Standort"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptAdditionalFolium_TextValue",
+      "target": "Manuskript_manuscriptAdditionalFolium",
       "label": "Additional Folium"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasText_TextValue",
+      "target": "Manuskript_hasText",
       "label": "Text"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptHasShelfMark_TextValue",
+      "target": "Manuskript_manuscriptHasShelfMark",
       "label": "Shelfmark"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
+      "target": "Manuskript_beolIDs",
       "label": "BEOL-IDs"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#mentionedIn_TextValue",
+      "target": "Manuskript_mentionedIn",
       "label": "Mentioned In"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
+      "target": "Manuskript_comment",
       "label": "Kommentar"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasSubject_ListValue",
+      "target": "Manuskript_hasSubject",
       "label": "Themen"
     },
     {
@@ -1057,7 +1381,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptStartPage_TextValue",
+      "target": "Manuskript_manuscriptStartPage",
       "label": "Start Page"
     },
     {
@@ -1067,7 +1391,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEndPage_TextValue",
+      "target": "Manuskript_manuscriptEndPage",
       "label": "End Page"
     },
     {
@@ -1077,12 +1401,12 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#title_TextValue",
+      "target": "Eintrag in einem Manuskript_title",
       "label": "Titel"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#seqnum_IntValue",
+      "target": "Eintrag in einem Manuskript_seqnum",
       "label": "Sequenznummer"
     },
     {
@@ -1092,7 +1416,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasSubject_ListValue",
+      "target": "Eintrag in einem Manuskript_hasSubject",
       "label": "Themen"
     },
     {
@@ -1102,7 +1426,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#page",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#pagenum_TextValue",
+      "target": "Seite_pagenum",
       "label": "Seitenbezeichnung"
     },
     {
@@ -1112,17 +1436,17 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#page",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#seqnum_IntValue",
+      "target": "Seite_seqnum",
       "label": "Sequenznummer"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#page",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
+      "target": "Seite_comment",
       "label": "Kommentar"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#page",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
+      "target": "Seite_beolIDs",
       "label": "BEOL-IDs"
     },
     {
@@ -1137,72 +1461,72 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasFamilyName_TextValue",
+      "target": "Person_hasFamilyName",
       "label": "Nachname"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasGivenName_TextValue",
+      "target": "Person_hasGivenName",
       "label": "Vorname"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#personHasTitle_TextValue",
+      "target": "Person_personHasTitle",
       "label": "Titel"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasAlternativeName_TextValue",
+      "target": "Person_hasAlternativeName",
       "label": "Alternative-Name"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
+      "target": "Person_beolIDs",
       "label": "BEOL-IDs"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasIAFIdentifier_TextValue",
+      "target": "Person_hasIAFIdentifier",
       "label": "Gemeinsame Normdatei (GND)"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasBirthDate_DateValue",
+      "target": "Person_hasBirthDate",
       "label": "Geburtsdatum"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasDeathDate_DateValue",
+      "target": "Person_hasDeathDate",
       "label": "Sterbedatum"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasFloruitDate_DateValue",
+      "target": "Person_hasFloruitDate",
       "label": "Floruit-Dataum"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasMarriageDate_DateValue",
+      "target": "Person_hasMarriageDate",
       "label": "Hochzeitdataum"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasBirthPlace_TextValue",
+      "target": "Person_hasBirthPlace",
       "label": "Geburtsort"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasDeathPlace_TextValue",
+      "target": "Person_hasDeathPlace",
       "label": "Todesort"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasFloruitPlace_TextValue",
+      "target": "Person_hasFloruitPlace",
       "label": "Floruit-Ort"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasMarriagePlace_TextValue",
+      "target": "Person_hasMarriagePlace",
       "label": "Trauugsort"
     },
     {
@@ -1212,17 +1536,17 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasDictionaryEntries_TextValue",
+      "target": "Person_hasDictionaryEntries",
       "label": "Indexeinträge"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
+      "target": "Person_comment",
       "label": "Kommentar"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#mentionedIn_TextValue",
+      "target": "Person_mentionedIn",
       "label": "Mentioned In"
     },
     {
@@ -1262,17 +1586,17 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasSubject_ListValue",
+      "target": "Sektion_hasSubject",
       "label": "Themen"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#sectionHasTitle_TextValue",
+      "target": "Sektion_sectionHasTitle",
       "label": "Titel"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasText_TextValue",
+      "target": "Sektion_hasText",
       "label": "Text"
     },
     {
@@ -1282,7 +1606,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
+      "target": "Sektion_beolIDs",
       "label": "BEOL-IDs"
     },
     {
@@ -1292,7 +1616,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#transcription",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasText_TextValue",
+      "target": "Transkription_hasText",
       "label": "Text"
     },
     {
@@ -1307,7 +1631,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#transcription",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#layer_IntValue",
+      "target": "Transkription_layer",
       "label": "Schicht"
     },
     {
@@ -1317,7 +1641,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#title_TextValue",
+      "target": "schriftliche Quelle_title",
       "label": "Titel"
     },
     {
@@ -1327,32 +1651,32 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#creationDate_DateValue",
+      "target": "schriftliche Quelle_creationDate",
       "label": "Datum der Entstehung"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#location_TextValue",
+      "target": "schriftliche Quelle_location",
       "label": "Standort"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasText_TextValue",
+      "target": "schriftliche Quelle_hasText",
       "label": "Text"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#beolIDs_TextValue",
+      "target": "schriftliche Quelle_beolIDs",
       "label": "BEOL-IDs"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#comment_TextValue",
+      "target": "schriftliche Quelle_comment",
       "label": "Kommentar"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#hasSubject_ListValue",
+      "target": "schriftliche Quelle_hasSubject",
       "label": "Themen"
     },
     {

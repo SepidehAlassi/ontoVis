@@ -2062,15 +2062,33 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
       }
     ];
     const gData = {'nodes': nodes, 'links': links};
-
+    this.graph.graphData(gData);
+    // node design
     this.graph.nodeLabel('label');
+    this.graph.nodeAutoColorBy('class');
+    this.graph.enableNodeDrag(true);
+    this.graph.nodeThreeObject((node) => {
+      let geometry;
+      if (node[`group`] === 'literal') {
+        geometry = new THREE.BoxGeometry(10, 5, 7);
+      } else {
+        geometry = new THREE.SphereGeometry(5, 16, 12);
+        geometry.applyMatrix(new THREE.Matrix4().makeScale(2, 1.0, 1.5));
+      }
+      const material = new THREE.MeshLambertMaterial({
+                            color: node[`color`],
+                            transparent: true,
+                            opacity: 0.75
+                           });
+      const mesh = new THREE.Mesh(geometry, material);
+      return mesh; });
+    // link design
     this.graph.linkLabel('label');
+    this.graph.linkThreeObjectExtend(true);
+    this.graph.linkDirectionalArrowLength(5);
+    this.graph.linkDirectionalArrowRelPos(1);
     this.graph.linkWidth(1.5);
 
-    this.graph.graphData(gData);
-    this.graph.nodeAutoColorBy('class');
-    this.graph.showNavInfo(true);
-    this.graph.enableNodeDrag(true);
   }
   ngAfterViewInit() {
     this.graph(this.graphcontainer.nativeElement);
