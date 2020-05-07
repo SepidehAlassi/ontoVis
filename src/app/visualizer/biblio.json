@@ -2,109 +2,109 @@
   "nodes": [
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
-      "label": "Artikel",
+      "label": "biblio:Article",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
-      "label": "Buch",
+      "label": "biblio:Book",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#BookContent",
-      "label": "Buch-Inhalt",
+      "label": "biblio:BookContent",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
-      "label": "Serie",
+      "label": "biblio:Collection",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
-      "label": "Serie Artikel",
+      "label": "biblio:CollectionArticle",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
-      "label": "Serie Buch",
+      "label": "biblio:EditedBook",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
-      "label": "Edition",
+      "label": "biblio:Edition",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Journal",
-      "label": "Zeitschrift",
+      "label": "biblio:Journal",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
-      "label": "Zeitschrift Artikel",
+      "label": "biblio:JournalArticle",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
-      "label": "Organisation",
+      "label": "biblio:Organization",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "Publikation",
+      "label": "biblio:Publication",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
-      "label": "Verlag",
+      "label": "biblio:Publisher",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Translation",
-      "label": "Übersetzung",
+      "label": "biblio:Translation",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
-      "label": "Varia Posthuma Artikel",
+      "label": "biblio:VPArticle",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Webpage",
-      "label": "Webpage",
+      "label": "biblio:Webpage",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Website",
-      "label": "Website",
+      "label": "biblio:Website",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
-      "label": "Website Artikel",
+      "label": "biblio:WebsiteArticle",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#letter",
-      "label": "Publizierte Brief",
+      "label": "biblio:letter",
       "group": "resource",
       "class": "native"
     },
@@ -116,73 +116,73 @@
     },
     {
       "id": "Artikel_publicationHasTitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Artikel_startPage",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Artikel_endPage",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Artikel_publicationHasSubtitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+      "label": "beol:person",
       "group": "resource",
       "class": "external"
     },
     {
       "id": "Artikel_volumeSubtitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Artikel_publicationHasAbbreviation",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Artikel_publicationHasDate",
-      "label": "DateValue",
+      "label": "knora-api:DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
       "id": "Artikel_publicationHasLocation",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
+      "label": "beol:manuscript",
       "group": "resource",
       "class": "external"
     },
     {
       "id": "Artikel_publicationHasDOI",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Artikel_publicationHasExternalLink",
-      "label": "UriValue",
+      "label": "knora-api:UriValue",
       "group": "literal",
       "class": "UriValue"
     },
@@ -194,85 +194,85 @@
     },
     {
       "id": "Buch_bookHasISBN",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Buch_publicationHasTitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Buch_numPages",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Buch_publicationHasSubtitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Buch_numVolumes",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Buch_publicationHasAbbreviation",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Buch_collectionNumber",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Buch_publicationHasDate",
-      "label": "DateValue",
+      "label": "knora-api:DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
       "id": "Buch_publicationHasLocation",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Buch_publicationHasDOI",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Buch_publicationHasExternalLink",
-      "label": "UriValue",
+      "label": "knora-api:UriValue",
       "group": "literal",
       "class": "UriValue"
     },
     {
       "id": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "http://api.knora.org/ontology/knora-api/v2#Resource",
+      "label": "knora-api:Resource",
       "group": "resource",
       "class": "external"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#introduction",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#introduction",
+      "label": "beol:introduction",
       "group": "resource",
       "class": "external"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
+      "label": "beol:letter",
       "group": "resource",
       "class": "external"
     },
@@ -284,85 +284,85 @@
     },
     {
       "id": "Serie_hasName",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie_collectionNumber",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie_numVolumes",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Artikel_collectionNumber",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Artikel_publicationHasTitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Artikel_startPage",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Artikel_endPage",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Artikel_publicationHasSubtitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Artikel_volumeSubtitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Artikel_publicationHasAbbreviation",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Artikel_publicationHasDate",
-      "label": "DateValue",
+      "label": "knora-api:DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
       "id": "Serie Artikel_publicationHasLocation",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Artikel_publicationHasDOI",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Artikel_publicationHasExternalLink",
-      "label": "UriValue",
+      "label": "knora-api:UriValue",
       "group": "literal",
       "class": "UriValue"
     },
@@ -374,85 +374,85 @@
     },
     {
       "id": "Serie Buch_bookHasISBN",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Buch_publicationHasTitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Buch_numPages",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Buch_publicationHasSubtitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Buch_numVolumes",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Buch_publicationHasAbbreviation",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Buch_collectionNumber",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Buch_publicationHasDate",
-      "label": "DateValue",
+      "label": "knora-api:DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
       "id": "Serie Buch_publicationHasLocation",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Buch_publicationHasDOI",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Serie Buch_publicationHasExternalLink",
-      "label": "UriValue",
+      "label": "knora-api:UriValue",
       "group": "literal",
       "class": "UriValue"
     },
     {
       "id": "Edition_editionHasTitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Edition_editionHasNumber",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Edition_editionHasDate",
-      "label": "DateValue",
+      "label": "knora-api:DateValue",
       "group": "literal",
       "class": "DateValue"
     },
@@ -464,91 +464,91 @@
     },
     {
       "id": "Zeitschrift_hasName",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Zeitschrift_numPages",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Zeitschrift_numVolumes",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Zeitschrift Artikel_journalVolume",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Zeitschrift Artikel_publicationHasTitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Zeitschrift Artikel_startPage",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Zeitschrift Artikel_endPage",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Zeitschrift Artikel_journalIssue",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Zeitschrift Artikel_publicationHasSubtitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Zeitschrift Artikel_volumeSubtitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Zeitschrift Artikel_publicationHasAbbreviation",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Zeitschrift Artikel_publicationHasDate",
-      "label": "DateValue",
+      "label": "knora-api:DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
       "id": "Zeitschrift Artikel_publicationHasLocation",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Zeitschrift Artikel_publicationHasDOI",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Zeitschrift Artikel_publicationHasExternalLink",
-      "label": "UriValue",
+      "label": "knora-api:UriValue",
       "group": "literal",
       "class": "UriValue"
     },
@@ -560,7 +560,7 @@
     },
     {
       "id": "Organisation_hasName",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
@@ -572,43 +572,43 @@
     },
     {
       "id": "Publikation_publicationHasTitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Publikation_publicationHasSubtitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Publikation_publicationHasAbbreviation",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Publikation_publicationHasDate",
-      "label": "DateValue",
+      "label": "knora-api:DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
       "id": "Publikation_publicationHasLocation",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Publikation_publicationHasDOI",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Publikation_publicationHasExternalLink",
-      "label": "UriValue",
+      "label": "knora-api:UriValue",
       "group": "literal",
       "class": "UriValue"
     },
@@ -620,73 +620,73 @@
     },
     {
       "id": "Verlag_hasName",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Verlag_publisherHasLocation",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Übersetzung_translationHasTitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Übersetzung_translationHasLanguage",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Übersetzung_translationHasDate",
-      "label": "DateValue",
+      "label": "knora-api:DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
       "id": "Varia Posthuma Artikel_editionHasTitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Varia Posthuma Artikel_vpEndPage",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Varia Posthuma Artikel_vpStartPage",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Varia Posthuma Artikel_editionHasNumber",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
+      "label": "beol:manuscriptEntry",
       "group": "resource",
       "class": "external"
     },
     {
       "id": "Varia Posthuma Artikel_hasURI",
-      "label": "UriValue",
+      "label": "knora-api:UriValue",
       "group": "literal",
       "class": "UriValue"
     },
     {
       "id": "Varia Posthuma Artikel_editionHasDate",
-      "label": "DateValue",
+      "label": "knora-api:DateValue",
       "group": "literal",
       "class": "DateValue"
     },
@@ -698,19 +698,19 @@
     },
     {
       "id": "Webpage_hasName",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Webpage_hasURI",
-      "label": "UriValue",
+      "label": "knora-api:UriValue",
       "group": "literal",
       "class": "UriValue"
     },
     {
       "id": "Webpage_webpageHasHrefTag",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
@@ -722,73 +722,73 @@
     },
     {
       "id": "Website_hasName",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Website_hasURI",
-      "label": "UriValue",
+      "label": "knora-api:UriValue",
       "group": "literal",
       "class": "UriValue"
     },
     {
       "id": "Website Artikel_publicationHasTitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Website Artikel_publicationHasSubtitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Website Artikel_publicationHasAbbreviation",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Website Artikel_publicationHasDate",
-      "label": "DateValue",
+      "label": "knora-api:DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
       "id": "Website Artikel_publicationHasLocation",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Website Artikel_publicationHasDOI",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Website Artikel_publicationHasExternalLink",
-      "label": "UriValue",
+      "label": "knora-api:UriValue",
       "group": "literal",
       "class": "UriValue"
     },
     {
       "id": "Publizierte Brief_publishedLetterNumber",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Publizierte Brief_publishedLetterStartPage",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Publizierte Brief_publishedLetterEndPage",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     }

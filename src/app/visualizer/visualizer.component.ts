@@ -2,6 +2,7 @@ import {Component, OnInit, ViewChild, ElementRef, AfterViewInit} from '@angular/
 import {MatRadioChange} from '@angular/material/radio';
 import ForceGraph3D from '3d-force-graph';
 import * as THREE from 'three';
+import {white} from "color-name";
 
 @Component({
   selector: 'app-visualizer',
@@ -9,16 +10,13 @@ import * as THREE from 'three';
   styleUrls: ['./visualizer.component.css']
 })
 export class VisualizerComponent implements OnInit, AfterViewInit {
-
-  ontologyName: string;
   @ViewChild('graphcontainer', {read: ElementRef}) graphcontainer: ElementRef;
   graph = ForceGraph3D();
   dimension = '3';
   constructor() { }
 
   ngOnInit(): void {
-    this.ontologyName = 'BEOL Ontology';
-    const ontoInfo = require('./beol.json');
+    const ontoInfo = require('./biblio.json');
     const gData = {'nodes': ontoInfo.nodes, 'links': ontoInfo.links};
     this.graph.graphData(gData);
     // node design
