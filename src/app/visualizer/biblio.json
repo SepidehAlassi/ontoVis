@@ -301,6 +301,12 @@
       "class": "TextValue"
     },
     {
+      "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collectionist Teil von",
+      "label": "biblio:Collection",
+      "group": "resource",
+      "class": "external"
+    },
+    {
       "id": "Serie Artikel_collectionNumber",
       "label": "knora-api:TextValue",
       "group": "literal",
@@ -599,6 +605,54 @@
       "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
+    },
+    {
+      "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationist bearbeitet",
+      "label": "biblio:Publication",
+      "group": "resource",
+      "class": "external"
+    },
+    {
+      "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationist Edition von",
+      "label": "biblio:Publication",
+      "group": "resource",
+      "class": "external"
+    },
+    {
+      "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationwieder abgedruckt",
+      "label": "biblio:Publication",
+      "group": "resource",
+      "class": "external"
+    },
+    {
+      "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationwieder abgedruckt von",
+      "label": "biblio:Publication",
+      "group": "resource",
+      "class": "external"
+    },
+    {
+      "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#PublicationBewertet",
+      "label": "biblio:Publication",
+      "group": "resource",
+      "class": "external"
+    },
+    {
+      "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#PublicationKritik von",
+      "label": "biblio:Publication",
+      "group": "resource",
+      "class": "external"
+    },
+    {
+      "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationist Übersetztung von ",
+      "label": "biblio:Publication",
+      "group": "resource",
+      "class": "external"
+    },
+    {
+      "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationist übersetzt",
+      "label": "biblio:Publication",
+      "group": "resource",
+      "class": "external"
     },
     {
       "id": "Publikation_publicationHasDOI",
@@ -1111,7 +1165,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
-      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
+      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collectionist Teil von",
       "label": "ist Teil von"
     },
     {
@@ -1676,32 +1730,32 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationist bearbeitet",
       "label": "ist bearbeitet"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationist Edition von",
       "label": "ist Edition von"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationwieder abgedruckt",
       "label": "wieder abgedruckt"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationwieder abgedruckt von",
       "label": "wieder abgedruckt von"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#PublicationBewertet",
       "label": "Bewertet"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#PublicationKritik von",
       "label": "Kritik von"
     },
     {
@@ -1711,12 +1765,12 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationist Übersetztung von ",
       "label": "ist Übersetztung von "
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationist übersetzt",
       "label": "ist übersetzt"
     },
     {

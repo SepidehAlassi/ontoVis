@@ -2,709 +2,721 @@
   "nodes": [
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
-      "label": "Archive",
+      "label": "beol:Archive",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-      "label": "Basis-Brief",
+      "label": "beol:basicLetter",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
-      "label": "Bild von Dokument",
+      "label": "beol:documentImage",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnote",
-      "label": "Endnote",
+      "label": "beol:endnote",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#entryComment",
-      "label": "Kommentar zu Manuskripteintrag",
+      "label": "beol:entryComment",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
-      "label": "Faksimile",
+      "label": "beol:facsimile",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
-      "label": "Figur",
+      "label": "beol:figure",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#introduction",
-      "label": "Einleitung",
+      "label": "beol:introduction",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "label": "Brief",
+      "label": "beol:letter",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "label": "Manuskript",
+      "label": "beol:manuscript",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
-      "label": "Eintrag in einem Manuskript",
+      "label": "beol:manuscriptEntry",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#page",
-      "label": "Seite",
+      "label": "beol:page",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Person",
+      "label": "beol:person",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
-      "label": "Sektion",
+      "label": "beol:section",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#transcription",
-      "label": "Transkription",
+      "label": "beol:transcription",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-      "label": "schriftliche Quelle",
+      "label": "beol:writtenSource",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffAbbreviationMarkerTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffAbbreviationMarkerTag",
+      "label": "beol:StandoffAbbreviationMarkerTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffAdditionTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffAdditionTag",
+      "label": "beol:StandoffAdditionTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffBrTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffBrTag",
+      "label": "beol:StandoffBrTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffCenterTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffCenterTag",
+      "label": "beol:StandoffCenterTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffCorrectionTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffCorrectionTag",
+      "label": "beol:StandoffCorrectionTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffDeletionTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffDeletionTag",
+      "label": "beol:StandoffDeletionTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffEntityTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffEntityTag",
+      "label": "beol:StandoffEntityTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffExpansionMarkerTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffExpansionMarkerTag",
+      "label": "beol:StandoffExpansionMarkerTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffExpansionTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffExpansionTag",
+      "label": "beol:StandoffExpansionTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFacsimileTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFacsimileTag",
+      "label": "beol:StandoffFacsimileTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFigCaptionTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFigCaptionTag",
+      "label": "beol:StandoffFigCaptionTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFigTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFigTag",
+      "label": "beol:StandoffFigTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFigureTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFigureTag",
+      "label": "beol:StandoffFigureTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFontTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFontTag",
+      "label": "beol:StandoffFontTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffForeignTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffForeignTag",
+      "label": "beol:StandoffForeignTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffGapTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffGapTag",
+      "label": "beol:StandoffGapTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffHrTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffHrTag",
+      "label": "beol:StandoffHrTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffHtmlTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffHtmlTag",
+      "label": "beol:StandoffHtmlTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffInterventionMarkerTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffInterventionMarkerTag",
+      "label": "beol:StandoffInterventionMarkerTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffMarginalTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffMarginalTag",
+      "label": "beol:StandoffMarginalTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffMathTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffMathTag",
+      "label": "beol:StandoffMathTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffOriginalMarkerTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffOriginalMarkerTag",
+      "label": "beol:StandoffOriginalMarkerTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffPbTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffPbTag",
+      "label": "beol:StandoffPbTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffReferenceTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffReferenceTag",
+      "label": "beol:StandoffReferenceTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffRegionTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffRegionTag",
+      "label": "beol:StandoffRegionTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSmallTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSmallTag",
+      "label": "beol:StandoffSmallTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSubstitutionAdditionTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSubstitutionAdditionTag",
+      "label": "beol:StandoffSubstitutionAdditionTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSubstitutionDeletionTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSubstitutionDeletionTag",
+      "label": "beol:StandoffSubstitutionDeletionTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSubstitutionTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSubstitutionTag",
+      "label": "beol:StandoffSubstitutionTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffTableCellTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffTableCellTag",
+      "label": "beol:StandoffTableCellTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffTableTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffTableTag",
+      "label": "beol:StandoffTableTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffUnclearTag",
-      "label": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffUnclearTag",
+      "label": "beol:StandoffUnclearTag",
       "group": "resource",
       "class": "native"
     },
     {
       "id": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "http://api.knora.org/ontology/knora-api/v2#Resource",
+      "label": "knora-api:Resource",
       "group": "resource",
       "class": "external"
     },
     {
       "id": "Archive_archiveHasName",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Archive_archiveHasAbbreviation",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Archive_archiveHasLocation",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Archive_mentionedIn",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Archive_comment",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Archive_beolIDs",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Basis-Brief_title",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Basis-Brief_letterHasNumber",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Basis-Brief_creationDate",
-      "label": "DateValue",
+      "label": "knora-api:DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
       "id": "Basis-Brief_letterHasLanguage",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Basis-Brief_letterHasURI",
-      "label": "UriValue",
+      "label": "knora-api:UriValue",
       "group": "literal",
       "class": "UriValue"
     },
     {
       "id": "Basis-Brief_location",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Basis-Brief_hasText",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Basis-Brief_beolIDs",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Basis-Brief_comment",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Basis-Brief_hasSubject",
-      "label": "ListValue",
+      "label": "knora-api:ListValue",
       "group": "literal",
       "class": "ListValue"
     },
     {
       "id": "http://api.knora.org/ontology/knora-api/v2#StillImageRepresentation",
-      "label": "http://api.knora.org/ontology/knora-api/v2#StillImageRepresentation",
+      "label": "knora-api:StillImageRepresentation",
       "group": "resource",
       "class": "external"
     },
     {
       "id": "Bild von Dokument_pagenum",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Bild von Dokument_seqnum",
-      "label": "IntValue",
+      "label": "knora-api:IntValue",
       "group": "literal",
       "class": "IntValue"
     },
     {
       "id": "Bild von Dokument_comment",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Bild von Dokument_beolIDs",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Endnote_endnoteHasNumber",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Endnote_hasText",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Endnote_beolIDs",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Kommentar zu Manuskripteintrag_hasText",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Kommentar zu Manuskripteintrag_seqnum",
-      "label": "IntValue",
+      "label": "knora-api:IntValue",
       "group": "literal",
       "class": "IntValue"
     },
     {
       "id": "Faksimile_hasCaption",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Faksimile_pagenum",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Faksimile_seqnum",
-      "label": "IntValue",
+      "label": "knora-api:IntValue",
       "group": "literal",
       "class": "IntValue"
     },
     {
       "id": "Faksimile_comment",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Faksimile_beolIDs",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Figur_hasCaption",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Figur_beolIDs",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Einleitung_beolIDs",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Brief_title",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Brief_letterHasNumber",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
+      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterÜbersetzung",
+      "label": "beol:letter",
+      "group": "resource",
+      "class": "external"
+    },
+    {
       "id": "Brief_creationDate",
-      "label": "DateValue",
+      "label": "knora-api:DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
       "id": "Brief_letterHasLanguage",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#letter",
-      "label": "http://0.0.0.0:3333/ontology/0801/biblio/v2#letter",
+      "label": "biblio:letter",
       "group": "resource",
       "class": "external"
     },
     {
       "id": "Brief_letterHasRepertoriumNumber",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Brief_letterHasURI",
-      "label": "UriValue",
+      "label": "knora-api:UriValue",
       "group": "literal",
       "class": "UriValue"
     },
     {
       "id": "Brief_location",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Brief_externalRepository",
-      "label": "UriValue",
+      "label": "knora-api:UriValue",
       "group": "literal",
       "class": "UriValue"
     },
     {
       "id": "Brief_hasText",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Brief_beolIDs",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
+      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterAntwort auf",
+      "label": "beol:letter",
+      "group": "resource",
+      "class": "external"
+    },
+    {
       "id": "Brief_comment",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Brief_hasSystemNumber",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Brief_hasSubject",
-      "label": "ListValue",
+      "label": "knora-api:ListValue",
       "group": "literal",
       "class": "ListValue"
     },
     {
       "id": "Manuskript_title",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Manuskript_manuscriptStartFolium",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Manuskript_creationDate",
-      "label": "DateValue",
+      "label": "knora-api:DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
       "id": "Manuskript_manuscriptEndFolium",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Manuskript_location",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Manuskript_manuscriptAdditionalFolium",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Manuskript_hasText",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Manuskript_manuscriptHasShelfMark",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Manuskript_beolIDs",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Manuskript_mentionedIn",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Manuskript_comment",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Manuskript_hasSubject",
-      "label": "ListValue",
+      "label": "knora-api:ListValue",
       "group": "literal",
       "class": "ListValue"
     },
     {
       "id": "Manuskript_manuscriptStartPage",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Manuskript_manuscriptEndPage",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Eintrag in einem Manuskript_title",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Eintrag in einem Manuskript_seqnum",
-      "label": "IntValue",
+      "label": "knora-api:IntValue",
       "group": "literal",
       "class": "IntValue"
     },
     {
       "id": "Eintrag in einem Manuskript_hasSubject",
-      "label": "ListValue",
+      "label": "knora-api:ListValue",
       "group": "literal",
       "class": "ListValue"
     },
     {
       "id": "Seite_pagenum",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Seite_seqnum",
-      "label": "IntValue",
+      "label": "knora-api:IntValue",
       "group": "literal",
       "class": "IntValue"
     },
     {
       "id": "Seite_comment",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Seite_beolIDs",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
@@ -716,229 +728,271 @@
     },
     {
       "id": "Person_hasFamilyName",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Person_hasGivenName",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Person_personHasTitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Person_hasAlternativeName",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Person_beolIDs",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Person_hasIAFIdentifier",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Person_hasBirthDate",
-      "label": "DateValue",
+      "label": "knora-api:DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
       "id": "Person_hasDeathDate",
-      "label": "DateValue",
+      "label": "knora-api:DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
       "id": "Person_hasFloruitDate",
-      "label": "DateValue",
+      "label": "knora-api:DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
       "id": "Person_hasMarriageDate",
-      "label": "DateValue",
+      "label": "knora-api:DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
       "id": "Person_hasBirthPlace",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Person_hasDeathPlace",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Person_hasFloruitPlace",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Person_hasMarriagePlace",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
+      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Sohn",
+      "label": "beol:person",
+      "group": "resource",
+      "class": "external"
+    },
+    {
       "id": "Person_hasDictionaryEntries",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Person_comment",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Person_mentionedIn",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
+      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Bruder",
+      "label": "beol:person",
+      "group": "resource",
+      "class": "external"
+    },
+    {
+      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Neffe",
+      "label": "beol:person",
+      "group": "resource",
+      "class": "external"
+    },
+    {
+      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Onkel",
+      "label": "beol:person",
+      "group": "resource",
+      "class": "external"
+    },
+    {
+      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Schüler",
+      "label": "beol:person",
+      "group": "resource",
+      "class": "external"
+    },
+    {
+      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Lehrer",
+      "label": "beol:person",
+      "group": "resource",
+      "class": "external"
+    },
+    {
       "id": "Sektion_hasSubject",
-      "label": "ListValue",
+      "label": "knora-api:ListValue",
       "group": "literal",
       "class": "ListValue"
     },
     {
       "id": "Sektion_sectionHasTitle",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Sektion_hasText",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
+      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#sectionhat Sektion",
+      "label": "beol:section",
+      "group": "resource",
+      "class": "external"
+    },
+    {
       "id": "Sektion_beolIDs",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "Transkription_hasText",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "http://api.knora.org/ontology/knora-api/v2#Region",
-      "label": "http://api.knora.org/ontology/knora-api/v2#Region",
+      "label": "knora-api:Region",
       "group": "resource",
       "class": "external"
     },
     {
       "id": "Transkription_layer",
-      "label": "IntValue",
+      "label": "knora-api:IntValue",
       "group": "literal",
       "class": "IntValue"
     },
     {
       "id": "schriftliche Quelle_title",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "schriftliche Quelle_creationDate",
-      "label": "DateValue",
+      "label": "knora-api:DateValue",
       "group": "literal",
       "class": "DateValue"
     },
     {
       "id": "schriftliche Quelle_location",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "schriftliche Quelle_hasText",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "schriftliche Quelle_beolIDs",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "schriftliche Quelle_comment",
-      "label": "TextValue",
+      "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
     },
     {
       "id": "schriftliche Quelle_hasSubject",
-      "label": "ListValue",
+      "label": "knora-api:ListValue",
       "group": "literal",
       "class": "ListValue"
     },
     {
       "id": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
+      "label": "knora-api:StandoffTag",
       "group": "resource",
       "class": "external"
     },
     {
       "id": "http://api.knora.org/ontology/standoff/v2#StandoffBrTag",
-      "label": "http://api.knora.org/ontology/standoff/v2#StandoffBrTag",
+      "label": "standoff:StandoffBrTag",
       "group": "resource",
       "class": "external"
     },
     {
       "id": "http://api.knora.org/ontology/knora-api/v2#StandoffLinkTag",
-      "label": "http://api.knora.org/ontology/knora-api/v2#StandoffLinkTag",
+      "label": "knora-api:StandoffLinkTag",
       "group": "resource",
       "class": "external"
     },
     {
       "id": "http://api.knora.org/ontology/standoff/v2#StandoffRootTag",
-      "label": "http://api.knora.org/ontology/standoff/v2#StandoffRootTag",
+      "label": "standoff:StandoffRootTag",
       "group": "resource",
       "class": "external"
     },
     {
       "id": "http://api.knora.org/ontology/standoff/v2#StandoffVisualTag",
-      "label": "http://api.knora.org/ontology/standoff/v2#StandoffVisualTag",
+      "label": "standoff:StandoffVisualTag",
       "group": "resource",
       "class": "external"
     },
     {
       "id": "http://api.knora.org/ontology/standoff/v2#StandoffTableCellTag",
-      "label": "http://api.knora.org/ontology/standoff/v2#StandoffTableCellTag",
+      "label": "standoff:StandoffTableCellTag",
       "group": "resource",
       "class": "external"
     },
     {
       "id": "http://api.knora.org/ontology/standoff/v2#StandoffTableTag",
-      "label": "http://api.knora.org/ontology/standoff/v2#StandoffTableTag",
+      "label": "standoff:StandoffTableTag",
       "group": "resource",
       "class": "external"
     }
@@ -1221,7 +1275,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterÜbersetzung",
       "label": "Übersetzung"
     },
     {
@@ -1271,7 +1325,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterAntwort auf",
       "label": "Antwort auf"
     },
     {
@@ -1531,7 +1585,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Sohn",
       "label": "hat Sohn"
     },
     {
@@ -1551,32 +1605,32 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Bruder",
       "label": "hat Bruder"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Neffe",
       "label": "hat Neffe"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Onkel",
       "label": "hat Onkel"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Schüler",
       "label": "hat Schüler"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Schüler",
       "label": "hat Schüler"
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Lehrer",
       "label": "hat Lehrer"
     },
     {
@@ -1601,7 +1655,7 @@
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#sectionhat Sektion",
       "label": "hat Sektion"
     },
     {
