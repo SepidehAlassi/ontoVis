@@ -16,7 +16,7 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
   constructor() { }
 
   ngOnInit(): void {
-    const ontoInfo = require('./beol.json');
+    const ontoInfo = require('./biblio.json');
     const gData = {'nodes': ontoInfo.nodes, 'links': ontoInfo.links};
     this.graph.graphData(gData);
     // node design
@@ -42,7 +42,9 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
     this.graph.linkLabel('label');
     this.graph.linkCurvature('curvature');
     this.graph.linkCurveRotation('rotation');
-    this.graph.linkDirectionalParticles(2)
+    this.graph.linkThreeObjectExtend(true);
+    this.graph.linkDirectionalArrowLength(5);
+    this.graph.linkDirectionalArrowRelPos(1);
     this.graph.linkWidth(1.5);
 
   }
