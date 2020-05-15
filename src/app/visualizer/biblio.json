@@ -301,12 +301,6 @@
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collectionist Teil von",
-      "label": "biblio:Collection",
-      "group": "resource",
-      "class": "external"
-    },
-    {
       "id": "Serie Artikel_collectionNumber",
       "label": "knora-api:TextValue",
       "group": "literal",
@@ -607,54 +601,6 @@
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationist bearbeitet",
-      "label": "biblio:Publication",
-      "group": "resource",
-      "class": "external"
-    },
-    {
-      "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationist Edition von",
-      "label": "biblio:Publication",
-      "group": "resource",
-      "class": "external"
-    },
-    {
-      "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationwieder abgedruckt",
-      "label": "biblio:Publication",
-      "group": "resource",
-      "class": "external"
-    },
-    {
-      "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationwieder abgedruckt von",
-      "label": "biblio:Publication",
-      "group": "resource",
-      "class": "external"
-    },
-    {
-      "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#PublicationBewertet",
-      "label": "biblio:Publication",
-      "group": "resource",
-      "class": "external"
-    },
-    {
-      "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#PublicationKritik von",
-      "label": "biblio:Publication",
-      "group": "resource",
-      "class": "external"
-    },
-    {
-      "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationist Übersetztung von ",
-      "label": "biblio:Publication",
-      "group": "resource",
-      "class": "external"
-    },
-    {
-      "id": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationist übersetzt",
-      "label": "biblio:Publication",
-      "group": "resource",
-      "class": "external"
-    },
-    {
       "id": "Publikation_publicationHasDOI",
       "label": "knora-api:TextValue",
       "group": "literal",
@@ -851,1247 +797,1745 @@
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "http://purl.org/ontology/bibo/Article",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "Artikel_publicationHasTitle",
-      "label": "Publikationstitel"
+      "label": "Publikationstitel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "Artikel_startPage",
-      "label": "Erste Seite"
+      "label": "Erste Seite",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "Artikel_endPage",
-      "label": "letzte Seite"
+      "label": "letzte Seite",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "Artikel_publicationHasSubtitle",
-      "label": "Untertitel"
+      "label": "Untertitel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Autor"
+      "label": "Autor",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "Artikel_volumeSubtitle",
-      "label": "Untertitel des Bandes"
+      "label": "Untertitel des Bandes",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "Artikel_publicationHasAbbreviation",
-      "label": "Abbreviation of the publication"
+      "label": "Abbreviation of the publication",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "Artikel_publicationHasDate",
-      "label": "Datum der Veröffentlichung "
+      "label": "Datum der Veröffentlichung ",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "Artikel_publicationHasLocation",
-      "label": "Veröffentlichungsort"
+      "label": "Veröffentlichungsort",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Redaktor (person)"
+      "label": "Redaktor (person)",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
-      "label": "Editorische Organisation"
+      "label": "Editorische Organisation",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
-      "label": "Verlag"
+      "label": "Verlag",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Übersetzer"
+      "label": "Übersetzer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist bearbeitet"
+      "label": "ist bearbeitet",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist Edition von"
+      "label": "ist Edition von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "wieder abgedruckt"
+      "label": "wieder abgedruckt",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "wieder abgedruckt von"
+      "label": "wieder abgedruckt von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "Bewertet"
+      "label": "Bewertet",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "Kritik von"
+      "label": "Kritik von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "label": "Manuskript"
+      "label": "Manuskript",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist Übersetztung von "
+      "label": "ist Übersetztung von ",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist übersetzt"
+      "label": "ist übersetzt",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "Artikel_publicationHasDOI",
-      "label": "DOI"
+      "label": "DOI",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
       "target": "Artikel_publicationHasExternalLink",
-      "label": "Externer Link"
+      "label": "Externer Link",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "http://purl.org/ontology/bibo/book",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "Buch_bookHasISBN",
-      "label": "ISBN"
+      "label": "ISBN",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "Buch_publicationHasTitle",
-      "label": "Publikationstitel"
+      "label": "Publikationstitel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "Buch_numPages",
-      "label": "Seitenzahl"
+      "label": "Seitenzahl",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "Buch_publicationHasSubtitle",
-      "label": "Untertitel"
+      "label": "Untertitel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "Buch_numVolumes",
-      "label": "Bändenzahl"
+      "label": "Bändenzahl",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Autor"
+      "label": "Autor",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
-      "label": "ist Teil von"
+      "label": "ist Teil von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "Buch_publicationHasAbbreviation",
-      "label": "Abbreviation of the publication"
+      "label": "Abbreviation of the publication",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "Buch_collectionNumber",
-      "label": "Serie Nummer"
+      "label": "Serie Nummer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "Buch_publicationHasDate",
-      "label": "Datum der Veröffentlichung "
+      "label": "Datum der Veröffentlichung ",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#BookContent",
-      "label": "Buch-Inhalt"
+      "label": "Buch-Inhalt",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "Buch_publicationHasLocation",
-      "label": "Veröffentlichungsort"
+      "label": "Veröffentlichungsort",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Redaktor (person)"
+      "label": "Redaktor (person)",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
-      "label": "Editorische Organisation"
+      "label": "Editorische Organisation",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
-      "label": "Verlag"
+      "label": "Verlag",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Übersetzer"
+      "label": "Übersetzer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist bearbeitet"
+      "label": "ist bearbeitet",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist Edition von"
+      "label": "ist Edition von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "wieder abgedruckt"
+      "label": "wieder abgedruckt",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "wieder abgedruckt von"
+      "label": "wieder abgedruckt von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "Bewertet"
+      "label": "Bewertet",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "Kritik von"
+      "label": "Kritik von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "label": "Manuskript"
+      "label": "Manuskript",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist Übersetztung von "
+      "label": "ist Übersetztung von ",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist übersetzt"
+      "label": "ist übersetzt",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "Buch_publicationHasDOI",
-      "label": "DOI"
+      "label": "DOI",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
       "target": "Buch_publicationHasExternalLink",
-      "label": "Externer Link"
+      "label": "Externer Link",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#BookContent",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#BookContent",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#introduction",
-      "label": "Einleitung"
+      "label": "Einleitung",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#BookContent",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "label": "Inhalt"
+      "label": "Inhalt",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
       "target": "http://purl.org/ontology/bibo/Collection",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
       "target": "Serie_hasName",
-      "label": "Name"
+      "label": "Name",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
       "target": "Serie_collectionNumber",
-      "label": "Serie Nummer"
+      "label": "Serie Nummer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
       "target": "Serie_numVolumes",
-      "label": "Bändenzahl"
+      "label": "Bändenzahl",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
-      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collectionist Teil von",
-      "label": "ist Teil von"
+      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
+      "label": "ist Teil von",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "Serie Artikel_collectionNumber",
-      "label": "Serie Nummer"
+      "label": "Serie Nummer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "Serie Artikel_publicationHasTitle",
-      "label": "Publikationstitel"
+      "label": "Publikationstitel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "Serie Artikel_startPage",
-      "label": "Erste Seite"
+      "label": "Erste Seite",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "Serie Artikel_endPage",
-      "label": "letzte Seite"
+      "label": "letzte Seite",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
-      "label": "ist Teil von"
+      "label": "ist Teil von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "Serie Artikel_publicationHasSubtitle",
-      "label": "Untertitel"
+      "label": "Untertitel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Autor"
+      "label": "Autor",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "Serie Artikel_volumeSubtitle",
-      "label": "Untertitel des Bandes"
+      "label": "Untertitel des Bandes",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "Serie Artikel_publicationHasAbbreviation",
-      "label": "Abbreviation of the publication"
+      "label": "Abbreviation of the publication",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "Serie Artikel_publicationHasDate",
-      "label": "Datum der Veröffentlichung "
+      "label": "Datum der Veröffentlichung ",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "Serie Artikel_publicationHasLocation",
-      "label": "Veröffentlichungsort"
+      "label": "Veröffentlichungsort",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Redaktor (person)"
+      "label": "Redaktor (person)",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
-      "label": "Editorische Organisation"
+      "label": "Editorische Organisation",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
-      "label": "Verlag"
+      "label": "Verlag",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Übersetzer"
+      "label": "Übersetzer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist bearbeitet"
+      "label": "ist bearbeitet",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist Edition von"
+      "label": "ist Edition von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "wieder abgedruckt"
+      "label": "wieder abgedruckt",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "wieder abgedruckt von"
+      "label": "wieder abgedruckt von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "Bewertet"
+      "label": "Bewertet",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "Kritik von"
+      "label": "Kritik von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "label": "Manuskript"
+      "label": "Manuskript",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist Übersetztung von "
+      "label": "ist Übersetztung von ",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist übersetzt"
+      "label": "ist übersetzt",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "Serie Artikel_publicationHasDOI",
-      "label": "DOI"
+      "label": "DOI",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
       "target": "Serie Artikel_publicationHasExternalLink",
-      "label": "Externer Link"
+      "label": "Externer Link",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Book",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "http://purl.org/ontology/bibo/EditedBook",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "Serie Buch_bookHasISBN",
-      "label": "ISBN"
+      "label": "ISBN",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "Serie Buch_publicationHasTitle",
-      "label": "Publikationstitel"
+      "label": "Publikationstitel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "Serie Buch_numPages",
-      "label": "Seitenzahl"
+      "label": "Seitenzahl",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "Serie Buch_publicationHasSubtitle",
-      "label": "Untertitel"
+      "label": "Untertitel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "Serie Buch_numVolumes",
-      "label": "Bändenzahl"
+      "label": "Bändenzahl",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Autor"
+      "label": "Autor",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Collection",
-      "label": "ist Teil von"
+      "label": "ist Teil von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "Serie Buch_publicationHasAbbreviation",
-      "label": "Abbreviation of the publication"
+      "label": "Abbreviation of the publication",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "Serie Buch_collectionNumber",
-      "label": "Serie Nummer"
+      "label": "Serie Nummer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "Serie Buch_publicationHasDate",
-      "label": "Datum der Veröffentlichung "
+      "label": "Datum der Veröffentlichung ",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#BookContent",
-      "label": "Buch-Inhalt"
+      "label": "Buch-Inhalt",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "Serie Buch_publicationHasLocation",
-      "label": "Veröffentlichungsort"
+      "label": "Veröffentlichungsort",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Redaktor (person)"
+      "label": "Redaktor (person)",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
-      "label": "Editorische Organisation"
+      "label": "Editorische Organisation",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
-      "label": "Verlag"
+      "label": "Verlag",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Übersetzer"
+      "label": "Übersetzer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist bearbeitet"
+      "label": "ist bearbeitet",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist Edition von"
+      "label": "ist Edition von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "wieder abgedruckt"
+      "label": "wieder abgedruckt",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "wieder abgedruckt von"
+      "label": "wieder abgedruckt von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "Bewertet"
+      "label": "Bewertet",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "Kritik von"
+      "label": "Kritik von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "label": "Manuskript"
+      "label": "Manuskript",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist Übersetztung von "
+      "label": "ist Übersetztung von ",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist übersetzt"
+      "label": "ist übersetzt",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "Serie Buch_publicationHasDOI",
-      "label": "DOI"
+      "label": "DOI",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
       "target": "Serie Buch_publicationHasExternalLink",
-      "label": "Externer Link"
+      "label": "Externer Link",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
       "target": "Edition_editionHasTitle",
-      "label": "Edition Titel"
+      "label": "Edition Titel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Redaktor (Person)"
+      "label": "Redaktor (Person)",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
       "target": "Edition_editionHasNumber",
-      "label": "Edition Nummer"
+      "label": "Edition Nummer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
-      "label": "Organisation"
+      "label": "Organisation",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "label": "Manuskript der Edition"
+      "label": "Manuskript der Edition",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
       "target": "Edition_editionHasDate",
-      "label": "Datum der Bearbeitung"
+      "label": "Datum der Bearbeitung",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
-      "label": "ist Teil von"
+      "label": "ist Teil von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Journal",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Journal",
       "target": "http://purl.org/ontology/bibo/Journal",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Journal",
       "target": "Zeitschrift_hasName",
-      "label": "Name"
+      "label": "Name",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Journal",
       "target": "Zeitschrift_numPages",
-      "label": "Seitenzahl"
+      "label": "Seitenzahl",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Journal",
       "target": "Zeitschrift_numVolumes",
-      "label": "Bändenzahl"
+      "label": "Bändenzahl",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Article",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "Zeitschrift Artikel_journalVolume",
-      "label": "Ausgabe"
+      "label": "Ausgabe",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "Zeitschrift Artikel_publicationHasTitle",
-      "label": "Publikationstitel"
+      "label": "Publikationstitel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "Zeitschrift Artikel_startPage",
-      "label": "Erste Seite"
+      "label": "Erste Seite",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "Zeitschrift Artikel_endPage",
-      "label": "letzte Seite"
+      "label": "letzte Seite",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "Zeitschrift Artikel_journalIssue",
-      "label": "Ausgabe No"
+      "label": "Ausgabe No",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "Zeitschrift Artikel_publicationHasSubtitle",
-      "label": "Untertitel"
+      "label": "Untertitel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Journal",
-      "label": "ist Teil von"
+      "label": "ist Teil von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Autor"
+      "label": "Autor",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "Zeitschrift Artikel_volumeSubtitle",
-      "label": "Untertitel des Bandes"
+      "label": "Untertitel des Bandes",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "Zeitschrift Artikel_publicationHasAbbreviation",
-      "label": "Abbreviation of the publication"
+      "label": "Abbreviation of the publication",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "Zeitschrift Artikel_publicationHasDate",
-      "label": "Datum der Veröffentlichung "
+      "label": "Datum der Veröffentlichung ",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "Zeitschrift Artikel_publicationHasLocation",
-      "label": "Veröffentlichungsort"
+      "label": "Veröffentlichungsort",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Redaktor (person)"
+      "label": "Redaktor (person)",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
-      "label": "Editorische Organisation"
+      "label": "Editorische Organisation",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
-      "label": "Verlag"
+      "label": "Verlag",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Übersetzer"
+      "label": "Übersetzer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist bearbeitet"
+      "label": "ist bearbeitet",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist Edition von"
+      "label": "ist Edition von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "wieder abgedruckt"
+      "label": "wieder abgedruckt",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "wieder abgedruckt von"
+      "label": "wieder abgedruckt von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "Bewertet"
+      "label": "Bewertet",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "Kritik von"
+      "label": "Kritik von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "label": "Manuskript"
+      "label": "Manuskript",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist Übersetztung von "
+      "label": "ist Übersetztung von ",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist übersetzt"
+      "label": "ist übersetzt",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "Zeitschrift Artikel_publicationHasDOI",
-      "label": "DOI"
+      "label": "DOI",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#JournalArticle",
       "target": "Zeitschrift Artikel_publicationHasExternalLink",
-      "label": "Externer Link"
+      "label": "Externer Link",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
       "target": "http://xmlns.com/foaf/0.1/organization",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
       "target": "Organisation_hasName",
-      "label": "Name"
+      "label": "Name",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
       "target": "http://purl.org/dc/terms/BibliographicResource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
       "target": "Publikation_publicationHasTitle",
-      "label": "Publikationstitel"
+      "label": "Publikationstitel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
       "target": "Publikation_publicationHasSubtitle",
-      "label": "Untertitel"
+      "label": "Untertitel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Autor"
+      "label": "Autor",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
       "target": "Publikation_publicationHasAbbreviation",
-      "label": "Abbreviation of the publication"
+      "label": "Abbreviation of the publication",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
       "target": "Publikation_publicationHasDate",
-      "label": "Datum der Veröffentlichung "
+      "label": "Datum der Veröffentlichung ",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
       "target": "Publikation_publicationHasLocation",
-      "label": "Veröffentlichungsort"
+      "label": "Veröffentlichungsort",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Redaktor (person)"
+      "label": "Redaktor (person)",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
-      "label": "Editorische Organisation"
+      "label": "Editorische Organisation",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
-      "label": "Verlag"
+      "label": "Verlag",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Übersetzer"
+      "label": "Übersetzer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationist bearbeitet",
-      "label": "ist bearbeitet"
+      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+      "label": "ist bearbeitet",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationist Edition von",
-      "label": "ist Edition von"
+      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+      "label": "ist Edition von",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationwieder abgedruckt",
-      "label": "wieder abgedruckt"
+      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+      "label": "wieder abgedruckt",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationwieder abgedruckt von",
-      "label": "wieder abgedruckt von"
+      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+      "label": "wieder abgedruckt von",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#PublicationBewertet",
-      "label": "Bewertet"
+      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+      "label": "Bewertet",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#PublicationKritik von",
-      "label": "Kritik von"
+      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+      "label": "Kritik von",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "label": "Manuskript"
+      "label": "Manuskript",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationist Übersetztung von ",
-      "label": "ist Übersetztung von "
+      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+      "label": "ist Übersetztung von ",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publicationist übersetzt",
-      "label": "ist übersetzt"
+      "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
+      "label": "ist übersetzt",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
       "target": "Publikation_publicationHasDOI",
-      "label": "DOI"
+      "label": "DOI",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
       "target": "Publikation_publicationHasExternalLink",
-      "label": "Externer Link"
+      "label": "Externer Link",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
       "target": "http://purl.org/dc/terms/publisher",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
       "target": "Verlag_hasName",
-      "label": "Name"
+      "label": "Name",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
       "target": "Verlag_publisherHasLocation",
-      "label": "Ort"
+      "label": "Ort",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Offizinleiter"
+      "label": "Offizinleiter",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Translation",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Translation",
       "target": "Übersetzung_translationHasTitle",
-      "label": "Übersetzungstitle"
+      "label": "Übersetzungstitle",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Translation",
       "target": "Übersetzung_translationHasLanguage",
-      "label": "Sprache"
+      "label": "Sprache",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Translation",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist Übersetzung von"
+      "label": "ist Übersetzung von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Translation",
       "target": "Übersetzung_translationHasDate",
-      "label": "Datum der Übersetzung"
+      "label": "Datum der Übersetzung",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Edition",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
       "target": "Varia Posthuma Artikel_editionHasTitle",
-      "label": "Edition Titel"
+      "label": "Edition Titel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
       "target": "Varia Posthuma Artikel_vpEndPage",
-      "label": "End Page"
+      "label": "End Page",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Redaktor (Person)"
+      "label": "Redaktor (Person)",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
       "target": "Varia Posthuma Artikel_vpStartPage",
-      "label": "Start Page"
+      "label": "Start Page",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
       "target": "Varia Posthuma Artikel_editionHasNumber",
-      "label": "Edition Nummer"
+      "label": "Edition Nummer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
-      "label": "Edition der Manuskripteintrag"
+      "label": "Edition der Manuskripteintrag",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
-      "label": "Organisation"
+      "label": "Organisation",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#CollectionArticle",
-      "label": "Der Manuskript ist publiziert"
+      "label": "Der Manuskript ist publiziert",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
       "target": "Varia Posthuma Artikel_hasURI",
-      "label": "URI"
+      "label": "URI",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "label": "Manuskript der Edition"
+      "label": "Manuskript der Edition",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
       "target": "Varia Posthuma Artikel_editionHasDate",
-      "label": "Datum der Bearbeitung"
+      "label": "Datum der Bearbeitung",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#VPArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
-      "label": "ist Teil von"
+      "label": "ist Teil von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Webpage",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Webpage",
       "target": "http://purl.org/ontology/bibo/Webpage",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Webpage",
       "target": "Webpage_hasName",
-      "label": "Name"
+      "label": "Name",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Webpage",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Website",
-      "label": "ist Teil von"
+      "label": "ist Teil von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Webpage",
       "target": "Webpage_hasURI",
-      "label": "URI"
+      "label": "URI",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Webpage",
       "target": "Webpage_webpageHasHrefTag",
-      "label": "href Tag"
+      "label": "href Tag",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Website",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Website",
       "target": "http://purl.org/ontology/bibo/Website",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Website",
       "target": "Website_hasName",
-      "label": "Name"
+      "label": "Name",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Website",
       "target": "Website_hasURI",
-      "label": "URI"
+      "label": "URI",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "http://purl.org/ontology/bibo/Webpage",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "Website Artikel_publicationHasTitle",
-      "label": "Publikationstitel"
+      "label": "Publikationstitel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "Website Artikel_publicationHasSubtitle",
-      "label": "Untertitel"
+      "label": "Untertitel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Autor"
+      "label": "Autor",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "Website Artikel_publicationHasAbbreviation",
-      "label": "Abbreviation of the publication"
+      "label": "Abbreviation of the publication",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "Website Artikel_publicationHasDate",
-      "label": "Datum der Veröffentlichung "
+      "label": "Datum der Veröffentlichung ",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "Website Artikel_publicationHasLocation",
-      "label": "Veröffentlichungsort"
+      "label": "Veröffentlichungsort",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Redaktor (person)"
+      "label": "Redaktor (person)",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Organization",
-      "label": "Editorische Organisation"
+      "label": "Editorische Organisation",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publisher",
-      "label": "Verlag"
+      "label": "Verlag",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Übersetzer"
+      "label": "Übersetzer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist bearbeitet"
+      "label": "ist bearbeitet",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist Edition von"
+      "label": "ist Edition von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "wieder abgedruckt"
+      "label": "wieder abgedruckt",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "wieder abgedruckt von"
+      "label": "wieder abgedruckt von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "Bewertet"
+      "label": "Bewertet",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "Kritik von"
+      "label": "Kritik von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "label": "Manuskript"
+      "label": "Manuskript",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Webpage",
-      "label": "Link"
+      "label": "Link",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist Übersetztung von "
+      "label": "ist Übersetztung von ",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#Publication",
-      "label": "ist übersetzt"
+      "label": "ist übersetzt",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "Website Artikel_publicationHasDOI",
-      "label": "DOI"
+      "label": "DOI",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#WebsiteArticle",
       "target": "Website Artikel_publicationHasExternalLink",
-      "label": "Externer Link"
+      "label": "Externer Link",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#letter",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#letter",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#EditedBook",
-      "label": "Der Brief ist publiziert in"
+      "label": "Der Brief ist publiziert in",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#letter",
       "target": "Publizierte Brief_publishedLetterNumber",
-      "label": "Letter Number in the Edition"
+      "label": "Letter Number in the Edition",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#letter",
       "target": "Publizierte Brief_publishedLetterStartPage",
-      "label": "Start Page in Edition"
+      "label": "Start Page in Edition",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/biblio/v2#letter",
       "target": "Publizierte Brief_publishedLetterEndPage",
-      "label": "End Page in Edition"
+      "label": "End Page in Edition",
+      "rotation": 0,
+      "curvature": 0
     }
   ]
 }

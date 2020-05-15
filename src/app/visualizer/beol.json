@@ -511,12 +511,6 @@
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterÜbersetzung",
-      "label": "beol:letter",
-      "group": "resource",
-      "class": "external"
-    },
-    {
       "id": "Brief_creationDate",
       "label": "knora-api:DateValue",
       "group": "literal",
@@ -569,12 +563,6 @@
       "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
-    },
-    {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterAntwort auf",
-      "label": "beol:letter",
-      "group": "resource",
-      "class": "external"
     },
     {
       "id": "Brief_comment",
@@ -811,12 +799,6 @@
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Sohn",
-      "label": "beol:person",
-      "group": "resource",
-      "class": "external"
-    },
-    {
       "id": "Person_hasDictionaryEntries",
       "label": "knora-api:TextValue",
       "group": "literal",
@@ -835,36 +817,6 @@
       "class": "TextValue"
     },
     {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Bruder",
-      "label": "beol:person",
-      "group": "resource",
-      "class": "external"
-    },
-    {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Neffe",
-      "label": "beol:person",
-      "group": "resource",
-      "class": "external"
-    },
-    {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Onkel",
-      "label": "beol:person",
-      "group": "resource",
-      "class": "external"
-    },
-    {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Schüler",
-      "label": "beol:person",
-      "group": "resource",
-      "class": "external"
-    },
-    {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Lehrer",
-      "label": "beol:person",
-      "group": "resource",
-      "class": "external"
-    },
-    {
       "id": "Sektion_hasSubject",
       "label": "knora-api:ListValue",
       "group": "literal",
@@ -881,12 +833,6 @@
       "label": "knora-api:TextValue",
       "group": "literal",
       "class": "TextValue"
-    },
-    {
-      "id": "http://0.0.0.0:3333/ontology/0801/beol/v2#sectionhat Sektion",
-      "label": "beol:section",
-      "group": "resource",
-      "class": "external"
     },
     {
       "id": "Sektion_beolIDs",
@@ -1001,907 +947,1269 @@
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
       "target": "Archive_archiveHasName",
-      "label": "Name"
+      "label": "Name",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
       "target": "Archive_archiveHasAbbreviation",
-      "label": "Archive Arbbreviation"
+      "label": "Archive Arbbreviation",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
       "target": "Archive_archiveHasLocation",
-      "label": "Archive Location"
+      "label": "Archive Location",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
       "target": "Archive_mentionedIn",
-      "label": "Mentioned In"
+      "label": "Mentioned In",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
       "target": "Archive_comment",
-      "label": "Kommentar"
+      "label": "Kommentar",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
       "target": "Archive_beolIDs",
-      "label": "BEOL-IDs"
+      "label": "BEOL-IDs",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Empfänger"
+      "label": "Empfänger",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
       "target": "Basis-Brief_title",
-      "label": "Titel"
+      "label": "Titel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Autor/Verfasser"
+      "label": "Autor/Verfasser",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
       "target": "Basis-Brief_letterHasNumber",
-      "label": "Briefnummer"
+      "label": "Briefnummer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
       "target": "Basis-Brief_creationDate",
-      "label": "Datum der Entstehung"
+      "label": "Datum der Entstehung",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
       "target": "Basis-Brief_letterHasLanguage",
-      "label": "Sprache"
+      "label": "Sprache",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
       "target": "Basis-Brief_letterHasURI",
-      "label": "PDF des Briefes in der Vollfassung"
+      "label": "PDF des Briefes in der Vollfassung",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
       "target": "Basis-Brief_location",
-      "label": "Standort"
+      "label": "Standort",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
       "target": "Basis-Brief_hasText",
-      "label": "Text"
+      "label": "Text",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
       "target": "Basis-Brief_beolIDs",
-      "label": "BEOL-IDs"
+      "label": "BEOL-IDs",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
       "target": "Basis-Brief_comment",
-      "label": "Kommentar"
+      "label": "Kommentar",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
       "target": "Basis-Brief_hasSubject",
-      "label": "Themen"
+      "label": "Themen",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
-      "label": "Zeichen"
+      "label": "Zeichen",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "erwähnte Person"
+      "label": "erwähnte Person",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
       "target": "http://api.knora.org/ontology/knora-api/v2#StillImageRepresentation",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
       "target": "Bild von Dokument_pagenum",
-      "label": "Seitenbezeichnung"
+      "label": "Seitenbezeichnung",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-      "label": "ist ein Teil von"
+      "label": "ist ein Teil von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
       "target": "Bild von Dokument_seqnum",
-      "label": "Sequenznummer"
+      "label": "Sequenznummer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
       "target": "Bild von Dokument_comment",
-      "label": "Kommentar"
+      "label": "Kommentar",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
       "target": "Bild von Dokument_beolIDs",
-      "label": "BEOL-IDs"
+      "label": "BEOL-IDs",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnote",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnote",
       "target": "Endnote_endnoteHasNumber",
-      "label": "Endnote-Nummer"
+      "label": "Endnote-Nummer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnote",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
-      "label": "Zeichen"
+      "label": "Zeichen",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnote",
       "target": "Endnote_hasText",
-      "label": "Text"
+      "label": "Text",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#endnote",
       "target": "Endnote_beolIDs",
-      "label": "BEOL-IDs"
+      "label": "BEOL-IDs",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#entryComment",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#entryComment",
       "target": "Kommentar zu Manuskripteintrag_hasText",
-      "label": "Text"
+      "label": "Text",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#entryComment",
       "target": "Kommentar zu Manuskripteintrag_seqnum",
-      "label": "Sequenznummer"
+      "label": "Sequenznummer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#entryComment",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
-      "label": "Kommentar zu"
+      "label": "Kommentar zu",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
       "target": "Faksimile_hasCaption",
-      "label": "Bildunterschrift"
+      "label": "Bildunterschrift",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
       "target": "Faksimile_pagenum",
-      "label": "Seitenbezeichnung"
+      "label": "Seitenbezeichnung",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-      "label": "ist ein Teil von"
+      "label": "ist ein Teil von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
       "target": "Faksimile_seqnum",
-      "label": "Sequenznummer"
+      "label": "Sequenznummer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
       "target": "Faksimile_comment",
-      "label": "Kommentar"
+      "label": "Kommentar",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#facsimile",
       "target": "Faksimile_beolIDs",
-      "label": "BEOL-IDs"
+      "label": "BEOL-IDs",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
       "target": "http://api.knora.org/ontology/knora-api/v2#StillImageRepresentation",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
       "target": "Figur_hasCaption",
-      "label": "Bildunterschrift"
+      "label": "Bildunterschrift",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
       "target": "Figur_beolIDs",
-      "label": "BEOL-IDs"
+      "label": "BEOL-IDs",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#introduction",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#introduction",
       "target": "Einleitung_beolIDs",
-      "label": "BEOL-IDs"
+      "label": "BEOL-IDs",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#basicLetter",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Empfänger"
+      "label": "Empfänger",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "label": "Manuscript des Briefs"
+      "label": "Manuscript des Briefs",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "Brief_title",
-      "label": "Titel"
+      "label": "Titel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Autor/Verfasser"
+      "label": "Autor/Verfasser",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "Brief_letterHasNumber",
-      "label": "Briefnummer"
+      "label": "Briefnummer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterÜbersetzung",
-      "label": "Übersetzung"
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
+      "label": "Übersetzung",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "Brief_creationDate",
-      "label": "Datum der Entstehung"
+      "label": "Datum der Entstehung",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "Brief_letterHasLanguage",
-      "label": "Sprache"
+      "label": "Sprache",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "http://0.0.0.0:3333/ontology/0801/biblio/v2#letter",
-      "label": "Der Brief ist publiziert"
+      "label": "Der Brief ist publiziert",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "Brief_letterHasRepertoriumNumber",
-      "label": "Repertorium-Nummer"
+      "label": "Repertorium-Nummer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "Brief_letterHasURI",
-      "label": "PDF des Briefes in der Vollfassung"
+      "label": "PDF des Briefes in der Vollfassung",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "Brief_location",
-      "label": "Standort"
+      "label": "Standort",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "Brief_externalRepository",
-      "label": "Dieser Brief ist auch vorhanden in"
+      "label": "Dieser Brief ist auch vorhanden in",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "Brief_hasText",
-      "label": "Text"
+      "label": "Text",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "Brief_beolIDs",
-      "label": "BEOL-IDs"
+      "label": "BEOL-IDs",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letterAntwort auf",
-      "label": "Antwort auf"
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
+      "label": "Antwort auf",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "Brief_comment",
-      "label": "Kommentar"
+      "label": "Kommentar",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "Brief_hasSystemNumber",
-      "label": "System number"
+      "label": "System number",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "Brief_hasSubject",
-      "label": "Themen"
+      "label": "Themen",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
-      "label": "Zeichen"
+      "label": "Zeichen",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#letter",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "erwähnte Person"
+      "label": "erwähnte Person",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#Archive",
-      "label": "Archive of Manuscript"
+      "label": "Archive of Manuscript",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "Manuskript_title",
-      "label": "Titel"
+      "label": "Titel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Autor/Verfasser"
+      "label": "Autor/Verfasser",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "Manuskript_manuscriptStartFolium",
-      "label": "Start Folium"
+      "label": "Start Folium",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "Manuskript_creationDate",
-      "label": "Datum der Entstehung"
+      "label": "Datum der Entstehung",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "Manuskript_manuscriptEndFolium",
-      "label": "End Folium"
+      "label": "End Folium",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "Manuskript_location",
-      "label": "Standort"
+      "label": "Standort",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "Manuskript_manuscriptAdditionalFolium",
-      "label": "Additional Folium"
+      "label": "Additional Folium",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "Manuskript_hasText",
-      "label": "Text"
+      "label": "Text",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "Manuskript_manuscriptHasShelfMark",
-      "label": "Shelfmark"
+      "label": "Shelfmark",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "Manuskript_beolIDs",
-      "label": "BEOL-IDs"
+      "label": "BEOL-IDs",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "Manuskript_mentionedIn",
-      "label": "Mentioned In"
+      "label": "Mentioned In",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "Manuskript_comment",
-      "label": "Kommentar"
+      "label": "Kommentar",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "Manuskript_hasSubject",
-      "label": "Themen"
+      "label": "Themen",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
-      "label": "Zeichen"
+      "label": "Zeichen",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "Manuskript_manuscriptStartPage",
-      "label": "Start Page"
+      "label": "Start Page",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "erwähnte Person"
+      "label": "erwähnte Person",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
       "target": "Manuskript_manuscriptEndPage",
-      "label": "End Page"
+      "label": "End Page",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
       "target": "Eintrag in einem Manuskript_title",
-      "label": "Titel"
+      "label": "Titel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
       "target": "Eintrag in einem Manuskript_seqnum",
-      "label": "Sequenznummer"
+      "label": "Sequenznummer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscript",
-      "label": "Manuskripteintrag in"
+      "label": "Manuskripteintrag in",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
       "target": "Eintrag in einem Manuskript_hasSubject",
-      "label": "Themen"
+      "label": "Themen",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#page",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#documentImage",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#page",
       "target": "Seite_pagenum",
-      "label": "Seitenbezeichnung"
+      "label": "Seitenbezeichnung",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#page",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
-      "label": "ist ein Teil von"
+      "label": "ist ein Teil von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#page",
       "target": "Seite_seqnum",
-      "label": "Sequenznummer"
+      "label": "Sequenznummer",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#page",
       "target": "Seite_comment",
-      "label": "Kommentar"
+      "label": "Kommentar",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#page",
       "target": "Seite_beolIDs",
-      "label": "BEOL-IDs"
+      "label": "BEOL-IDs",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "http://xmlns.com/foaf/0.1/Person",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "Person_hasFamilyName",
-      "label": "Nachname"
+      "label": "Nachname",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "Person_hasGivenName",
-      "label": "Vorname"
+      "label": "Vorname",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "Person_personHasTitle",
-      "label": "Titel"
+      "label": "Titel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "Person_hasAlternativeName",
-      "label": "Alternative-Name"
+      "label": "Alternative-Name",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "Person_beolIDs",
-      "label": "BEOL-IDs"
+      "label": "BEOL-IDs",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "Person_hasIAFIdentifier",
-      "label": "Gemeinsame Normdatei (GND)"
+      "label": "Gemeinsame Normdatei (GND)",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "Person_hasBirthDate",
-      "label": "Geburtsdatum"
+      "label": "Geburtsdatum",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "Person_hasDeathDate",
-      "label": "Sterbedatum"
+      "label": "Sterbedatum",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "Person_hasFloruitDate",
-      "label": "Floruit-Dataum"
+      "label": "Floruit-Dataum",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "Person_hasMarriageDate",
-      "label": "Hochzeitdataum"
+      "label": "Hochzeitdataum",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "Person_hasBirthPlace",
-      "label": "Geburtsort"
+      "label": "Geburtsort",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "Person_hasDeathPlace",
-      "label": "Todesort"
+      "label": "Todesort",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "Person_hasFloruitPlace",
-      "label": "Floruit-Ort"
+      "label": "Floruit-Ort",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "Person_hasMarriagePlace",
-      "label": "Trauugsort"
+      "label": "Trauugsort",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Sohn",
-      "label": "hat Sohn"
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+      "label": "hat Sohn",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "Person_hasDictionaryEntries",
-      "label": "Indexeinträge"
+      "label": "Indexeinträge",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "Person_comment",
-      "label": "Kommentar"
+      "label": "Kommentar",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
       "target": "Person_mentionedIn",
-      "label": "Mentioned In"
+      "label": "Mentioned In",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Bruder",
-      "label": "hat Bruder"
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+      "label": "hat Bruder",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Neffe",
-      "label": "hat Neffe"
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+      "label": "hat Neffe",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Onkel",
-      "label": "hat Onkel"
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+      "label": "hat Onkel",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Schüler",
-      "label": "hat Schüler"
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+      "label": "hat Schüler",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Schüler",
-      "label": "hat Schüler"
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+      "label": "hat Schüler",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#personhat Lehrer",
-      "label": "hat Lehrer"
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
+      "label": "hat Lehrer",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
       "target": "Sektion_hasSubject",
-      "label": "Themen"
+      "label": "Themen",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
       "target": "Sektion_sectionHasTitle",
-      "label": "Titel"
+      "label": "Titel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
       "target": "Sektion_hasText",
-      "label": "Text"
+      "label": "Text",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
-      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#sectionhat Sektion",
-      "label": "hat Sektion"
+      "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
+      "label": "hat Sektion",
+      "rotation": 1,
+      "curvature": 0.5
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#section",
       "target": "Sektion_beolIDs",
-      "label": "BEOL-IDs"
+      "label": "BEOL-IDs",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#transcription",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#transcription",
       "target": "Transkription_hasText",
-      "label": "Text"
+      "label": "Text",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#transcription",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#manuscriptEntry",
-      "label": "Transkription von"
+      "label": "Transkription von",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#transcription",
       "target": "http://api.knora.org/ontology/knora-api/v2#Region",
-      "label": "Bezug zu Region"
+      "label": "Bezug zu Region",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#transcription",
       "target": "Transkription_layer",
-      "label": "Schicht"
+      "label": "Schicht",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
       "target": "http://api.knora.org/ontology/knora-api/v2#Resource",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
       "target": "schriftliche Quelle_title",
-      "label": "Titel"
+      "label": "Titel",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "Autor/Verfasser"
+      "label": "Autor/Verfasser",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
       "target": "schriftliche Quelle_creationDate",
-      "label": "Datum der Entstehung"
+      "label": "Datum der Entstehung",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
       "target": "schriftliche Quelle_location",
-      "label": "Standort"
+      "label": "Standort",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
       "target": "schriftliche Quelle_hasText",
-      "label": "Text"
+      "label": "Text",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
       "target": "schriftliche Quelle_beolIDs",
-      "label": "BEOL-IDs"
+      "label": "BEOL-IDs",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
       "target": "schriftliche Quelle_comment",
-      "label": "Kommentar"
+      "label": "Kommentar",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
       "target": "schriftliche Quelle_hasSubject",
-      "label": "Themen"
+      "label": "Themen",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#figure",
-      "label": "Zeichen"
+      "label": "Zeichen",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#writtenSource",
       "target": "http://0.0.0.0:3333/ontology/0801/beol/v2#person",
-      "label": "erwähnte Person"
+      "label": "erwähnte Person",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffAbbreviationMarkerTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffAdditionTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffBrTag",
       "target": "http://api.knora.org/ontology/standoff/v2#StandoffBrTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffCenterTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffCorrectionTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffDeletionTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffEntityTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffLinkTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffExpansionMarkerTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffExpansionTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFacsimileTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffLinkTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFigCaptionTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFigTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFigureTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffLinkTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffFontTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffForeignTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffGapTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffHrTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffHtmlTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffInterventionMarkerTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffMarginalTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffMathTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffOriginalMarkerTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffPbTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffReferenceTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffRegionTag",
       "target": "http://api.knora.org/ontology/standoff/v2#StandoffRootTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSmallTag",
       "target": "http://api.knora.org/ontology/standoff/v2#StandoffVisualTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSubstitutionAdditionTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSubstitutionDeletionTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffSubstitutionTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffTableCellTag",
       "target": "http://api.knora.org/ontology/standoff/v2#StandoffTableCellTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffTableTag",
       "target": "http://api.knora.org/ontology/standoff/v2#StandoffTableTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     },
     {
       "source": "http://0.0.0.0:3333/ontology/0801/beol/v2#StandoffUnclearTag",
       "target": "http://api.knora.org/ontology/knora-api/v2#StandoffTag",
-      "label": "subClassOf"
+      "label": "subClassOf",
+      "rotation": 0,
+      "curvature": 0
     }
   ]
 }
