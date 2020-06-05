@@ -1,8 +1,10 @@
 import {Component, OnInit, ViewChild, ElementRef, AfterViewInit} from '@angular/core';
 import {MatRadioChange} from '@angular/material/radio';
+import {MatSlideToggle} from '@angular/material/slide-toggle';
 import ForceGraph3D from '3d-force-graph';
 import * as THREE from 'three';
-import {white} from "color-name";
+
+
 
 @Component({
   selector: 'app-visualizer',
@@ -51,12 +53,15 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     this.graph(this.graphcontainer.nativeElement);
   }
-  dimensionHandler(mrChange: MatRadioChange) {
-    this.dimension = mrChange.value;
+  dimensionHandler(dimChange: MatRadioChange) {
+    this.dimension = dimChange.value;
     if (this.dimension === '3') {
       this.graph.numDimensions(3);
     } else {
       this.graph.numDimensions(2);
     }
+  }
+  labelHandler(showLabel: MatSlideToggle) {
+    console.log(showLabel.checked);
   }
 }
