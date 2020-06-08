@@ -3,6 +3,7 @@ import {MatRadioChange} from '@angular/material/radio';
 import {MatSlideToggle} from '@angular/material/slide-toggle';
 import ForceGraph3D from '3d-force-graph';
 import * as THREE from 'three';
+import SpriteText from 'three-spritetext';
 
 
 
@@ -15,6 +16,7 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
   @ViewChild('graphcontainer', {read: ElementRef}) graphcontainer: ElementRef;
   graph = ForceGraph3D();
   dimension = '3';
+  showLabel = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -41,10 +43,31 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
       const mesh = new THREE.Mesh(geometry, material);
       return mesh; });
     // link design
-    this.graph.linkLabel('label');
     this.graph.linkCurvature('curvature');
     this.graph.linkCurveRotation('rotation');
     this.graph.linkThreeObjectExtend(true);
+    console.log(this.showLabel);
+    if (this.showLabel === true) {
+      this.graph.linkThreeObject(link => {
+        // extend link with text sprite
+        const sprite = new SpriteText(link[`label`]);
+        sprite.color = 'lightgrey';
+        sprite.textHeight = 2.5;
+        sprite.fontWeight = 'bold';
+        return sprite;
+      });
+      this.graph.linkPositionUpdate((sprite, {start, end}) => {
+        const middlePos = Object.assign(...['x', 'y', 'z'].map(c => ({
+          [c]: start[c] + (end[c] - start[c]) / 2 // calc middle point
+        })));
+
+        // Position sprite
+        Object.assign(sprite.position, middlePos);
+        return false;
+      });
+    } else {
+      this.graph.linkLabel('label');
+    }
     this.graph.linkDirectionalArrowLength(5);
     this.graph.linkDirectionalArrowRelPos(1);
     this.graph.linkWidth(1.5);
@@ -61,7 +84,9 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
       this.graph.numDimensions(2);
     }
   }
-  labelHandler(showLabel: MatSlideToggle) {
-    console.log(showLabel.checked);
+  LinkLabelHandler(showLabel: MatSlideToggle) {
+    this.showLabel = showLabel.checked;
+    console.log(this.showLabel);
+    this.ngOnInit();
   }
 }

@@ -24,9 +24,10 @@
     "@angular/router": "~9.1.0",
     "d3": "^5.15.1",
     "d3-force-3d": "^2.1.0",
+    "dat.gui": "^0.7.7",
     "rxjs": "~6.5.4",
     "three": "^0.115.0",
-    "three-spritetext": "^1.4.0",
+    "three-spritetext": "^1.5.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
