@@ -16,8 +16,59 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
   @ViewChild('graphcontainer', {read: ElementRef}) graphcontainer: ElementRef;
   graph = ForceGraph3D();
   dimension = '3';
-  showLabel = false;
+  showLinkLabel = false;
+  showNodeLabel = false;
   constructor() { }
+
+  designNode(node) {
+    {
+
+      let opacity = 0.9;
+      let depthWrite = true;
+      if (this.showNodeLabel) {
+        opacity = 0.2;
+        depthWrite = false;
+      }
+      let geometry;
+      if (node[`group`] === 'literal') {
+        geometry = new THREE.BoxGeometry(10, 5, 7);
+      } else {
+        geometry = new THREE.SphereGeometry(5, 16, 12);
+        geometry.applyMatrix(new THREE.Matrix4().makeScale(2, 1.0, 1.5));
+      }
+      const material = new THREE.MeshLambertMaterial({
+        color: node[`color`],
+        depthWrite: depthWrite,
+        transparent: true,
+        opacity: opacity
+      });
+      const obj = new THREE.Mesh(geometry, material);
+      if (this.showNodeLabel) {
+        // add text sprite as child
+        const sprite = new SpriteText(node[`label`]);
+        sprite.color = 'black';
+        sprite.textHeight = 4;
+        sprite.
+        obj.add(sprite);
+      }
+
+      return obj; }
+  }
+
+  calcMiddlePos(start, end) {
+    const middlePosX = start.x + (end.x - start.x) / 2;
+    const middlePosY = start.y + (end.y - start.y) / 2;
+    let middlePosZ;
+    if (this.dimension === '3') {
+      middlePosZ = start.z + (end.z - start.z) / 2 ;
+    } else {
+      middlePosZ = start.z;
+    }
+    const middlePos  = { x: middlePosX, y: middlePosY, z: middlePosZ };
+    console.log(middlePos);
+    return middlePos;
+  }
+
 
   ngOnInit(): void {
     const ontoInfo = require('./biblio.json');
@@ -27,26 +78,12 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
     this.graph.nodeLabel('label');
     this.graph.nodeAutoColorBy('class');
     this.graph.enableNodeDrag(true);
-    this.graph.nodeThreeObject((node) => {
-      let geometry;
-      if (node[`group`] === 'literal') {
-        geometry = new THREE.BoxGeometry(10, 5, 7);
-      } else {
-        geometry = new THREE.SphereGeometry(5, 16, 12);
-        geometry.applyMatrix(new THREE.Matrix4().makeScale(2, 1.0, 1.5));
-      }
-      const material = new THREE.MeshLambertMaterial({
-                            color: node[`color`],
-                            transparent: true,
-                            opacity: 0.75
-                           });
-      const mesh = new THREE.Mesh(geometry, material);
-      return mesh; });
+    this.graph.nodeThreeObject((node) => this.designNode(node));
     // link design
     this.graph.linkCurvature('curvature');
     this.graph.linkCurveRotation('rotation');
     this.graph.linkThreeObjectExtend(true);
-    if (this.showLabel === true) {
+    if (this.showLinkLabel === true) {
       this.graph.linkThreeObject(link => {
         // extend link with text sprite
         const sprite = new SpriteText(link[`label`]);
@@ -82,23 +119,13 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
     }
   }
 
-  LinkLabelHandler(showLabel: MatSlideToggle) {
-    this.showLabel = showLabel.checked;
-    console.log(this.showLabel);
+  LinkLabelHandler(showlinkLabel: MatSlideToggle) {
+    this.showLinkLabel = showlinkLabel.checked;
     this.ngOnInit();
   }
 
-  calcMiddlePos(start, end) {
-    const middlePosX = start.x + (end.x - start.x) / 2;
-    const middlePosY = start.y + (end.y - start.y) / 2;
-    let middlePosZ;
-    if (this.dimension === '3') {
-      middlePosZ = start.z + (end.z - start.z) / 2 ;
-    } else {
-      middlePosZ = start.z;
-    }
-    const middlePos  = { x: middlePosX, y: middlePosY, z: middlePosZ };
-    console.log(middlePos);
-    return middlePos;
+  NodeLabelHandler(showNodeLabel: MatSlideToggle) {
+    this.showNodeLabel = showNodeLabel.checked;
+    this.ngOnInit();
   }
 }
