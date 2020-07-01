@@ -48,7 +48,6 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
         const sprite = new SpriteText(node[`label`]);
         sprite.color = 'black';
         sprite.textHeight = 4;
-        sprite.
         obj.add(sprite);
       }
 
