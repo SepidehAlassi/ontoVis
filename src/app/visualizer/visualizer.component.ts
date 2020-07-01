@@ -26,20 +26,19 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
       let opacity = 0.9;
       let depthWrite = true;
       if (this.showNodeLabel) {
-        opacity = 0.2;
+        opacity = 0.7;
         depthWrite = false;
       }
       let geometry;
       if (node[`group`] === 'literal') {
-        geometry = new THREE.BoxGeometry(10, 5, 7);
+        geometry = new THREE.BoxGeometry(38, 12, 10);
       } else {
-        geometry = new THREE.SphereGeometry(5, 16, 12);
+        geometry = new THREE.SphereGeometry(12, 38, 12);
         geometry.applyMatrix(new THREE.Matrix4().makeScale(2, 1.0, 1.5));
       }
       const material = new THREE.MeshLambertMaterial({
         color: node[`color`],
         depthWrite: depthWrite,
-        transparent: true,
         opacity: opacity
       });
       const obj = new THREE.Mesh(geometry, material);
@@ -48,6 +47,7 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
         const sprite = new SpriteText(node[`label`]);
         sprite.color = 'black';
         sprite.textHeight = 4;
+        sprite.fontWeight  = 'bold';
         obj.add(sprite);
       }
 
