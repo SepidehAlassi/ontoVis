@@ -46,7 +46,6 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
     this.graph.linkCurvature('curvature');
     this.graph.linkCurveRotation('rotation');
     this.graph.linkThreeObjectExtend(true);
-    console.log(this.showLabel);
     if (this.showLabel === true) {
       this.graph.linkThreeObject(link => {
         // extend link with text sprite
@@ -57,12 +56,8 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
         return sprite;
       });
       this.graph.linkPositionUpdate((sprite, {start, end}) => {
-        const middlePos = Object.assign(...['x', 'y', 'z'].map(c => ({
-          [c]: start[c] + (end[c] - start[c]) / 2 // calc middle point
-        })));
-
         // Position sprite
-        Object.assign(sprite.position, middlePos);
+        Object.assign(sprite.position, this.calcMiddlePos(start, end));
         return false;
       });
     } else {
@@ -73,9 +68,11 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
     this.graph.linkWidth(1.5);
 
   }
+
   ngAfterViewInit() {
     this.graph(this.graphcontainer.nativeElement);
   }
+
   dimensionHandler(dimChange: MatRadioChange) {
     this.dimension = dimChange.value;
     if (this.dimension === '3') {
@@ -84,9 +81,24 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
       this.graph.numDimensions(2);
     }
   }
+
   LinkLabelHandler(showLabel: MatSlideToggle) {
     this.showLabel = showLabel.checked;
     console.log(this.showLabel);
     this.ngOnInit();
+  }
+
+  calcMiddlePos(start, end) {
+    const middlePosX = start.x + (end.x - start.x) / 2;
+    const middlePosY = start.y + (end.y - start.y) / 2;
+    let middlePosZ;
+    if (this.dimension === '3') {
+      middlePosZ = start.z + (end.z - start.z) / 2 ;
+    } else {
+      middlePosZ = start.z;
+    }
+    const middlePos  = { x: middlePosX, y: middlePosY, z: middlePosZ };
+    console.log(middlePos);
+    return middlePos;
   }
 }
