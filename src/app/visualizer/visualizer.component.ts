@@ -12,6 +12,7 @@ import SpriteText from 'three-spritetext';
   templateUrl: './visualizer.component.html',
   styleUrls: ['./visualizer.component.css']
 })
+
 export class VisualizerComponent implements OnInit, AfterViewInit {
   @ViewChild('graphcontainer', {read: ElementRef}) graphcontainer: ElementRef;
   graph = ForceGraph3D();
@@ -21,37 +22,34 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
   constructor() { }
 
   designNode(node) {
-    {
-
-      let opacity = 0.9;
       let depthWrite = true;
       if (this.showNodeLabel) {
-        opacity = 0.7;
         depthWrite = false;
       }
+      const sprite = new SpriteText(node[`label`], 2);
+      sprite.color = 'black';
+      sprite.fontWeight  = 'bold';
+      const geometricalWidth = sprite.text.length + 5;
       let geometry;
       if (node[`group`] === 'literal') {
-        geometry = new THREE.BoxGeometry(38, 12, 10);
+        geometry = new THREE.BoxGeometry(geometricalWidth, 12, 10);
       } else {
-        geometry = new THREE.SphereGeometry(12, 38, 12);
+        geometry = new THREE.SphereGeometry(10, geometricalWidth, 12);
         geometry.applyMatrix(new THREE.Matrix4().makeScale(2, 1.0, 1.5));
       }
       const material = new THREE.MeshLambertMaterial({
         color: node[`color`],
         depthWrite: depthWrite,
-        opacity: opacity
+        transparent: false,
+        opacity: 1
       });
       const obj = new THREE.Mesh(geometry, material);
       if (this.showNodeLabel) {
         // add text sprite as child
-        const sprite = new SpriteText(node[`label`]);
-        sprite.color = 'black';
-        sprite.textHeight = 4;
-        sprite.fontWeight  = 'bold';
+        sprite.scale.set(sprite.text.length, 12,1);
         obj.add(sprite);
       }
-
-      return obj; }
+      return obj;
   }
 
   calcMiddlePos(start, end) {
@@ -87,7 +85,7 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
         // extend link with text sprite
         const sprite = new SpriteText(link[`label`]);
         sprite.color = 'lightgrey';
-        sprite.textHeight = 2.5;
+        sprite.textHeight = 3;
         sprite.fontWeight = 'bold';
         return sprite;
       });
