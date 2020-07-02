@@ -59,7 +59,7 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
     if (this.dimension === '3') {
       middlePosZ = start.z + (end.z - start.z) / 2 ;
     } else {
-      middlePosZ = start.z;
+      middlePosZ = 1;
     }
     const middlePos  = { x: middlePosX, y: middlePosY, z: middlePosZ };
     console.log(middlePos);
