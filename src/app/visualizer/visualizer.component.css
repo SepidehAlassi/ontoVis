@@ -1,7 +1,17 @@
-.mat-radio-button ~ .mat-radio-button {
+.dimensions{
   margin-left: 16px;
+}
+.mat-radio-button{
+  margin-left: 10px;
 }
 .mat-slide-toggle{
   margin-right: 16px;
+  margin-top: 10px;
   float: right;
+}
+.forceSlider{
+  margin-left: 100px;
+}
+.mat-slider{
+  margin-top: 25px;
 }

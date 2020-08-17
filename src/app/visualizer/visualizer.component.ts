@@ -1,6 +1,8 @@
-import {Component, OnInit, ViewChild, ElementRef, AfterViewInit} from '@angular/core';
-import {MatRadioChange} from '@angular/material/radio';
-import {MatSlideToggle} from '@angular/material/slide-toggle';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { MatRadioChange } from '@angular/material/radio';
+import { MatSlideToggle } from '@angular/material/slide-toggle';
+import { MatSlider } from '@angular/material/slider';
+
 import ForceGraph3D from '3d-force-graph';
 import * as THREE from 'three';
 import SpriteText from 'three-spritetext';
@@ -19,6 +21,7 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
   dimension = '3';
   showLinkLabel = false;
   showNodeLabel = false;
+  linkDistance = 20;
   constructor() { }
 
   designNode(node) {
@@ -63,7 +66,6 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
       middlePosZ = 1;
     }
     const middlePos  = { x: middlePosX, y: middlePosY, z: middlePosZ };
-    console.log(middlePos);
     return middlePos;
   }
 
@@ -101,7 +103,8 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
     this.graph.linkDirectionalArrowLength(5);
     this.graph.linkDirectionalArrowRelPos(1);
     this.graph.linkWidth(1.5);
-
+    const linkForce: any = this.graph.d3Force('link');
+    linkForce.distance(this.linkDistance);
   }
 
   ngAfterViewInit() {
@@ -119,11 +122,16 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
 
   LinkLabelHandler(showlinkLabel: MatSlideToggle) {
     this.showLinkLabel = showlinkLabel.checked;
-    this.ngOnInit();
+    this.ngOnInit(); // Re-heat simulation
   }
 
   NodeLabelHandler(showNodeLabel: MatSlideToggle) {
     this.showNodeLabel = showNodeLabel.checked;
-    this.ngOnInit();
+    this.ngOnInit(); // Re-heat simulation
+  }
+
+  updateLinkDistance(event: any) {
+    this.linkDistance = event.value;
+    this.ngOnInit(); // Re-heat simulation
   }
 }
