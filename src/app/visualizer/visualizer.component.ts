@@ -26,9 +26,10 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
       if (this.showNodeLabel) {
         depthWrite = false;
       }
-      const sprite = new SpriteText(node[`label`], 2);
+      const sprite = new SpriteText(node[`label`], 1);
+      sprite.fontFace = 'Arial';
+      sprite.fontWeight = 'bold';
       sprite.color = 'black';
-      sprite.fontWeight  = 'bold';
       const geometricalWidth = sprite.text.length + 5;
       let geometry;
       if (node[`group`] === 'literal') {
@@ -68,7 +69,7 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
 
 
   ngOnInit(): void {
-    const ontoInfo = require('./biblio.json');
+    const ontoInfo = require('./beol.json');
     const gData = {'nodes': ontoInfo.nodes, 'links': ontoInfo.links};
     this.graph.graphData(gData);
     // node design
