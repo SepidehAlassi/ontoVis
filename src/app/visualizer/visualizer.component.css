@@ -4,14 +4,16 @@
 .mat-radio-button{
   margin-left: 10px;
 }
-.mat-slide-toggle{
-  margin-right: 16px;
-  margin-top: 10px;
-  float: right;
-}
+
 .forceSlider{
+  margin-top: 30px;
   margin-left: 100px;
 }
-.mat-slider{
-  margin-top: 25px;
+
+.showLabels{
+  margin-left: 100px;
+}
+.mat-slide-toggle{
+  margin-right: 16px;
+  margin-top: 30px;
 }
