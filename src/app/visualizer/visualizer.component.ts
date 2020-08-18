@@ -32,6 +32,7 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
       const sprite = new SpriteText(node[`label`], 1);
       sprite.fontFace = 'Arial';
       sprite.fontWeight = 'bold';
+      sprite.textHeight = 8;
       sprite.color = 'black';
       const geometricalWidth = sprite.text.length + 5;
       let geometry;
@@ -50,7 +51,7 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
       const obj = new THREE.Mesh(geometry, material);
       if (this.showNodeLabel) {
         // add text sprite as child
-        sprite.scale.set(sprite.text.length, 12,1);
+        sprite.scale.set(sprite.text.length, 8, 1);
         obj.add(sprite);
       }
       return obj;
