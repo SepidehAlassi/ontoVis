@@ -80,10 +80,10 @@ export class VisualizerComponent implements OnInit, AfterViewInit {
     this.graph.nodeAutoColorBy('class');
     this.graph.enableNodeDrag(true);
     this.graph.nodeThreeObject((node) => this.designNode(node));
-    this.graph.onNodeDragEnd(node => {
-      node.fx = node.x;
-      node.fy = node.y;
-      node.fz = node.z; });
+    // this.graph.onNodeDragEnd(node => {
+    //   node.fx = node.x;
+    //   node.fy = node.y;
+    //   node.fz = node.z; });
 
     // link design
     this.graph.linkCurvature('curvature');

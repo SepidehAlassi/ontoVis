@@ -1,0 +1,224 @@
+{
+  "nodes": [
+    {
+      "id": "SubjectIndex",
+      "color": "purple",
+      "level": 0
+    },
+    {
+      "id": "mathematics",
+      "color": "pink",
+      "level": 1,
+      "position": 0
+    },
+    {
+      "id": "algebra",
+      "color": "yellow",
+      "level": 2,
+      "position": 0
+    },
+    {
+      "id": "complex numbers",
+      "color": "blue",
+      "level": 3,
+      "position": 0
+    },
+    {
+      "id": "algebraic equations",
+      "color": "blue",
+      "level": 3,
+      "position": 1
+    },
+    {
+      "id": "5th degree equations",
+      "color": "cyan",
+      "level": 4,
+      "position": 0
+    },
+    {
+      "id": "geometry",
+      "color": "yellow",
+      "level": 2,
+      "position": 1
+    },
+    {
+      "id": "convex geometry",
+      "color": "blue",
+      "level": 3,
+      "position": 0
+    },
+    {
+      "id": "polyhedra",
+      "color": "cyan",
+      "level": 4,
+      "position": 0
+    },
+    {
+      "id": "differential geometry",
+      "color": "blue",
+      "level": 3,
+      "position": 1
+    },
+    {
+      "id": "curvature",
+      "color": "cyan",
+      "level": 4,
+      "position": 0
+    },
+    {
+      "id": "statistics",
+      "color": "yellow",
+      "level": 2,
+      "position": 2
+    },
+    {
+      "id": "physics",
+      "color": "pink",
+      "level": 1,
+      "position": 1
+    },
+    {
+      "id": "optics",
+      "color": "yellow",
+      "level": 2,
+      "position": 0
+    },
+    {
+      "id": "theory of light",
+      "color": "blue",
+      "level": 3,
+      "position": 0
+    },
+    {
+      "id": "astronomy",
+      "color": "yellow",
+      "level": 2,
+      "position": 1
+    },
+    {
+      "id": "comets",
+      "color": "blue",
+      "level": 3,
+      "position": 0
+    },
+    {
+      "id": "eclipses",
+      "color": "blue",
+      "level": 3,
+      "position": 1
+    },
+    {
+      "id": "personal life",
+      "color": "pink",
+      "level": 1,
+      "position": 2
+    },
+    {
+      "id": "jobs",
+      "color": "yellow",
+      "level": 2,
+      "position": 0
+    },
+    {
+      "id": "family",
+      "color": "yellow",
+      "level": 2,
+      "position": 1
+    },
+    {
+      "id": "children",
+      "color": "blue",
+      "level": 3,
+      "position": 0
+    }
+  ],
+  "links": [
+    {
+      "source": "SubjectIndex",
+      "target": "mathematics"
+    },
+    {
+      "source": "mathematics",
+      "target": "algebra"
+    },
+    {
+      "source": "algebra",
+      "target": "complex numbers"
+    },
+    {
+      "source": "algebra",
+      "target": "algebraic equations"
+    },
+    {
+      "source": "algebraic equations",
+      "target": "5th degree equations"
+    },
+    {
+      "source": "mathematics",
+      "target": "geometry"
+    },
+    {
+      "source": "geometry",
+      "target": "convex geometry"
+    },
+    {
+      "source": "convex geometry",
+      "target": "polyhedra"
+    },
+    {
+      "source": "geometry",
+      "target": "differential geometry"
+    },
+    {
+      "source": "differential geometry",
+      "target": "curvature"
+    },
+    {
+      "source": "mathematics",
+      "target": "statistics"
+    },
+    {
+      "source": "SubjectIndex",
+      "target": "physics"
+    },
+    {
+      "source": "physics",
+      "target": "optics"
+    },
+    {
+      "source": "optics",
+      "target": "theory of light"
+    },
+    {
+      "source": "physics",
+      "target": "astronomy"
+    },
+    {
+      "source": "astronomy",
+      "target": "comets"
+    },
+    {
+      "source": "astronomy",
+      "target": "eclipses"
+    },
+    {
+      "source": "SubjectIndex",
+      "target": "personal life"
+    },
+    {
+      "source": "personal life",
+      "target": "family"
+    },
+    {
+      "source": "family",
+      "target": "children"
+    },
+    {
+      "source": "personal life",
+      "target": "jobs"
+    }
+
+  ]
+
+}
+

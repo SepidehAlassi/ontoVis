@@ -1,0 +1,3932 @@
+{
+  "nodes": [
+    {
+      "color": "purple",
+      "leaf": "SubjecIndex",
+      "id": "SubjectIndex",
+      "module": "null",
+      "level": 0,
+      "size": 100
+    },
+    {
+      "color": "rgb(255,255,102)",
+      "leaf": "mathematics",
+      "id": "mathematics",
+      "module": "mathematics",
+      "level": 1,
+      "size": 100
+    },
+    {
+      "color": "rgb(255,255,102)",
+      "leaf": "other sciences",
+      "id": "other sciences",
+      "module": "other sciences",
+      "level": 1,
+      "size": 100
+    },
+    {
+      "color": "rgb(255,255,102)",
+      "leaf": "professional activity",
+      "id": "professional activity",
+      "module": "professional activity",
+      "level": 1,
+      "size": 100
+    },
+    {
+      "color": "rgb(255,255,102)",
+      "leaf": "personal life",
+      "id": "personal life",
+      "module": "personal life",
+      "level": 1,
+      "size": 100
+    },
+    {
+      "color": "rgb(255,255,102)",
+      "leaf": "optics",
+      "id": "optics",
+      "module": "optics",
+      "level": 1,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "algebra",
+      "id": "algebra",
+      "module": "algebra",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "number theory",
+      "id": "number theory",
+      "module": "number theory",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "analysis",
+      "id": "analysis",
+      "module": "analysis",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "geometry",
+      "id": "geometry",
+      "module": "geometry",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "other topics in mathematics",
+      "id": "other topics in mathematics",
+      "module": "other topics in mathematics",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "physics natural philosophy",
+      "id": "physics natural philosophy",
+      "module": "physics natural philosophy",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "astronomy",
+      "id": "astronomy",
+      "module": "astronomy",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "technology",
+      "id": "technology",
+      "module": "technology",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "music theory",
+      "id": "music theory",
+      "module": "music theory",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "anatomy",
+      "id": "anatomy",
+      "module": "anatomy",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "career",
+      "id": "career",
+      "module": "career",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "academies",
+      "id": "academies",
+      "module": "academies",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "publications",
+      "id": "publications",
+      "module": "publications",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "teaching",
+      "id": "teaching",
+      "module": "teaching",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "controversies",
+      "id": "controversies",
+      "module": "controversies",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "other professional tasks",
+      "id": "other professional tasks",
+      "module": "other professional tasks",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "royalSocietyElection",
+      "id": "royalSocietyElection",
+      "module": "royalSocietyElection",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "youth",
+      "id": "youth",
+      "module": "youth",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "personal contact",
+      "id": "personal contact",
+      "module": "personal contact",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "correspondence",
+      "id": "correspondence",
+      "module": "correspondence",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "books",
+      "id": "books",
+      "module": "books",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "living circumstances",
+      "id": "living circumstances",
+      "module": "living circumstances",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "miscellanea",
+      "id": "miscellanea",
+      "module": "miscellanea",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "cyan",
+      "leaf": "theoryOfLight",
+      "id": "theoryOfLight",
+      "module": "theoryOfLight",
+      "level": 2,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "complex numbers",
+      "id": "complex numbers",
+      "module": "complex numbers",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "algebraic equations",
+      "id": "algebraic equations",
+      "module": "algebraic equations",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "rational interpolation",
+      "id": "rational interpolation",
+      "module": "rational interpolation",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "elementary number theory",
+      "id": "elementary number theory",
+      "module": "elementary number theory",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "distribution of primes",
+      "id": "distribution of primes",
+      "module": "distribution of primes",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "sums of powers",
+      "id": "sums of powers",
+      "module": "sums of powers",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "other diophantine equations",
+      "id": "other diophantine equations",
+      "module": "other diophantine equations",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "algebraic number theory",
+      "id": "algebraic number theory",
+      "module": "algebraic number theory",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "analytic number theory",
+      "id": "analytic number theory",
+      "module": "analytic number theory",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "elementary analysis",
+      "id": "elementary analysis",
+      "module": "elementary analysis",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "series and sequences",
+      "id": "series and sequences",
+      "module": "series and sequences",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "infinite products",
+      "id": "infinite products",
+      "module": "infinite products",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "continued fractions",
+      "id": "continued fractions",
+      "module": "continued fractions",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "approximation newton-raphson method",
+      "id": "approximation newton-raphson method",
+      "module": "approximation newton-raphson method",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "integral calculus",
+      "id": "integral calculus",
+      "module": "integral calculus",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "differential equations",
+      "id": "differential equations",
+      "module": "differential equations",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "elementary cartesian geometry",
+      "id": "elementary cartesian geometry",
+      "module": "elementary cartesian geometry",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "differential geometry",
+      "id": "differential geometry",
+      "module": "differential geometry",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "fractal geometry",
+      "id": "fractal geometry",
+      "module": "fractal geometry",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "topology",
+      "id": "topology",
+      "module": "topology",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "cryptography",
+      "id": "cryptography",
+      "module": "cryptography",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "calculating prodigy",
+      "id": "calculating prodigy",
+      "module": "calculating prodigy",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "mathematical notation",
+      "id": "mathematical notation",
+      "module": "mathematical notation",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "principles of mechanics",
+      "id": "principles of mechanics",
+      "module": "principles of mechanics",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "monads mind-matter problem",
+      "id": "monads mind-matter problem",
+      "module": "monads mind-matter problem",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "magnetism",
+      "id": "magnetism",
+      "module": "magnetism",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "eclipses",
+      "id": "eclipses",
+      "module": "eclipses",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "lunar theory tables",
+      "id": "lunar theory tables",
+      "module": "lunar theory tables",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "planets",
+      "id": "planets",
+      "module": "planets",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "comets",
+      "id": "comets",
+      "module": "comets",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "perpetuum mobile",
+      "id": "perpetuum mobile",
+      "module": "perpetuum mobile",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "achromatic compound lenses",
+      "id": "achromatic compound lenses",
+      "module": "achromatic compound lenses",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "burning mirrors",
+      "id": "burning mirrors",
+      "module": "burning mirrors",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "erythrocytes",
+      "id": "erythrocytes",
+      "module": "erythrocytes",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "eulers career",
+      "id": "eulers career",
+      "module": "eulers career",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "goldbachs career",
+      "id": "goldbachs career",
+      "module": "goldbachs career",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "petersburg academy",
+      "id": "petersburg academy",
+      "module": "petersburg academy",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "berlin academy",
+      "id": "berlin academy",
+      "module": "berlin academy",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "paris academy",
+      "id": "paris academy",
+      "module": "paris academy",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "eulers publications",
+      "id": "eulers publications",
+      "module": "eulers publications",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "goldbachs publications",
+      "id": "goldbachs publications",
+      "module": "goldbachs publications",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "other authors publications",
+      "id": "other authors publications",
+      "module": "other authors publications",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "for the academies administration",
+      "id": "for the academies administration",
+      "module": "for the academies administration",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "level": 3,
+      "id": "goldbachs work as a russian civil servant",
+      "module": "goldbachs work as a russian civil servant",
+      "size": 100,
+      "leaf": "goldbachs work as a russian civil servant"
+    },
+    {
+      "color": "blue",
+      "leaf": "eulers youth",
+      "id": "eulers youth",
+      "module": "eulers youth",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "goldbachs youth",
+      "id": "goldbachs youth",
+      "module": "goldbachs youth",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "eulers contacts with goldbach",
+      "id": "eulers contacts with goldbach",
+      "module": "eulers contacts with goldbach",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "eulers contacts with other colleagues",
+      "id": "eulers contacts with other colleagues",
+      "module": "eulers contacts with other colleagues",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "eulers contacts with officials and patrons",
+      "id": "eulers contacts with officials and patrons",
+      "module": "eulers contacts with officials and patrons",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "eulers contacts with visitors in berlin",
+      "id": "eulers contacts with visitors in berlin",
+      "module": "eulers contacts with visitors in berlin",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "goldbachs contacts",
+      "id": "goldbachs contacts",
+      "module": "goldbachs contacts",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "between euler and goldbach",
+      "id": "between euler and goldbach",
+      "module": "between euler and goldbach",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "between euler and others",
+      "id": "between euler and others",
+      "module": "between euler and others",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "between goldbach and others",
+      "id": "between goldbach and others",
+      "module": "between goldbach and others",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "errands",
+      "id": "errands",
+      "module": "errands",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "mail forwarded",
+      "id": "mail forwarded",
+      "module": "mail forwarded",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "postal service postage",
+      "id": "postal service postage",
+      "module": "postal service postage",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "book trade orders",
+      "id": "book trade orders",
+      "module": "book trade orders",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "church membership",
+      "id": "church membership",
+      "module": "church membership",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "family",
+      "id": "family",
+      "module": "family",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "finances",
+      "id": "finances",
+      "module": "finances",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "health",
+      "id": "health",
+      "module": "health",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "living quarters",
+      "id": "living quarters",
+      "module": "living quarters",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "plans for the future",
+      "id": "plans for the future",
+      "module": "plans for the future",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "politics warfare silesian wars",
+      "id": "politics warfare silesian wars",
+      "module": "politics warfare silesian wars",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "travel",
+      "id": "travel",
+      "module": "travel",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "chess",
+      "id": "chess",
+      "module": "chess",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "french grammar and prose style",
+      "id": "french grammar and prose style",
+      "module": "french grammar and prose style",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "horoscopy",
+      "id": "horoscopy",
+      "module": "horoscopy",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "theoryOfReflection",
+      "id": "theoryOfReflection",
+      "module": "theoryOfReflection",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "theoryOfColors",
+      "id": "theoryOfColors",
+      "module": "theoryOfColors",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "blue",
+      "leaf": "glassExperiment",
+      "id": "glassExperiment",
+      "module": "glassExperiment",
+      "level": 3,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "5th-degree equations",
+      "id": "5th-degree equations",
+      "module": "5th-degree equations",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "factorisation fundamental theorem of algebra",
+      "id": "factorisation fundamental theorem of algebra",
+      "module": "factorisation fundamental theorem of algebra",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "triangular numbers",
+      "id": "triangular numbers",
+      "module": "triangular numbers",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "figurate polygonal numbers",
+      "id": "figurate polygonal numbers",
+      "module": "figurate polygonal numbers",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "representation of squares and triangular numbers",
+      "id": "representation of squares and triangular numbers",
+      "module": "representation of squares and triangular numbers",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "divisibility",
+      "id": "divisibility",
+      "module": "divisibility",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "quadratic residues",
+      "id": "quadratic residues",
+      "module": "quadratic residues",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "fermat numbers",
+      "id": "fermat numbers",
+      "module": "fermat numbers",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "mersenne primes",
+      "id": "mersenne primes",
+      "module": "mersenne primes",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "twin primes primes with given difference",
+      "id": "twin primes primes with given difference",
+      "module": "twin primes primes with given difference",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "representation of primes by polynomials",
+      "id": "representation of primes by polynomials",
+      "module": "representation of primes by polynomials",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "goldbachs conjecture and related conjectures",
+      "id": "goldbachs conjecture and related conjectures",
+      "module": "goldbachs conjecture and related conjectures",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "sums of triangular numbers and squares",
+      "id": "sums of triangular numbers and squares",
+      "module": "sums of triangular numbers and squares",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "sums of squares",
+      "id": "sums of squares",
+      "module": "sums of squares",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "fermats theorem on figurate polygonal numbers",
+      "id": "fermats theorem on figurate polygonal numbers",
+      "module": "fermats theorem on figurate polygonal numbers",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "other quadratic forms",
+      "id": "other quadratic forms",
+      "module": "other quadratic forms",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "cubic and higher-degree forms",
+      "id": "cubic and higher-degree forms",
+      "module": "cubic and higher-degree forms",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "fermats last theorem fermat conjecture",
+      "id": "fermats last theorem fermat conjecture",
+      "module": "fermats last theorem fermat conjecture",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "quadratic equations with rational solutions",
+      "id": "quadratic equations with rational solutions",
+      "module": "quadratic equations with rational solutions",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "cubic equations with rational solutions",
+      "id": "cubic equations with rational solutions",
+      "module": "cubic equations with rational solutions",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "quartic equations with rational solutions parametrisation",
+      "id": "quartic equations with rational solutions parametrisation",
+      "module": "quartic equations with rational solutions parametrisation",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "rational algebraic surd and transcendental numbers",
+      "id": "rational algebraic surd and transcendental numbers",
+      "module": "rational algebraic surd and transcendental numbers",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "irrationality of texte",
+      "id": "irrationality of texte",
+      "module": "irrationality of texte",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "irrationality and transcendence of pi  quadrature of the circle approximation of pi ",
+      "id": "irrationality and transcendence of pi  quadrature of the circle approximation of pi ",
+      "module": "irrationality and transcendence of pi  quadrature of the circle approximation of pi ",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "series defined by arithmetic properties",
+      "id": "series defined by arithmetic properties",
+      "module": "series defined by arithmetic properties",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "zeta function",
+      "id": "zeta function",
+      "module": "zeta function",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "multi-zeta values",
+      "id": "multi-zeta values",
+      "module": "multi-zeta values",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "generating functions",
+      "id": "generating functions",
+      "module": "generating functions",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "product developments",
+      "id": "product developments",
+      "module": "product developments",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "logarithms",
+      "id": "logarithms",
+      "module": "logarithms",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "calculation of compound interest",
+      "id": "calculation of compound interest",
+      "module": "calculation of compound interest",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "reviews",
+      "id": "reviews",
+      "module": "reviews",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "recursively defined recurrent sequences fibonacci sequences",
+      "id": "recursively defined recurrent sequences fibonacci sequences",
+      "module": "recursively defined recurrent sequences fibonacci sequences",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "interpolation of sequences",
+      "id": "interpolation of sequences",
+      "module": "interpolation of sequences",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "beta function",
+      "id": "beta function",
+      "module": "beta function",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "summation by integration",
+      "id": "summation by integration",
+      "module": "summation by integration",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "summation by symmetric functions",
+      "id": "summation by symmetric functions",
+      "module": "summation by symmetric functions",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "euler-maclaurin summation formula",
+      "id": "euler-maclaurin summation formula",
+      "module": "euler-maclaurin summation formula",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "trigonometric series",
+      "id": "trigonometric series",
+      "module": "trigonometric series",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "divergent series",
+      "id": "divergent series",
+      "module": "divergent series",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "series development of irrational powers",
+      "id": "series development of irrational powers",
+      "module": "series development of irrational powers",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "series development of roots lambert series",
+      "id": "series development of roots lambert series",
+      "module": "series development of roots lambert series",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "representation of sequences by integration",
+      "id": "representation of sequences by integration",
+      "module": "representation of sequences by integration",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "integration of rational functions",
+      "id": "integration of rational functions",
+      "module": "integration of rational functions",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "rationalisation of algebraic differentials",
+      "id": "rationalisation of algebraic differentials",
+      "module": "rationalisation of algebraic differentials",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "elliptic integrals",
+      "id": "elliptic integrals",
+      "module": "elliptic integrals",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "definite integrals of algebraic functions",
+      "id": "definite integrals of algebraic functions",
+      "module": "definite integrals of algebraic functions",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "riccati equation",
+      "id": "riccati equation",
+      "module": "riccati equation",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "algebraically integrable differential equations",
+      "id": "algebraically integrable differential equations",
+      "module": "algebraically integrable differential equations",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "solution of differential equations by differentiation singular solutions",
+      "id": "solution of differential equations by differentiation singular solutions",
+      "module": "solution of differential equations by differentiation singular solutions",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "quadrilaterals",
+      "id": "quadrilaterals",
+      "module": "quadrilaterals",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "squareable lunes squareable circular sectors keplers problem",
+      "id": "squareable lunes squareable circular sectors keplers problem",
+      "module": "squareable lunes squareable circular sectors keplers problem",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "stereometry volume of polyhedra",
+      "id": "stereometry volume of polyhedra",
+      "module": "stereometry volume of polyhedra",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "curves of constant secant length",
+      "id": "curves of constant secant length",
+      "module": "curves of constant secant length",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "logarithmic curves",
+      "id": "logarithmic curves",
+      "module": "logarithmic curves",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "dragging motion pursuit curves tractrix construction",
+      "id": "dragging motion pursuit curves tractrix construction",
+      "module": "dragging motion pursuit curves tractrix construction",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "pairs of curves with rectifiable arcs",
+      "id": "pairs of curves with rectifiable arcs",
+      "module": "pairs of curves with rectifiable arcs",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "catoptric problem curves with closed reflection paths",
+      "id": "catoptric problem curves with closed reflection paths",
+      "module": "catoptric problem curves with closed reflection paths",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "dissection of polygons into triangles catalan numbers",
+      "id": "dissection of polygons into triangles catalan numbers",
+      "module": "dissection of polygons into triangles catalan numbers",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "eulers polyhedron formula",
+      "id": "eulers polyhedron formula",
+      "module": "eulers polyhedron formula",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "knights tour",
+      "id": "knights tour",
+      "module": "knights tour",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "gravitation",
+      "id": "gravitation",
+      "module": "gravitation",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "three-body problem",
+      "id": "three-body problem",
+      "module": "three-body problem",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "petersburg academy conflicts",
+      "id": "petersburg academy conflicts",
+      "module": "petersburg academy conflicts",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "petersburg academy buildings",
+      "id": "petersburg academy buildings",
+      "module": "petersburg academy buildings",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "petersburg academy prize competitions",
+      "id": "petersburg academy prize competitions",
+      "module": "petersburg academy prize competitions",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "berlin academy buildings",
+      "id": "berlin academy buildings",
+      "module": "berlin academy buildings",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "berlin academy prize competitions",
+      "id": "berlin academy prize competitions",
+      "module": "berlin academy prize competitions",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "paris academy prize competitions",
+      "id": "paris academy prize competitions",
+      "module": "paris academy prize competitions",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "cartography",
+      "id": "cartography",
+      "module": "cartography",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "recommendations",
+      "id": "recommendations",
+      "module": "recommendations",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "transmission and physical description of the manuscripts",
+      "id": "transmission and physical description of the manuscripts",
+      "module": "transmission and physical description of the manuscripts",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "linguistic characteristics",
+      "id": "linguistic characteristics",
+      "module": "linguistic characteristics",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "prior editions ph fu 1843 yushkevich",
+      "id": "prior editions ph fu 1843 yushkevich",
+      "module": "prior editions ph fu 1843 yushkevich",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "editorial principles",
+      "id": "editorial principles",
+      "module": "editorial principles",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "devices for medals and prize papers",
+      "id": "devices for medals and prize papers",
+      "module": "devices for medals and prize papers",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "eulers family",
+      "id": "eulers family",
+      "module": "eulers family",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "goldbachs family",
+      "id": "goldbachs family",
+      "module": "goldbachs family",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "eulers health",
+      "id": "eulers health",
+      "module": "eulers health",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "goldbachs health",
+      "id": "goldbachs health",
+      "module": "goldbachs health",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "eulers living quarters",
+      "id": "eulers living quarters",
+      "module": "eulers living quarters",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "goldbachs living quarters",
+      "id": "goldbachs living quarters",
+      "module": "goldbachs living quarters",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "eulers travels",
+      "id": "eulers travels",
+      "module": "eulers travels",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "green",
+      "leaf": "goldbachs travels",
+      "id": "goldbachs travels",
+      "module": "goldbachs travels",
+      "level": 4,
+      "size": 100
+    },
+    {
+      "color": "orange",
+      "leaf": "pells equation",
+      "id": "pells equation",
+      "module": "pells equation",
+      "level": 5,
+      "size": 100
+    },
+    {
+      "color": "orange",
+      "leaf": "perfect numbers",
+      "id": "perfect numbers",
+      "module": "perfect numbers",
+      "level": 5,
+      "size": 100
+    },
+    {
+      "color": "orange",
+      "leaf": "fermats little theorem",
+      "id": "fermats little theorem",
+      "module": "fermats little theorem",
+      "level": 5,
+      "size": 100
+    },
+    {
+      "color": "orange",
+      "leaf": "sums of divisors partitions pentagonal number theorem",
+      "id": "sums of divisors partitions pentagonal number theorem",
+      "module": "sums of divisors partitions pentagonal number theorem",
+      "level": 5,
+      "size": 100
+    },
+    {
+      "color": "orange",
+      "leaf": "gamma function",
+      "id": "gamma function",
+      "module": "gamma function",
+      "level": 5,
+      "size": 100
+    },
+    {
+      "color": "orange",
+      "leaf": "bernoulli numbers",
+      "id": "bernoulli numbers",
+      "module": "bernoulli numbers",
+      "level": 5,
+      "size": 100
+    },
+    {
+      "color": "orange",
+      "leaf": "sums of two squares two squares theorem",
+      "id": "sums of two squares two squares theorem",
+      "module": "sums of two squares two squares theorem",
+      "level": 5,
+      "size": 100
+    },
+    {
+      "color": "orange",
+      "leaf": "sums of three squares",
+      "id": "sums of three squares",
+      "module": "sums of three squares",
+      "level": 5,
+      "size": 100
+    },
+    {
+      "color": "orange",
+      "leaf": "sums of four squares four squares theorem",
+      "id": "sums of four squares four squares theorem",
+      "module": "sums of four squares four squares theorem",
+      "level": 5,
+      "size": 100
+    },
+    {
+      "color": "orange",
+      "leaf": "johann albrecht euler",
+      "id": "johann albrecht euler",
+      "module": "johann albrecht euler",
+      "level": 5,
+      "size": 100
+    },
+    {
+      "color": "orange",
+      "leaf": "partial fraction decomposition",
+      "id": "partial fraction decomposition",
+      "module": "partial fraction decomposition",
+      "level": 5,
+      "size": 100
+    }
+  ],
+  "links": [
+    {
+      "target": "mathematics",
+      "source": "SubjectIndex",
+      "targetNode": {
+        "color": "rgb(255,255,102)",
+        "leaf": "mathematics",
+        "id": "mathematics",
+        "module": "mathematics",
+        "level": 1,
+        "size": 100
+      }
+    },
+    {
+      "target": "other sciences",
+      "source": "SubjectIndex",
+      "targetNode": {
+        "color": "rgb(255,255,102)",
+        "leaf": "other sciences",
+        "id": "other sciences",
+        "module": "other sciences",
+        "level": 1,
+        "size": 100
+      }
+    },
+    {
+      "target": "professional activity",
+      "source": "SubjectIndex",
+      "targetNode": {
+        "color": "rgb(255,255,102)",
+        "leaf": "professional activity",
+        "id": "professional activity",
+        "module": "professional activity",
+        "level": 1,
+        "size": 100
+      }
+    },
+    {
+      "target": "personal life",
+      "source": "SubjectIndex",
+      "targetNode": {
+        "color": "rgb(255,255,102)",
+        "leaf": "personal life",
+        "id": "personal life",
+        "module": "personal life",
+        "level": 1,
+        "size": 100
+      }
+    },
+    {
+      "target": "optics",
+      "source": "SubjectIndex",
+      "targetNode": {
+        "color": "rgb(255,255,102)",
+        "leaf": "optics",
+        "id": "optics",
+        "module": "optics",
+        "level": 1,
+        "size": 100
+      }
+    },
+    {
+      "target": "algebra",
+      "source": "mathematics",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "algebra",
+        "id": "algebra",
+        "module": "algebra",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "number theory",
+      "source": "mathematics",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "number theory",
+        "id": "number theory",
+        "module": "number theory",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "analysis",
+      "source": "mathematics",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "analysis",
+        "id": "analysis",
+        "module": "analysis",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "geometry",
+      "source": "mathematics",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "geometry",
+        "id": "geometry",
+        "module": "geometry",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "other topics in mathematics",
+      "source": "mathematics",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "other topics in mathematics",
+        "id": "other topics in mathematics",
+        "module": "other topics in mathematics",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "physics natural philosophy",
+      "source": "other sciences",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "physics natural philosophy",
+        "id": "physics natural philosophy",
+        "module": "physics natural philosophy",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "astronomy",
+      "source": "other sciences",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "astronomy",
+        "id": "astronomy",
+        "module": "astronomy",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "technology",
+      "source": "other sciences",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "technology",
+        "id": "technology",
+        "module": "technology",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "music theory",
+      "source": "other sciences",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "music theory",
+        "id": "music theory",
+        "module": "music theory",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "anatomy",
+      "source": "other sciences",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "anatomy",
+        "id": "anatomy",
+        "module": "anatomy",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "career",
+      "source": "professional activity",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "career",
+        "id": "career",
+        "module": "career",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "academies",
+      "source": "professional activity",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "academies",
+        "id": "academies",
+        "module": "academies",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "publications",
+      "source": "professional activity",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "publications",
+        "id": "publications",
+        "module": "publications",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "teaching",
+      "source": "professional activity",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "teaching",
+        "id": "teaching",
+        "module": "teaching",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "controversies",
+      "source": "professional activity",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "controversies",
+        "id": "controversies",
+        "module": "controversies",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "other professional tasks",
+      "source": "professional activity",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "other professional tasks",
+        "id": "other professional tasks",
+        "module": "other professional tasks",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "royalSocietyElection",
+      "source": "professional activity",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "royalSocietyElection",
+        "id": "royalSocietyElection",
+        "module": "royalSocietyElection",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "youth",
+      "source": "personal life",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "youth",
+        "id": "youth",
+        "module": "youth",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "personal contact",
+      "source": "personal life",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "personal contact",
+        "id": "personal contact",
+        "module": "personal contact",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "correspondence",
+      "source": "personal life",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "correspondence",
+        "id": "correspondence",
+        "module": "correspondence",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "books",
+      "source": "personal life",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "books",
+        "id": "books",
+        "module": "books",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "living circumstances",
+      "source": "personal life",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "living circumstances",
+        "id": "living circumstances",
+        "module": "living circumstances",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "miscellanea",
+      "source": "personal life",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "miscellanea",
+        "id": "miscellanea",
+        "module": "miscellanea",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "theoryOfLight",
+      "source": "optics",
+      "targetNode": {
+        "color": "cyan",
+        "leaf": "theoryOfLight",
+        "id": "theoryOfLight",
+        "module": "theoryOfLight",
+        "level": 2,
+        "size": 100
+      }
+    },
+    {
+      "target": "complex numbers",
+      "source": "algebra",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "complex numbers",
+        "id": "complex numbers",
+        "module": "complex numbers",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "algebraic equations",
+      "source": "algebra",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "algebraic equations",
+        "id": "algebraic equations",
+        "module": "algebraic equations",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "rational interpolation",
+      "source": "algebra",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "rational interpolation",
+        "id": "rational interpolation",
+        "module": "rational interpolation",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "elementary number theory",
+      "source": "number theory",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "elementary number theory",
+        "id": "elementary number theory",
+        "module": "elementary number theory",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "distribution of primes",
+      "source": "number theory",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "distribution of primes",
+        "id": "distribution of primes",
+        "module": "distribution of primes",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "sums of powers",
+      "source": "number theory",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "sums of powers",
+        "id": "sums of powers",
+        "module": "sums of powers",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "other diophantine equations",
+      "source": "number theory",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "other diophantine equations",
+        "id": "other diophantine equations",
+        "module": "other diophantine equations",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "algebraic number theory",
+      "source": "number theory",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "algebraic number theory",
+        "id": "algebraic number theory",
+        "module": "algebraic number theory",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "analytic number theory",
+      "source": "number theory",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "analytic number theory",
+        "id": "analytic number theory",
+        "module": "analytic number theory",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "elementary analysis",
+      "source": "analysis",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "elementary analysis",
+        "id": "elementary analysis",
+        "module": "elementary analysis",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "series and sequences",
+      "source": "analysis",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "series and sequences",
+        "id": "series and sequences",
+        "module": "series and sequences",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "infinite products",
+      "source": "analysis",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "infinite products",
+        "id": "infinite products",
+        "module": "infinite products",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "continued fractions",
+      "source": "analysis",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "continued fractions",
+        "id": "continued fractions",
+        "module": "continued fractions",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "approximation newton-raphson method",
+      "source": "analysis",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "approximation newton-raphson method",
+        "id": "approximation newton-raphson method",
+        "module": "approximation newton-raphson method",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "integral calculus",
+      "source": "analysis",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "integral calculus",
+        "id": "integral calculus",
+        "module": "integral calculus",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "differential equations",
+      "source": "analysis",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "differential equations",
+        "id": "differential equations",
+        "module": "differential equations",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "elementary cartesian geometry",
+      "source": "geometry",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "elementary cartesian geometry",
+        "id": "elementary cartesian geometry",
+        "module": "elementary cartesian geometry",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "differential geometry",
+      "source": "geometry",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "differential geometry",
+        "id": "differential geometry",
+        "module": "differential geometry",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "fractal geometry",
+      "source": "geometry",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "fractal geometry",
+        "id": "fractal geometry",
+        "module": "fractal geometry",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "topology",
+      "source": "other topics in mathematics",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "topology",
+        "id": "topology",
+        "module": "topology",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "cryptography",
+      "source": "other topics in mathematics",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "cryptography",
+        "id": "cryptography",
+        "module": "cryptography",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "calculating prodigy",
+      "source": "other topics in mathematics",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "calculating prodigy",
+        "id": "calculating prodigy",
+        "module": "calculating prodigy",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "mathematical notation",
+      "source": "other topics in mathematics",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "mathematical notation",
+        "id": "mathematical notation",
+        "module": "mathematical notation",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "principles of mechanics",
+      "source": "physics natural philosophy",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "principles of mechanics",
+        "id": "principles of mechanics",
+        "module": "principles of mechanics",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "monads mind-matter problem",
+      "source": "physics natural philosophy",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "monads mind-matter problem",
+        "id": "monads mind-matter problem",
+        "module": "monads mind-matter problem",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "magnetism",
+      "source": "physics natural philosophy",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "magnetism",
+        "id": "magnetism",
+        "module": "magnetism",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "eclipses",
+      "source": "astronomy",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "eclipses",
+        "id": "eclipses",
+        "module": "eclipses",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "lunar theory tables",
+      "source": "astronomy",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "lunar theory tables",
+        "id": "lunar theory tables",
+        "module": "lunar theory tables",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "planets",
+      "source": "astronomy",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "planets",
+        "id": "planets",
+        "module": "planets",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "comets",
+      "source": "astronomy",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "comets",
+        "id": "comets",
+        "module": "comets",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "perpetuum mobile",
+      "source": "technology",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "perpetuum mobile",
+        "id": "perpetuum mobile",
+        "module": "perpetuum mobile",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "achromatic compound lenses",
+      "source": "technology",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "achromatic compound lenses",
+        "id": "achromatic compound lenses",
+        "module": "achromatic compound lenses",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "burning mirrors",
+      "source": "technology",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "burning mirrors",
+        "id": "burning mirrors",
+        "module": "burning mirrors",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "erythrocytes",
+      "source": "anatomy",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "erythrocytes",
+        "id": "erythrocytes",
+        "module": "erythrocytes",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "eulers career",
+      "source": "career",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "eulers career",
+        "id": "eulers career",
+        "module": "eulers career",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "goldbachs career",
+      "source": "career",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "goldbachs career",
+        "id": "goldbachs career",
+        "module": "goldbachs career",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "petersburg academy",
+      "source": "academies",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "petersburg academy",
+        "id": "petersburg academy",
+        "module": "petersburg academy",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "berlin academy",
+      "source": "academies",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "berlin academy",
+        "id": "berlin academy",
+        "module": "berlin academy",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "paris academy",
+      "source": "academies",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "paris academy",
+        "id": "paris academy",
+        "module": "paris academy",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "eulers publications",
+      "source": "publications",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "eulers publications",
+        "id": "eulers publications",
+        "module": "eulers publications",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "goldbachs publications",
+      "source": "publications",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "goldbachs publications",
+        "id": "goldbachs publications",
+        "module": "goldbachs publications",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "other authors publications",
+      "source": "publications",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "other authors publications",
+        "id": "other authors publications",
+        "module": "other authors publications",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "for the academies administration",
+      "source": "other professional tasks",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "for the academies administration",
+        "id": "for the academies administration",
+        "module": "for the academies administration",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "goldbachs work as a russian civil servant",
+      "source": "other professional tasks",
+      "targetNode": {
+        "level": 3,
+        "id": "goldbachs work as a russian civil servant",
+        "module": "goldbachs work as a russian civil servant",
+        "size": 100,
+        "leaf": "goldbachs work as a russian civil servant"
+      }
+    },
+    {
+      "target": "eulers youth",
+      "source": "youth",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "eulers youth",
+        "id": "eulers youth",
+        "module": "eulers youth",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "goldbachs youth",
+      "source": "youth",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "goldbachs youth",
+        "id": "goldbachs youth",
+        "module": "goldbachs youth",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "eulers contacts with goldbach",
+      "source": "personal contact",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "eulers contacts with goldbach",
+        "id": "eulers contacts with goldbach",
+        "module": "eulers contacts with goldbach",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "eulers contacts with other colleagues",
+      "source": "personal contact",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "eulers contacts with other colleagues",
+        "id": "eulers contacts with other colleagues",
+        "module": "eulers contacts with other colleagues",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "eulers contacts with officials and patrons",
+      "source": "personal contact",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "eulers contacts with officials and patrons",
+        "id": "eulers contacts with officials and patrons",
+        "module": "eulers contacts with officials and patrons",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "eulers contacts with visitors in berlin",
+      "source": "personal contact",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "eulers contacts with visitors in berlin",
+        "id": "eulers contacts with visitors in berlin",
+        "module": "eulers contacts with visitors in berlin",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "goldbachs contacts",
+      "source": "personal contact",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "goldbachs contacts",
+        "id": "goldbachs contacts",
+        "module": "goldbachs contacts",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "between euler and goldbach",
+      "source": "correspondence",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "between euler and goldbach",
+        "id": "between euler and goldbach",
+        "module": "between euler and goldbach",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "between euler and others",
+      "source": "correspondence",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "between euler and others",
+        "id": "between euler and others",
+        "module": "between euler and others",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "between goldbach and others",
+      "source": "correspondence",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "between goldbach and others",
+        "id": "between goldbach and others",
+        "module": "between goldbach and others",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "errands",
+      "source": "correspondence",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "errands",
+        "id": "errands",
+        "module": "errands",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "mail forwarded",
+      "source": "correspondence",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "mail forwarded",
+        "id": "mail forwarded",
+        "module": "mail forwarded",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "postal service postage",
+      "source": "correspondence",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "postal service postage",
+        "id": "postal service postage",
+        "module": "postal service postage",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "book trade orders",
+      "source": "books",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "book trade orders",
+        "id": "book trade orders",
+        "module": "book trade orders",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "church membership",
+      "source": "living circumstances",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "church membership",
+        "id": "church membership",
+        "module": "church membership",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "family",
+      "source": "living circumstances",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "family",
+        "id": "family",
+        "module": "family",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "finances",
+      "source": "living circumstances",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "finances",
+        "id": "finances",
+        "module": "finances",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "health",
+      "source": "living circumstances",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "health",
+        "id": "health",
+        "module": "health",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "living quarters",
+      "source": "living circumstances",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "living quarters",
+        "id": "living quarters",
+        "module": "living quarters",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "plans for the future",
+      "source": "living circumstances",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "plans for the future",
+        "id": "plans for the future",
+        "module": "plans for the future",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "politics warfare silesian wars",
+      "source": "living circumstances",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "politics warfare silesian wars",
+        "id": "politics warfare silesian wars",
+        "module": "politics warfare silesian wars",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "travel",
+      "source": "living circumstances",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "travel",
+        "id": "travel",
+        "module": "travel",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "chess",
+      "source": "miscellanea",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "chess",
+        "id": "chess",
+        "module": "chess",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "french grammar and prose style",
+      "source": "miscellanea",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "french grammar and prose style",
+        "id": "french grammar and prose style",
+        "module": "french grammar and prose style",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "horoscopy",
+      "source": "miscellanea",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "horoscopy",
+        "id": "horoscopy",
+        "module": "horoscopy",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "theoryOfReflection",
+      "source": "theoryOfLight",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "theoryOfReflection",
+        "id": "theoryOfReflection",
+        "module": "theoryOfReflection",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "theoryOfColors",
+      "source": "theoryOfLight",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "theoryOfColors",
+        "id": "theoryOfColors",
+        "module": "theoryOfColors",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "glassExperiment",
+      "source": "theoryOfLight",
+      "targetNode": {
+        "color": "blue",
+        "leaf": "glassExperiment",
+        "id": "glassExperiment",
+        "module": "glassExperiment",
+        "level": 3,
+        "size": 100
+      }
+    },
+    {
+      "target": "5th-degree equations",
+      "source": "algebraic equations",
+      "targetNode": {
+        "color": "green",
+        "leaf": "5th-degree equations",
+        "id": "5th-degree equations",
+        "module": "5th-degree equations",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "factorisation fundamental theorem of algebra",
+      "source": "algebraic equations",
+      "targetNode": {
+        "color": "green",
+        "leaf": "factorisation fundamental theorem of algebra",
+        "id": "factorisation fundamental theorem of algebra",
+        "module": "factorisation fundamental theorem of algebra",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "triangular numbers",
+      "source": "elementary number theory",
+      "targetNode": {
+        "color": "green",
+        "leaf": "triangular numbers",
+        "id": "triangular numbers",
+        "module": "triangular numbers",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "figurate polygonal numbers",
+      "source": "elementary number theory",
+      "targetNode": {
+        "color": "green",
+        "leaf": "figurate polygonal numbers",
+        "id": "figurate polygonal numbers",
+        "module": "figurate polygonal numbers",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "representation of squares and triangular numbers",
+      "source": "elementary number theory",
+      "targetNode": {
+        "color": "green",
+        "leaf": "representation of squares and triangular numbers",
+        "id": "representation of squares and triangular numbers",
+        "module": "representation of squares and triangular numbers",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "divisibility",
+      "source": "elementary number theory",
+      "targetNode": {
+        "color": "green",
+        "leaf": "divisibility",
+        "id": "divisibility",
+        "module": "divisibility",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "quadratic residues",
+      "source": "elementary number theory",
+      "targetNode": {
+        "color": "green",
+        "leaf": "quadratic residues",
+        "id": "quadratic residues",
+        "module": "quadratic residues",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "fermat numbers",
+      "source": "distribution of primes",
+      "targetNode": {
+        "color": "green",
+        "leaf": "fermat numbers",
+        "id": "fermat numbers",
+        "module": "fermat numbers",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "mersenne primes",
+      "source": "distribution of primes",
+      "targetNode": {
+        "color": "green",
+        "leaf": "mersenne primes",
+        "id": "mersenne primes",
+        "module": "mersenne primes",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "twin primes primes with given difference",
+      "source": "distribution of primes",
+      "targetNode": {
+        "color": "green",
+        "leaf": "twin primes primes with given difference",
+        "id": "twin primes primes with given difference",
+        "module": "twin primes primes with given difference",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "representation of primes by polynomials",
+      "source": "distribution of primes",
+      "targetNode": {
+        "color": "green",
+        "leaf": "representation of primes by polynomials",
+        "id": "representation of primes by polynomials",
+        "module": "representation of primes by polynomials",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "goldbachs conjecture and related conjectures",
+      "source": "distribution of primes",
+      "targetNode": {
+        "color": "green",
+        "leaf": "goldbachs conjecture and related conjectures",
+        "id": "goldbachs conjecture and related conjectures",
+        "module": "goldbachs conjecture and related conjectures",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "sums of triangular numbers and squares",
+      "source": "sums of powers",
+      "targetNode": {
+        "color": "green",
+        "leaf": "sums of triangular numbers and squares",
+        "id": "sums of triangular numbers and squares",
+        "module": "sums of triangular numbers and squares",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "sums of squares",
+      "source": "sums of powers",
+      "targetNode": {
+        "color": "green",
+        "leaf": "sums of squares",
+        "id": "sums of squares",
+        "module": "sums of squares",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "fermats theorem on figurate polygonal numbers",
+      "source": "sums of powers",
+      "targetNode": {
+        "color": "green",
+        "leaf": "fermats theorem on figurate polygonal numbers",
+        "id": "fermats theorem on figurate polygonal numbers",
+        "module": "fermats theorem on figurate polygonal numbers",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "other quadratic forms",
+      "source": "sums of powers",
+      "targetNode": {
+        "color": "green",
+        "leaf": "other quadratic forms",
+        "id": "other quadratic forms",
+        "module": "other quadratic forms",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "cubic and higher-degree forms",
+      "source": "sums of powers",
+      "targetNode": {
+        "color": "green",
+        "leaf": "cubic and higher-degree forms",
+        "id": "cubic and higher-degree forms",
+        "module": "cubic and higher-degree forms",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "fermats last theorem fermat conjecture",
+      "source": "sums of powers",
+      "targetNode": {
+        "color": "green",
+        "leaf": "fermats last theorem fermat conjecture",
+        "id": "fermats last theorem fermat conjecture",
+        "module": "fermats last theorem fermat conjecture",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "quadratic equations with rational solutions",
+      "source": "algebraic number theory",
+      "targetNode": {
+        "color": "green",
+        "leaf": "quadratic equations with rational solutions",
+        "id": "quadratic equations with rational solutions",
+        "module": "quadratic equations with rational solutions",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "cubic equations with rational solutions",
+      "source": "algebraic number theory",
+      "targetNode": {
+        "color": "green",
+        "leaf": "cubic equations with rational solutions",
+        "id": "cubic equations with rational solutions",
+        "module": "cubic equations with rational solutions",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "quartic equations with rational solutions parametrisation",
+      "source": "algebraic number theory",
+      "targetNode": {
+        "color": "green",
+        "leaf": "quartic equations with rational solutions parametrisation",
+        "id": "quartic equations with rational solutions parametrisation",
+        "module": "quartic equations with rational solutions parametrisation",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "rational algebraic surd and transcendental numbers",
+      "source": "algebraic number theory",
+      "targetNode": {
+        "color": "green",
+        "leaf": "rational algebraic surd and transcendental numbers",
+        "id": "rational algebraic surd and transcendental numbers",
+        "module": "rational algebraic surd and transcendental numbers",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "irrationality of texte",
+      "source": "algebraic number theory",
+      "targetNode": {
+        "color": "green",
+        "leaf": "irrationality of texte",
+        "id": "irrationality of texte",
+        "module": "irrationality of texte",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "irrationality and transcendence of pi  quadrature of the circle approximation of pi ",
+      "source": "algebraic number theory",
+      "targetNode": {
+        "color": "green",
+        "leaf": "irrationality and transcendence of pi  quadrature of the circle approximation of pi ",
+        "id": "irrationality and transcendence of pi  quadrature of the circle approximation of pi ",
+        "module": "irrationality and transcendence of pi  quadrature of the circle approximation of pi ",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "series defined by arithmetic properties",
+      "source": "analytic number theory",
+      "targetNode": {
+        "color": "green",
+        "leaf": "series defined by arithmetic properties",
+        "id": "series defined by arithmetic properties",
+        "module": "series defined by arithmetic properties",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "zeta function",
+      "source": "analytic number theory",
+      "targetNode": {
+        "color": "green",
+        "leaf": "zeta function",
+        "id": "zeta function",
+        "module": "zeta function",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "multi-zeta values",
+      "source": "analytic number theory",
+      "targetNode": {
+        "color": "green",
+        "leaf": "multi-zeta values",
+        "id": "multi-zeta values",
+        "module": "multi-zeta values",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "generating functions",
+      "source": "analytic number theory",
+      "targetNode": {
+        "color": "green",
+        "leaf": "generating functions",
+        "id": "generating functions",
+        "module": "generating functions",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "product developments",
+      "source": "analytic number theory",
+      "targetNode": {
+        "color": "green",
+        "leaf": "product developments",
+        "id": "product developments",
+        "module": "product developments",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "logarithms",
+      "source": "elementary analysis",
+      "targetNode": {
+        "color": "green",
+        "leaf": "logarithms",
+        "id": "logarithms",
+        "module": "logarithms",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "calculation of compound interest",
+      "source": "elementary analysis",
+      "targetNode": {
+        "color": "green",
+        "leaf": "calculation of compound interest",
+        "id": "calculation of compound interest",
+        "module": "calculation of compound interest",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "reviews",
+      "source": "eulers publications",
+      "targetNode": {
+        "color": "green",
+        "leaf": "reviews",
+        "id": "reviews",
+        "module": "reviews",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "recursively defined recurrent sequences fibonacci sequences",
+      "source": "series and sequences",
+      "targetNode": {
+        "color": "green",
+        "leaf": "recursively defined recurrent sequences fibonacci sequences",
+        "id": "recursively defined recurrent sequences fibonacci sequences",
+        "module": "recursively defined recurrent sequences fibonacci sequences",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "interpolation of sequences",
+      "source": "series and sequences",
+      "targetNode": {
+        "color": "green",
+        "leaf": "interpolation of sequences",
+        "id": "interpolation of sequences",
+        "module": "interpolation of sequences",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "beta function",
+      "source": "series and sequences",
+      "targetNode": {
+        "color": "green",
+        "leaf": "beta function",
+        "id": "beta function",
+        "module": "beta function",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "summation by integration",
+      "source": "series and sequences",
+      "targetNode": {
+        "color": "green",
+        "leaf": "summation by integration",
+        "id": "summation by integration",
+        "module": "summation by integration",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "summation by symmetric functions",
+      "source": "series and sequences",
+      "targetNode": {
+        "color": "green",
+        "leaf": "summation by symmetric functions",
+        "id": "summation by symmetric functions",
+        "module": "summation by symmetric functions",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "euler-maclaurin summation formula",
+      "source": "series and sequences",
+      "targetNode": {
+        "color": "green",
+        "leaf": "euler-maclaurin summation formula",
+        "id": "euler-maclaurin summation formula",
+        "module": "euler-maclaurin summation formula",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "trigonometric series",
+      "source": "series and sequences",
+      "targetNode": {
+        "color": "green",
+        "leaf": "trigonometric series",
+        "id": "trigonometric series",
+        "module": "trigonometric series",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "divergent series",
+      "source": "series and sequences",
+      "targetNode": {
+        "color": "green",
+        "leaf": "divergent series",
+        "id": "divergent series",
+        "module": "divergent series",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "series development of irrational powers",
+      "source": "series and sequences",
+      "targetNode": {
+        "color": "green",
+        "leaf": "series development of irrational powers",
+        "id": "series development of irrational powers",
+        "module": "series development of irrational powers",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "series development of roots lambert series",
+      "source": "series and sequences",
+      "targetNode": {
+        "color": "green",
+        "leaf": "series development of roots lambert series",
+        "id": "series development of roots lambert series",
+        "module": "series development of roots lambert series",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "representation of sequences by integration",
+      "source": "integral calculus",
+      "targetNode": {
+        "color": "green",
+        "leaf": "representation of sequences by integration",
+        "id": "representation of sequences by integration",
+        "module": "representation of sequences by integration",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "integration of rational functions",
+      "source": "integral calculus",
+      "targetNode": {
+        "color": "green",
+        "leaf": "integration of rational functions",
+        "id": "integration of rational functions",
+        "module": "integration of rational functions",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "rationalisation of algebraic differentials",
+      "source": "integral calculus",
+      "targetNode": {
+        "color": "green",
+        "leaf": "rationalisation of algebraic differentials",
+        "id": "rationalisation of algebraic differentials",
+        "module": "rationalisation of algebraic differentials",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "elliptic integrals",
+      "source": "integral calculus",
+      "targetNode": {
+        "color": "green",
+        "leaf": "elliptic integrals",
+        "id": "elliptic integrals",
+        "module": "elliptic integrals",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "definite integrals of algebraic functions",
+      "source": "integral calculus",
+      "targetNode": {
+        "color": "green",
+        "leaf": "definite integrals of algebraic functions",
+        "id": "definite integrals of algebraic functions",
+        "module": "definite integrals of algebraic functions",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "riccati equation",
+      "source": "differential equations",
+      "targetNode": {
+        "color": "green",
+        "leaf": "riccati equation",
+        "id": "riccati equation",
+        "module": "riccati equation",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "algebraically integrable differential equations",
+      "source": "differential equations",
+      "targetNode": {
+        "color": "green",
+        "leaf": "algebraically integrable differential equations",
+        "id": "algebraically integrable differential equations",
+        "module": "algebraically integrable differential equations",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "solution of differential equations by differentiation singular solutions",
+      "source": "differential equations",
+      "targetNode": {
+        "color": "green",
+        "leaf": "solution of differential equations by differentiation singular solutions",
+        "id": "solution of differential equations by differentiation singular solutions",
+        "module": "solution of differential equations by differentiation singular solutions",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "quadrilaterals",
+      "source": "elementary cartesian geometry",
+      "targetNode": {
+        "color": "green",
+        "leaf": "quadrilaterals",
+        "id": "quadrilaterals",
+        "module": "quadrilaterals",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "squareable lunes squareable circular sectors keplers problem",
+      "source": "elementary cartesian geometry",
+      "targetNode": {
+        "color": "green",
+        "leaf": "squareable lunes squareable circular sectors keplers problem",
+        "id": "squareable lunes squareable circular sectors keplers problem",
+        "module": "squareable lunes squareable circular sectors keplers problem",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "stereometry volume of polyhedra",
+      "source": "elementary cartesian geometry",
+      "targetNode": {
+        "color": "green",
+        "leaf": "stereometry volume of polyhedra",
+        "id": "stereometry volume of polyhedra",
+        "module": "stereometry volume of polyhedra",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "curves of constant secant length",
+      "source": "differential geometry",
+      "targetNode": {
+        "color": "green",
+        "leaf": "curves of constant secant length",
+        "id": "curves of constant secant length",
+        "module": "curves of constant secant length",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "logarithmic curves",
+      "source": "differential geometry",
+      "targetNode": {
+        "color": "green",
+        "leaf": "logarithmic curves",
+        "id": "logarithmic curves",
+        "module": "logarithmic curves",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "dragging motion pursuit curves tractrix construction",
+      "source": "differential geometry",
+      "targetNode": {
+        "color": "green",
+        "leaf": "dragging motion pursuit curves tractrix construction",
+        "id": "dragging motion pursuit curves tractrix construction",
+        "module": "dragging motion pursuit curves tractrix construction",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "pairs of curves with rectifiable arcs",
+      "source": "differential geometry",
+      "targetNode": {
+        "color": "green",
+        "leaf": "pairs of curves with rectifiable arcs",
+        "id": "pairs of curves with rectifiable arcs",
+        "module": "pairs of curves with rectifiable arcs",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "catoptric problem curves with closed reflection paths",
+      "source": "differential geometry",
+      "targetNode": {
+        "color": "green",
+        "leaf": "catoptric problem curves with closed reflection paths",
+        "id": "catoptric problem curves with closed reflection paths",
+        "module": "catoptric problem curves with closed reflection paths",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "dissection of polygons into triangles catalan numbers",
+      "source": "topology",
+      "targetNode": {
+        "color": "green",
+        "leaf": "dissection of polygons into triangles catalan numbers",
+        "id": "dissection of polygons into triangles catalan numbers",
+        "module": "dissection of polygons into triangles catalan numbers",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "eulers polyhedron formula",
+      "source": "topology",
+      "targetNode": {
+        "color": "green",
+        "leaf": "eulers polyhedron formula",
+        "id": "eulers polyhedron formula",
+        "module": "eulers polyhedron formula",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "knights tour",
+      "source": "topology",
+      "targetNode": {
+        "color": "green",
+        "leaf": "knights tour",
+        "id": "knights tour",
+        "module": "knights tour",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "gravitation",
+      "source": "principles of mechanics",
+      "targetNode": {
+        "color": "green",
+        "leaf": "gravitation",
+        "id": "gravitation",
+        "module": "gravitation",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "three-body problem",
+      "source": "principles of mechanics",
+      "targetNode": {
+        "color": "green",
+        "leaf": "three-body problem",
+        "id": "three-body problem",
+        "module": "three-body problem",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "petersburg academy conflicts",
+      "source": "petersburg academy",
+      "targetNode": {
+        "color": "green",
+        "leaf": "petersburg academy conflicts",
+        "id": "petersburg academy conflicts",
+        "module": "petersburg academy conflicts",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "petersburg academy buildings",
+      "source": "petersburg academy",
+      "targetNode": {
+        "color": "green",
+        "leaf": "petersburg academy buildings",
+        "id": "petersburg academy buildings",
+        "module": "petersburg academy buildings",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "petersburg academy prize competitions",
+      "source": "petersburg academy",
+      "targetNode": {
+        "color": "green",
+        "leaf": "petersburg academy prize competitions",
+        "id": "petersburg academy prize competitions",
+        "module": "petersburg academy prize competitions",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "berlin academy buildings",
+      "source": "berlin academy",
+      "targetNode": {
+        "color": "green",
+        "leaf": "berlin academy buildings",
+        "id": "berlin academy buildings",
+        "module": "berlin academy buildings",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "berlin academy prize competitions",
+      "source": "berlin academy",
+      "targetNode": {
+        "color": "green",
+        "leaf": "berlin academy prize competitions",
+        "id": "berlin academy prize competitions",
+        "module": "berlin academy prize competitions",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "paris academy prize competitions",
+      "source": "paris academy",
+      "targetNode": {
+        "color": "green",
+        "leaf": "paris academy prize competitions",
+        "id": "paris academy prize competitions",
+        "module": "paris academy prize competitions",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "cartography",
+      "source": "for the academies administration",
+      "targetNode": {
+        "color": "green",
+        "leaf": "cartography",
+        "id": "cartography",
+        "module": "cartography",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "recommendations",
+      "source": "eulers contacts with other colleagues",
+      "targetNode": {
+        "color": "green",
+        "leaf": "recommendations",
+        "id": "recommendations",
+        "module": "recommendations",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "transmission and physical description of the manuscripts",
+      "source": "between euler and goldbach",
+      "targetNode": {
+        "color": "green",
+        "leaf": "transmission and physical description of the manuscripts",
+        "id": "transmission and physical description of the manuscripts",
+        "module": "transmission and physical description of the manuscripts",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "linguistic characteristics",
+      "source": "between euler and goldbach",
+      "targetNode": {
+        "color": "green",
+        "leaf": "linguistic characteristics",
+        "id": "linguistic characteristics",
+        "module": "linguistic characteristics",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "prior editions ph fu 1843 yushkevich",
+      "source": "between euler and goldbach",
+      "targetNode": {
+        "color": "green",
+        "leaf": "prior editions ph fu 1843 yushkevich",
+        "id": "prior editions ph fu 1843 yushkevich",
+        "module": "prior editions ph fu 1843 yushkevich",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "editorial principles",
+      "source": "between euler and goldbach",
+      "targetNode": {
+        "color": "green",
+        "leaf": "editorial principles",
+        "id": "editorial principles",
+        "module": "editorial principles",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "devices for medals and prize papers",
+      "source": "errands",
+      "targetNode": {
+        "color": "green",
+        "leaf": "devices for medals and prize papers",
+        "id": "devices for medals and prize papers",
+        "module": "devices for medals and prize papers",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "eulers family",
+      "source": "family",
+      "targetNode": {
+        "color": "green",
+        "leaf": "eulers family",
+        "id": "eulers family",
+        "module": "eulers family",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "goldbachs family",
+      "source": "family",
+      "targetNode": {
+        "color": "green",
+        "leaf": "goldbachs family",
+        "id": "goldbachs family",
+        "module": "goldbachs family",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "eulers health",
+      "source": "health",
+      "targetNode": {
+        "color": "green",
+        "leaf": "eulers health",
+        "id": "eulers health",
+        "module": "eulers health",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "goldbachs health",
+      "source": "health",
+      "targetNode": {
+        "color": "green",
+        "leaf": "goldbachs health",
+        "id": "goldbachs health",
+        "module": "goldbachs health",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "eulers living quarters",
+      "source": "living quarters",
+      "targetNode": {
+        "color": "green",
+        "leaf": "eulers living quarters",
+        "id": "eulers living quarters",
+        "module": "eulers living quarters",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "goldbachs living quarters",
+      "source": "living quarters",
+      "targetNode": {
+        "color": "green",
+        "leaf": "goldbachs living quarters",
+        "id": "goldbachs living quarters",
+        "module": "goldbachs living quarters",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "eulers travels",
+      "source": "travel",
+      "targetNode": {
+        "color": "green",
+        "leaf": "eulers travels",
+        "id": "eulers travels",
+        "module": "eulers travels",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "goldbachs travels",
+      "source": "travel",
+      "targetNode": {
+        "color": "green",
+        "leaf": "goldbachs travels",
+        "id": "goldbachs travels",
+        "module": "goldbachs travels",
+        "level": 4,
+        "size": 100
+      }
+    },
+    {
+      "target": "pells equation",
+      "source": "other quadratic forms",
+      "targetNode": {
+        "color": "orange",
+        "leaf": "pells equation",
+        "id": "pells equation",
+        "module": "pells equation",
+        "level": 5,
+        "size": 100
+      }
+    },
+    {
+      "target": "perfect numbers",
+      "source": "divisibility",
+      "targetNode": {
+        "color": "orange",
+        "leaf": "perfect numbers",
+        "id": "perfect numbers",
+        "module": "perfect numbers",
+        "level": 5,
+        "size": 100
+      }
+    },
+    {
+      "target": "fermats little theorem",
+      "source": "divisibility",
+      "targetNode": {
+        "color": "orange",
+        "leaf": "fermats little theorem",
+        "id": "fermats little theorem",
+        "module": "fermats little theorem",
+        "level": 5,
+        "size": 100
+      }
+    },
+    {
+      "target": "sums of divisors partitions pentagonal number theorem",
+      "source": "divisibility",
+      "targetNode": {
+        "color": "orange",
+        "leaf": "sums of divisors partitions pentagonal number theorem",
+        "id": "sums of divisors partitions pentagonal number theorem",
+        "module": "sums of divisors partitions pentagonal number theorem",
+        "level": 5,
+        "size": 100
+      }
+    },
+    {
+      "target": "gamma function",
+      "source": "interpolation of sequences",
+      "targetNode": {
+        "color": "orange",
+        "leaf": "gamma function",
+        "id": "gamma function",
+        "module": "gamma function",
+        "level": 5,
+        "size": 100
+      }
+    },
+    {
+      "target": "bernoulli numbers",
+      "source": "euler-maclaurin summation formula",
+      "targetNode": {
+        "color": "orange",
+        "leaf": "bernoulli numbers",
+        "id": "bernoulli numbers",
+        "module": "bernoulli numbers",
+        "level": 5,
+        "size": 100
+      }
+    },
+    {
+      "target": "sums of two squares two squares theorem",
+      "source": "sums of squares",
+      "targetNode": {
+        "color": "orange",
+        "leaf": "sums of two squares two squares theorem",
+        "id": "sums of two squares two squares theorem",
+        "module": "sums of two squares two squares theorem",
+        "level": 5,
+        "size": 100
+      }
+    },
+    {
+      "target": "sums of three squares",
+      "source": "sums of squares",
+      "targetNode": {
+        "color": "orange",
+        "leaf": "sums of three squares",
+        "id": "sums of three squares",
+        "module": "sums of three squares",
+        "level": 5,
+        "size": 100
+      }
+    },
+    {
+      "target": "sums of four squares four squares theorem",
+      "source": "sums of squares",
+      "targetNode": {
+        "color": "orange",
+        "leaf": "sums of four squares four squares theorem",
+        "id": "sums of four squares four squares theorem",
+        "module": "sums of four squares four squares theorem",
+        "level": 5,
+        "size": 100
+      }
+    },
+    {
+      "target": "johann albrecht euler",
+      "source": "eulers family",
+      "targetNode": {
+        "color": "orange",
+        "leaf": "johann albrecht euler",
+        "id": "johann albrecht euler",
+        "module": "johann albrecht euler",
+        "level": 5,
+        "size": 100
+      }
+    },
+    {
+      "target": "partial fraction decomposition",
+      "source": "integration of rational functions",
+      "targetNode": {
+        "color": "orange",
+        "leaf": "partial fraction decomposition",
+        "id": "partial fraction decomposition",
+        "module": "partial fraction decomposition",
+        "level": 5,
+        "size": 100
+      }
+    }
+  ]
+}

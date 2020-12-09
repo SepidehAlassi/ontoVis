@@ -5,13 +5,15 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSliderModule } from '@angular/material/slider';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { VisualizerComponent } from './visualizer/visualizer.component';
+import { VisualizerComponent } from './onto-visualizer/visualizer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ListVisualizerComponent } from './list-visualizer/list-visualizer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    VisualizerComponent
+    VisualizerComponent,
+    ListVisualizerComponent
   ],
   imports: [
     BrowserModule,
