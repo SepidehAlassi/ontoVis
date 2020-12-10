@@ -21,8 +21,15 @@ export class ListVisualizerComponent implements OnInit, AfterViewInit {
   constructor() { }
 
   designNode(node) {
-    console.log('drawing box')
-    const sprite = new SpriteText(node[`id`], 90, 'black');
+    console.log('drawing box');
+    const text = node[`id`];
+    let truncated: string;
+    if (text.length > 20) {
+      truncated =  text.substring(0, 17) + '...';
+    } else {
+      truncated =  text;
+    }
+    const sprite = new SpriteText(truncated, 90, 'black');
     sprite.fontFace = 'Arial';
     sprite.fontWeight = 'bold';
     const geometry = new THREE.BoxGeometry(sprite.text.length + sprite.textHeight, 34, 10);
@@ -30,7 +37,7 @@ export class ListVisualizerComponent implements OnInit, AfterViewInit {
       color: node[`color`],
       depthWrite: false,
       transparent: false,
-      opacity: 0.3
+      opacity: 1
     });
     console.log(node[`id`], sprite.text.length)
     const obj = new THREE.Mesh(geometry, material);
@@ -40,8 +47,15 @@ export class ListVisualizerComponent implements OnInit, AfterViewInit {
   }
 
   nodeAsText(node) {
-    console.log('drawing text')
-    const sprite = new SpriteText(node[`id`], 32, node[`color`]);
+    console.log('drawing text');
+    const text = node[`id`];
+    let truncated: string;
+    if (text.length > 20) {
+      truncated =  text.substring(0, 17) + '...';
+    } else {
+      truncated =  text;
+    }
+    const sprite = new SpriteText(truncated, 32, node[`color`]);
     sprite.material.depthWrite = false;
     return sprite;
   }
@@ -65,6 +79,7 @@ export class ListVisualizerComponent implements OnInit, AfterViewInit {
     this.graph.enableNodeDrag(true);
 
     this.graph.nodeId('id');
+    this.graph.nodeLabel('id')
     this.graph.onNodeDragEnd(node => {
           node.fx = node.x;
           node.fy = node.y;
