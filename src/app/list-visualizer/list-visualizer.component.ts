@@ -62,7 +62,7 @@ export class ListVisualizerComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     console.log('upon init:', this.showNodeAsText)
-    const listData = require('./allergyList.json');
+    const listData = require('./testList.json');
     const gData = {'nodes': listData.nodes, 'links': listData.links};
     this.graph.graphData(gData);
     this.graph.dagMode('td');
