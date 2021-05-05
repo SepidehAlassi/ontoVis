@@ -1,0 +1,253 @@
+{
+  "nodes": [
+    {
+      "id": "Allergy",
+      "color": "purple",
+      "level": 0
+    },
+    {
+      "id": "Opiate Agonist Allergy",
+      "color": "pink",
+      "level": 1,
+      "position": 0
+    },
+    {
+      "id": "Substance",
+      "color": "pink",
+      "level": 1,
+      "position": 1
+    },
+    {
+      "id": "Drug Allergy",
+      "color": "yellow",
+      "level": 2,
+      "position": 0
+    },
+    {
+      "id": "Amoxicillin Allergy",
+      "color": "blue",
+      "level": 3,
+      "position": 0
+    },
+    {
+      "id": "Calcium Allergy",
+      "color": "blue",
+      "level": 3,
+      "position": 1
+    },
+    {
+      "id": "Estrogen Allergy",
+      "color": "blue",
+      "level": 3,
+      "position": 2
+    },
+    {
+      "id": "Estirol Allergy",
+      "color": "cyan",
+      "level": 4,
+      "position": 0
+    },
+    {
+      "id": "Insect Venom Allergy",
+      "color": "yellow",
+      "level": 2,
+      "position": 2
+    },
+    {
+      "id": "Hymenoptera Allergy",
+      "color": "blue",
+      "level": 3,
+      "position": 2
+    },
+    {
+      "id": "Bee Venom Allergy",
+      "color": "cyan",
+      "level": 4,
+      "position": 0
+    },
+    {
+      "id": "Wasp Venom Allergy",
+      "color": "cyan",
+      "level": 4,
+      "position": 1
+    },
+    {
+      "id": "Pollen Allergy",
+      "color": "yellow",
+      "level": 2,
+      "position": 3
+    },
+    {
+      "id": "Tree Pollen Allergy",
+      "color": "blue",
+      "level": 3,
+      "position": 0
+    },
+    {
+      "id": "Grass Pollen Allergy",
+      "color": "blue",
+      "level": 3,
+      "position": 1
+    },
+    {
+      "id": "Food Allergy",
+      "color": "yellow",
+      "level": 2,
+      "position": 1
+    },
+    {
+      "id": "Pulse Vegetable Allergy",
+      "color": "blue",
+      "level": 3,
+      "position": 0
+    },
+    {
+      "id": "Peanut Allergy",
+      "color": "cyan",
+      "level": 4,
+      "position": 0
+    },
+    {
+      "id": "Soy Bean Allergy",
+      "color": "cyan",
+      "level": 4,
+      "position": 1
+    },
+    {
+      "id": "Bean Allergy",
+      "color": "cyan",
+      "level": 4,
+      "position": 2
+    },
+    {
+      "id": "Fruit Allergy",
+      "color": "blue",
+      "level": 3,
+      "position": 1
+    },
+    {
+      "id": "Banana Allergy",
+      "color": "cyan",
+      "level": 4,
+      "position": 0
+    },
+    {
+      "id": "Mango Allergy",
+      "color": "cyan",
+      "level": 4,
+      "position": 1
+    },
+    {
+      "id": "Strawberry Allergy",
+      "color": "cyan",
+      "level": 4,
+      "position": 2
+    },
+    {
+      "id": "Kiwi Allergy",
+      "color": "cyan",
+      "level": 4,
+      "position": 3
+    }
+  ],
+  "links": [
+    {
+      "source": "Allergy",
+      "target": "Opiate Agonist Allergy"
+    },
+    {
+      "source": "Allergy",
+      "target": "Substance Allergy"
+    },
+    {
+      "source": "Substance Allergy",
+      "target": "Drug Allergy"
+    },
+    {
+      "source": "Drug Allergy",
+      "target": "Amoxicillin Allergy"
+    },
+    {
+      "source": "Drug Allergy",
+      "target": "Calcium Allergy"
+    },
+    {
+      "source": "Drug Allergy",
+      "target": "Estrogen Allergy"
+    },
+    {
+      "source": "Estrogen Allergy",
+      "target": "Estirol Allergy"
+    },
+    {
+      "source": "Substance Allergy",
+      "target": "Pollen Allergy"
+    },
+    {
+      "source": "Pollen Allergy",
+      "target": "Tree Pollen Allergy"
+    },
+    {
+      "source": "Pollen Allergy",
+      "target": "Grass Pollen Allergy"
+    },
+    {
+      "source": "Substance Allergy",
+      "target": "Insect Venom Allergy"
+    },
+    {
+      "source": "Insect Venom Allergy",
+      "target": "Hymenoptera Allergy"
+    },
+    {
+      "source": "Hymenoptera Allergy",
+      "target": "Bee Venom Allergy"
+    },
+    {
+      "source": "Hymenoptera Allergy",
+      "target": "Wasp Venom Allergy"
+    },
+    {
+      "source": "Substance Allergy",
+      "target": "Food Allergy"
+    },
+    {
+      "source": "Food Allergy",
+      "target": "Pulse Vegetable Allergy"
+    },
+    {
+      "source": "Pulse Vegetable Allergy",
+      "target": "Peanut Allergy"
+    },
+    {
+      "source": "Pulse Vegetable Allergy",
+      "target": "Soy Bean Allergy"
+    },
+    {
+      "source": "Pulse Vegetable Allergy",
+      "target": "Bean Allergy"
+    },
+    {
+      "source": "Food Allergy",
+      "target": "Fruit Allergy"
+    },
+    {
+      "source": "Fruit Allergy",
+      "target": "Banana Allergy"
+    },
+    {
+      "source": "Fruit Allergy",
+      "target": "Mango Allergy"
+    },
+    {
+      "source": "Fruit Allergy",
+      "target": "Strawberry Allergy"
+    },
+    {
+      "source": "Fruit Allergy",
+      "target": "Kiwi Allergy"
+    }
+  ]
+
+}
+
